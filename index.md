@@ -1,9 +1,10 @@
 ---
 layout: splash
+# Certifications section
 certifications: 
   - title: "Certificaciones"
   - excerpt: 'Explora mis certificaciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia. Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti.'
-feature_row:
+certifications-columns:
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
     alt: "Galardón: XV Jornada Científica SILAIS Granada — 1er lugar"
     title: "XV Jornada Científica — 1er lugar"
@@ -20,22 +21,26 @@ feature_row:
     alt: "Certificación: Estadística con Python"
     title: "Estadística con Python"
     excerpt: "University of Michigan"
+# Proyects section
 proyects: 
   - title: "Proyectos"
   - excerpt: 'Imagina cómo mi enfoque integral impulsará tus proyectos de investigación. Desde la manipulación experta de datos con Python, hasta la creación de presentaciones de PowerPoint impactantes y el uso hábil de Excel, te mostraré ejemplos concretos donde he transformado datos crudos en conocimiento valioso, proporcionando una claridad que redefine tus expectativas y desata el potencial de tus proyectos.'
-feature_row2:
+proyect-columns:
+  # Presentación ganadora - XV Jornada Científica SILAIS Granada
   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "Proyecto: NHANES"
-    title: "NHANES"
-    excerpt: "Python — Pandas, statmodels, seaborn"
-    url: "#test-link"
-    btn_label: "Ver más proyectos"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "Proyecto: XV Jornada Científica SILAIS Granada"
     title: "XV Jornada Científica SILAIS Granada"
     excerpt: "PowerPoint — Redacción, diseño y presentación persuasiva"
+    url: "#test-link"
+    btn_label: "Ver más proyectos"
+    btn_class: "btn--primary"
+  # Proyecto - NHANES
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "Proyecto: NHANES"
+    title: "NHANES"
+    excerpt: "Python — Pandas, statmodels, seaborn"
+  # Presentación - Sepsis y choque séptico
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     alt: "Proyecto: Sepsis y choque séptico"
@@ -44,7 +49,7 @@ feature_row2:
 author_profile: false
 ---
 <div class="custom-splash-hero">
-  <img src="/assets/images/web_hero.svg" alt="Foto de perfil">
+  <img src="/assets/images/web_hero.png" alt="Foto de perfil">
   <div>
     <h1>Más allá del estetoscopio: <br>Estadística en salud con Python</h1>
     <p>Hola, mi nombre es Enyel Rodríguez, doctor en medicina y cirugía. Me especializo en <strong>análisis estadístico con Python</strong> para la investigación médica, con un alto grado de dominio de la <strong>metodología</strong>, desarrollo de <strong>protocolo</strong> y análisis estadístico</p>
@@ -54,8 +59,19 @@ author_profile: false
 
 {% include feature_row id="certifications" type="center" %}
 
-{% include feature_row %}
+{% include feature_row id="certifications-columns" %}
 
 {% include feature_row id="proyects" type="center" %}
 
-{% include feature_row id="feature_row2" %}
+{% include feature_row id="proyect-columns" %}
+
+<div class="about-hero">
+  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <div>
+    <h1>Acerca de mí</h1>
+    <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
+    <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
+    <h2>Del saber al hacer: Una integración práctica</h2>
+    <p>Desde la bioestadística hasta la programación con Python, mi enfoque siempre ha sido traducir el saber en acciones tangibles que impacten positivamente en la vida de las personas y en el avance de la medicina.</p>
+  </div>
+</div>
