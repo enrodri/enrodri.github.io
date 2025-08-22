@@ -24,7 +24,7 @@ body {
       linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
       url('/assets/images/splash_white.jpeg') center/cover no-repeat;
   padding: 2.5rem 1.5rem;
-  margin-bottom: 8rem; // Increased bottom margin after the hero section
+  margin-bottom: 2rem; // Increased bottom margin after the hero section
   box-sizing: border-box;
   flex-wrap: wrap;
   min-height: calc(100vh - 60px);
@@ -41,7 +41,7 @@ body {
 .custom-splash-hero > div {
   min-width: 250px;
   flex: 1 1 300px;
-  margin: 0 !important;
+  margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
@@ -54,12 +54,29 @@ body {
   margin-bottom: 0 !important;
 }
 
-// Three-Column Grid Styles
+// Grid layout by screen size
+/* Mobile (default): Items stacked in a column */
 .grid-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  flex-direction: column;
+}
+
+/* Tablet (700px to 900px): Two-column grid */
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Desktop (901px and up): Three-column grid */
+@media screen and (min-width: 901px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 .grid-item {
@@ -106,11 +123,11 @@ body {
 
 .see-more-button {
   margin-top: 1.5rem;
-  margin-bottom: 6rem; // Increased bottom margin after the certifications section
+  margin-bottom: 3rem; // Increased bottom margin after the section
 }
 
 .about-hero {
-  margin-top: 10rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -131,8 +148,12 @@ body {
 // Footer color
 $footer-background-color: #003152;
 
+#footer {
+  margin-top: 4rem !important;
+}
+
 // Responsive: Stack columns on small screens
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .custom-splash-hero {
     flex-direction: column;
     align-items: center;
@@ -148,8 +169,8 @@ $footer-background-color: #003152;
     }
     
   .custom-splash-hero > div {
-    align-items: center;      // Optional: for flex children
-    justify-content: center;  // Optional: for flex children
+    align-items: center;      
+    justify-content: center;  
     width: 100%;
   }
   
@@ -159,11 +180,16 @@ $footer-background-color: #003152;
     text-align: center;
     padding: 2.5rem 1rem;
     min-height: unset;
+    margin-top: 0;
   }
 
   .about-hero img {
     width: 80vw;
     max-width: 400px;
     margin: 1.5rem 0rem;
+  }
+
+  #footer {
+    margin-top: 0 !important;
   }
 }
