@@ -1,8 +1,169 @@
 // Override the "contrast" skin's variables
 
-h2 {
+h2,
+h3 {
   color: #003152;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.custom-splash-hero {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  gap: 2rem;
+  background: 
+      linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
+      url('/assets/images/splash_white.jpeg') center/cover no-repeat;
+  padding: 2.5rem 1.5rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 60px);
+}
+
+.custom-splash-hero img {
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.custom-splash-hero > div {
+  min-width: 250px;
+  flex: 1 1 300px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.custom-splash-hero h1,
+.custom-splash-hero p {
+  color: #ffffff; // Replace with your desired color
+}
+
+.custom-splash-hero > div > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Three-Column Grid Styles */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.grid-item {
+  flex: 1 1 300px; /* This makes the columns responsive */
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.grid-item a {
+  display: block;
+  text-decoration: none;
+  color: transparent;
+}
+
+/* Removes underline on hover for all links in the grid */
+.grid-item a:hover {
+  text-decoration: none !important;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.grid-item h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #777;
+  padding-bottom: 0rem;
+}
+
+.certifications-button {
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.about-hero {
+  margin-top: 9rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.about-hero img {
+  width: 420px;
+  height: auto;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.about-hero h1 {
+  color: #b80f0a; // Replace with your desired color
 }
 
 // Footer color
 $footer-background-color: #003152;
+
+/* Responsive: Stack columns on small screens */
+@media (max-width: 900px) {
+  .custom-splash-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    min-height: unset;
+  }
+  
+  .custom-splash-hero img {
+    width: 80vw;
+    max-width: 400px;
+    margin: 1.5rem 0rem;
+    }
+    
+  .custom-splash-hero > div {
+    align-items: center;      // Optional: for flex children
+    justify-content: center;  // Optional: for flex children
+    width: 100%;
+  }
+  
+  .about-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    min-height: unset;
+  }
+
+  .about-hero img {
+    width: 80vw;
+    max-width: 400px;
+    margin: 1.5rem 0rem;
+  }
+}

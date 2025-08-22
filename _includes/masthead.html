@@ -21,6 +21,7 @@
               >{{ link.title }}</a>
             </li>
           {%- endfor -%}
+          {% include navbar-cta.html %}
         </ul>
         {% if site.search == true %}
         <button class="search__toggle" type="button">

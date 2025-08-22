@@ -4,48 +4,31 @@ layout: splash
 certifications: 
   - title: "Certificaciones"
   - excerpt: 'Explora mis certificaciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia. Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti.'
-certifications-columns:
-  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "Galardón: XV Jornada Científica SILAIS Granada — 1er lugar"
-    title: "XV Jornada Científica — 1er lugar"
-    excerpt: "SILAIS Granada"
-    url: "#test-link"
-    btn_label: "Ver más certificaciones"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "Certificación: Bioestadística en salud pública"
-    title: "Bioestadística en salud pública"
-    excerpt: "Johns Hopkins University"
-  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "Certificación: Estadística con Python"
-    title: "Estadística con Python"
-    excerpt: "University of Michigan"
-# Proyects section
-proyects: 
+# Projects section
+projects: 
   - title: "Proyectos"
   - excerpt: 'Imagina cómo mi enfoque integral impulsará tus proyectos de investigación. Desde la manipulación experta de datos con Python, hasta la creación de presentaciones de PowerPoint impactantes y el uso hábil de Excel, te mostraré ejemplos concretos donde he transformado datos crudos en conocimiento valioso, proporcionando una claridad que redefine tus expectativas y desata el potencial de tus proyectos.'
-proyect-columns:
-  # Presentación ganadora - XV Jornada Científica SILAIS Granada
-  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
-    alt: "Proyecto: XV Jornada Científica SILAIS Granada"
-    title: "XV Jornada Científica SILAIS Granada"
-    excerpt: "PowerPoint — Redacción, diseño y presentación persuasiva"
-    url: "#test-link"
-    btn_label: "Ver más proyectos"
-    btn_class: "btn--primary"
-  # Proyecto - NHANES
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "Proyecto: NHANES"
-    title: "NHANES"
-    excerpt: "Python — Pandas, statmodels, seaborn"
-  # Presentación - Sepsis y choque séptico
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    alt: "Proyecto: Sepsis y choque séptico"
-    title: "Sepsis y choque séptico"
-    excerpt: "PowerPoint, medicina basada en la evidencia"
+# proyect-columns:
+#   # Presentación ganadora - XV Jornada Científica SILAIS Granada
+#   - image_path: assets/images/unsplash-gallery-image-1-th.jpg
+#     alt: "Proyecto: XV Jornada Científica SILAIS Granada"
+#     title: "XV Jornada Científica SILAIS Granada"
+#     excerpt: "PowerPoint — Redacción, diseño y presentación persuasiva"
+#     url: "#test-link"
+#     btn_label: "Ver más proyectos"
+#     btn_class: "btn--primary"
+#   # Proyecto - NHANES
+#   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+#     alt: "Proyecto: NHANES"
+#     title: "NHANES"
+#     excerpt: "Python — Pandas, statmodels, seaborn"
+#   # Presentación - Sepsis y choque séptico
+#   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+#     alt: "Proyecto: Sepsis y choque séptico"
+#     title: "Sepsis y choque séptico"
+#     excerpt: "PowerPoint, medicina basada en la evidencia"
 author_profile: false
 ---
 <div class="custom-splash-hero">
@@ -59,12 +42,67 @@ author_profile: false
 
 {% include feature_row id="certifications" type="center" %}
 
-{% include feature_row id="certifications-columns" %}
+<!-- Certifications columns -->
+ <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+        <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
+        <h3>XV Jornada Científica <br> 1er lugar</h3>
+        <p>SILAIS Granada</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+        <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
+        <h3>Bioestadística en salud pública</h3>
+      <p>Johns Hopkins University</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+        <h3>Estadística con Python</h3>
+        <p>University of Michigan</p>
+      </a>
+    </div>
+  </div>
 
-{% include feature_row id="proyects" type="center" %}
+<div class="certifications-button">
+  <a href="/certifications-page/" class="btn btn--primary">Ver más certificaciones</a>
+</div>
 
-{% include feature_row id="proyect-columns" %}
+{% include feature_row id="projects" type="center" %}
 
+<!-- Projects columns -->
+ <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+        <img src="/assets/images/award_scientific-fair.jpg" alt="Proyecto: XV Jornada Científica SILAIS Granada">
+        <h3>XV Jornada Científica</h3>
+        <p>PowerPoint — Redacción, diseño y presentación persuasiva</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+        <img src="/assets/images/certification_biostatistics.jpg" alt="Proyecto: NHANES">
+        <h3>NHANES</h3>
+      <p>Python — Pandas, statmodels, seaborn</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+        <img src="/assets/images/certification_statistics-python.jpg" alt="Proyecto: Sepsis y choque séptico">
+        <h3>Sepsis y choque séptico</h3>
+        <p>PowerPoint, medicina basada en la evidencia</p>
+      </a>
+    </div>
+  </div>
+
+<div class="certifications-button">
+  <a href="/certifications-page/" class="btn btn--primary">Ver más proyectos</a>
+</div>
+
+<!-- About section -->
 <div class="about-hero">
   <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
   <div>

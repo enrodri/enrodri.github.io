@@ -6,5 +6,5 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Preguntas frecuentes"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/ 
-  - title: "Contáctame"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/   
+  # - title: "Contáctame"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/   
