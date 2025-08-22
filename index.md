@@ -67,7 +67,7 @@ author_profile: false
     </div>
   </div>
 
-<div class="certifications-button">
+<div class="see-more-button">
   <a href="/certifications-page/" class="btn btn--primary">Ver más certificaciones</a>
 </div>
 
@@ -98,7 +98,7 @@ author_profile: false
     </div>
   </div>
 
-<div class="certifications-button">
+<div class="see-more-button">
   <a href="/certifications-page/" class="btn btn--primary">Ver más proyectos</a>
 </div>
 
