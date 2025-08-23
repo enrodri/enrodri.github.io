@@ -7,12 +7,12 @@ lang: es
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-portfolio.jpg
-excerpt: "Desde proyectos reales hasta reconocimientos destacados, encontrarás la combinación perfecta de habilidades técnicas y compromiso profesional para llevar tus aspiraciones hacia nuevos niveles de éxito."
+excerpt: "Explora mi portafolio, un reflejo de mi dedicación a la excelencia. Desde proyectos reales hasta reconocimientos destacados, encontrarás la combinación perfecta de habilidades técnicas y compromiso profesional para llevar tus aspiraciones hacia nuevos niveles de éxito."
 # Projects section
 projects: 
   - title: "Proyectos"
   - excerpt: 'Imagina cómo mi enfoque integral impulsará tus proyectos de investigación. Desde la manipulación experta de datos con Python, hasta la creación de presentaciones de PowerPoint impactantes y el uso hábil de Excel, te mostraré ejemplos concretos donde he transformado datos crudos en conocimiento valioso, proporcionando una claridad que redefine tus expectativas y desata el potencial de tus proyectos.'
-  # Certifications section
+# Certifications section
 certifications: 
   - title: "Certificaciones"
   - excerpt: 'Explora mis certificaciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia. Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti.'
@@ -100,5 +100,5 @@ certifications:
   </div>
 
 <div class="see-more-button">
-  <a href="/certifications-page/" class="btn btn--primary">Ver más certificaciones</a>
+  <a href="/es/portafolio/certificaciones/" class="btn btn--primary">Ver más certificaciones</a>
 </div>

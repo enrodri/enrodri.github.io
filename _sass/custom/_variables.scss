@@ -137,6 +137,7 @@ body {
   align-items: center;
   position: relative;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .about-hero img {
@@ -152,10 +153,6 @@ body {
 
 // Footer color
 $footer-background-color: #003152;
-
-#footer {
-  margin-top: 4rem !important;
-}
 
 // Responsive: Stack columns on small screens
 @media (max-width: 1100px) {

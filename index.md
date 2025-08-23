@@ -50,7 +50,7 @@ projects:
   </div>
 
 <div class="see-more-button">
-  <a href="/certifications-page/" class="btn btn--primary">Ver más certificaciones</a>
+  <a href="/es/portafolio/certificaciones/" class="btn btn--primary">Ver más certificaciones</a>
 </div>
 
 <hr class="feature-divider">
