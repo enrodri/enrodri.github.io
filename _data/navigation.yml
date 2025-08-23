@@ -1,10 +1,8 @@
 # main links
 main:
   - title: "Portafolio"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /es/portafolio/
   - title: "Acerca de mí"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Preguntas frecuentes"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/ 
-  # - title: "Contáctame"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/   

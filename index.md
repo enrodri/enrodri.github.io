@@ -1,5 +1,9 @@
 ---
 layout: splash
+title: Enyel Rodríguez
+permalink: /
+lang: es
+author_profile: false
 # Certifications section
 certifications: 
   - title: "Certificaciones"
@@ -8,7 +12,6 @@ certifications:
 projects: 
   - title: "Proyectos"
   - excerpt: 'Imagina cómo mi enfoque integral impulsará tus proyectos de investigación. Desde la manipulación experta de datos con Python, hasta la creación de presentaciones de PowerPoint impactantes y el uso hábil de Excel, te mostraré ejemplos concretos donde he transformado datos crudos en conocimiento valioso, proporcionando una claridad que redefine tus expectativas y desata el potencial de tus proyectos.'
-author_profile: false
 ---
 <div class="custom-splash-hero">
   <img src="/assets/images/web_hero.png" alt="Foto de perfil">
