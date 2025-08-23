@@ -3,6 +3,6 @@ main:
   - title: "Portafolio"
     url: /es/portafolio/
   - title: "Acerca de mí"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+    url: /es/acerca-de/
   - title: "Preguntas frecuentes"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/ 

@@ -9,13 +9,27 @@ header:
   overlay_image: /assets/images/splash-certifications.jpg
 excerpt: "Explora mis condecoraciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia.Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti."
 # Certifications section
-research_and_statistics: 
-  - title: "Investigación y estadística"
+statistics_and_public-health: 
+  - title: "Estadística y salud pública"
+other_skills: 
+  - title: "Otras habilidades"
 ---
 
-{% include feature_row id="research_and_statistics" type="center" %}
+<!-- Adds top margin to the feature divider -->
+<style>
+.feature-divider {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
 
-<!-- Certifications columns -->
+#footer {
+  margin-top: 7rem !important;
+}
+</style>
+
+{% include feature_row id="statistics_and_public-health" type="center" %}
+
+<!-- Statistics and public health columns -->
  <div class="grid-container">
     <div class="grid-item">
       <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
@@ -54,11 +68,52 @@ research_and_statistics:
     </div>
     <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/specialization/JAOGI855KZXS">
-        <img src="/assets/images/certification_excel.jpg" alt="Certificación: Gerencia y finanzas en salud">
+        <img src="/assets/images/certification_healthcare-management.png" alt="Certificación: Gerencia y finanzas en salud">
         <h3>Gerencia y finanzas en salud</h3>
         <p>University of Michigan</p>
       </a>
     </div>
   </div>
 
-  <hr class="feature-divider">
+<hr class="feature-divider">
+
+{% include feature_row id="other_skills" type="center" %}
+
+<!-- Other skills columns -->
+<div class="grid-container">
+  <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/GEANNPWG96DG">
+        <img src="/assets/images/certification_speaking-presenting.jpg" alt="Certificación: Experto en palabras: Hablar y presentar">
+        <h3>Experto en palabras: Hablar y presentar</h3>
+        <p>University of Michigan</p>
+      </a>
+  </div>
+  <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/verify/JWZG97JHLWCX">
+        <img src="/assets/images/certification_slide-design.jpg" alt="Certificación: Habilidades en presentación: Diseñando láminas">
+        <h3>Habilidades en presentación: Diseñando láminas</h3>
+        <p>National Research Tomsk State University</p>
+      </a>
+  </div>
+  <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/verify/24WLKLMUS3A7">
+        <img src="/assets/images/certification_storytelling.jpg" alt="Certificación: Escritura de discursos y redacción de historias">
+        <h3>Escritura de discursos y redacción de historias</h3>
+        <p>National Research Tomsk State University</p>
+      </a>
+  </div>
+  <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/MV8WGWJ9SBPR">
+        <img src="/assets/images/certification_python-everyone.jpg" alt="Certificación: Python para todos">
+        <h3>Python para todos</h3>
+        <p>University of Michigan</p>
+      </a>
+  </div>
+  <div class="grid-item">
+      <a href="https://efset.org/cert/rn8hoZ">
+        <img src="/assets/images/efset_c2.jpg" alt="Certificación: Nivel de Inglés C2. Certificado EF SET">
+        <h3>Nivel de Inglés C2</h3>
+        <p>EF Standard English Test</p>
+      </a>
+  </div>
+</div>

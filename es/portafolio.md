@@ -46,7 +46,7 @@ certifications:
   </div>
 
 <div class="see-more-button">
-  <a href="/certifications-page/" class="btn btn--primary">Ver más proyectos</a>
+  <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
 </div>
 
 <hr class="feature-divider">
@@ -92,7 +92,7 @@ certifications:
     </div>
     <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/specialization/JAOGI855KZXS">
-        <img src="/assets/images/certification_excel.jpg" alt="Certificación: Gerencia y finanzas en salud">
+        <img src="/assets/images/certification_healthcare-management.png" alt="Certificación: Gerencia y finanzas en salud">
         <h3>Gerencia y finanzas en salud</h3>
         <p>University of Michigan</p>
       </a>

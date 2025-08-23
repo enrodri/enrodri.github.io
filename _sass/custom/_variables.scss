@@ -147,8 +147,14 @@ body {
   flex-shrink: 0;
 }
 
-.about-hero h1 {
+.about-hero h1,
+.about-values h1 {
   color: #b80f0a; // header color
+}
+
+.about-values {
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
 }
 
 // Footer color
