@@ -9,11 +9,10 @@ lang: es
 <div class="about-hero">
   <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
   <div>
-    <h1>Acerca de mí</h1>
-    <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
-    <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
-    <h2>Del saber al hacer: Una integración práctica</h2>
-    <p>Desde la bioestadística hasta la programación con Python, mi enfoque siempre ha sido traducir el saber en acciones tangibles que impacten positivamente en la vida de las personas y en el avance de la medicina.</p>
+    <h1>Detrás del Estetoscopio: <br> Aprendizaje constante y <br> persuasión impactante en acción</h1>
+    <hr class="feature-divider">
+    <p>Para mí, el desarrollo personal es un viaje de aprendizaje continuo, donde la integración de diversas habilidades y experiencias me permite abordar desafíos desde múltiples perspectivas. Este enfoque amplía mi comprensión del mundo y facilita la generación de soluciones innovadoras y efectivas para problemas complejos.</p>
+    <p>Persuadir y convencer son habilidades esenciales en mi arsenal. Entiendo que la persuasión no solo se trata de presentar argumentos, sino de conectar emocionalmente con las personas y comunicar la importancia de una idea de manera clara y convincente. </p>
   </div>
 </div>
 

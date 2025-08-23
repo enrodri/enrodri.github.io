@@ -9,8 +9,10 @@ header:
   overlay_image: /assets/images/splash-certifications.jpg
 excerpt: "Explora mis condecoraciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia.Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti."
 # Certifications section
-statistics_and_public-health: 
-  - title: "Estadística y salud pública"
+research_and_public-health: 
+  - title: "Investigación y salud pública"
+statistics_and_data:
+  - title: "Estadística y datos"
 other_skills: 
   - title: "Otras habilidades"
 ---
@@ -27,9 +29,9 @@ other_skills:
 }
 </style>
 
-{% include feature_row id="statistics_and_public-health" type="center" %}
+{% include feature_row id="research_and_public-health" type="center" %}
 
-<!-- Statistics and public health columns -->
+<!-- Research and public health columns -->
  <div class="grid-container">
     <div class="grid-item">
       <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
@@ -46,13 +48,6 @@ other_skills:
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-        <h3>Estadística con Python</h3>
-        <p>University of Michigan</p>
-      </a>
-    </div>
-    <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/verify/PR8EM6PJTQ9F">
         <img src="/assets/images/certification_meta-analysis.png" alt="Certificación: Introducción a revisión sistemática y metaanálisis">
         <h3>Introducción a revisión sistemática y metaanálisis</h3>
@@ -60,17 +55,32 @@ other_skills:
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
-        <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
-        <h3>Excel de todos los días</h3>
-        <p>University of Colorado Boulder</p>
-      </a>
-    </div>
-    <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/specialization/JAOGI855KZXS">
         <img src="/assets/images/certification_healthcare-management.png" alt="Certificación: Gerencia y finanzas en salud">
         <h3>Gerencia y finanzas en salud</h3>
         <p>University of Michigan</p>
+      </a>
+    </div>
+  </div>
+
+<hr class="feature-divider">
+
+{% include feature_row id="statistics_and_data" type="center" %}
+
+<!-- Statistics and data columns -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+        <h3>Estadística con Python</h3>
+        <p>University of Michigan</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
+        <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
+        <h3>Excel de todos los días</h3>
+        <p>University of Colorado Boulder</p>
       </a>
     </div>
   </div>
