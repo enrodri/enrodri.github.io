@@ -27,3 +27,12 @@ lang: es
     <h2>Evidencias sobre creencias: La clave del pensamiento crítico</h2>
     <p>Reconozco la subjetividad inherente a las opiniones, pero creo firmemente en la importancia de fundamentar nuestras creencias en datos concretos y evidencia verificable. Mi compromiso con el análisis riguroso de la evidencia disponible fomenta una mentalidad de pensamiento crítico y objetividad, esencial para discernir la verdad en un mundo lleno de opiniones divergentes.</p>
 </div>
+
+<!-- CTA section -->
+<div class="cta">
+  <div>
+    <h3>Transformemos tus ideas en acciones</h3>
+    <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+    <a href="/certifications-page/" class="btn btn--primary">Contáctame</a>
+  </div>
+</div>

@@ -99,3 +99,12 @@ projects:
     <p>Desde la bioestadística hasta la programación con Python, mi enfoque siempre ha sido traducir el saber en acciones tangibles que impacten positivamente en la vida de las personas y en el avance de la medicina.</p>
   </div>
 </div>
+
+<!-- CTA section -->
+<div class="cta">
+  <div>
+    <h3>Transformemos tus ideas en acciones</h3>
+    <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+    <a href="/certifications-page/" class="btn btn--primary">Contáctame</a>
+  </div>
+</div>
