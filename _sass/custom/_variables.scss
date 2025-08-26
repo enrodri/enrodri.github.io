@@ -1,5 +1,9 @@
 // Override the "contrast" skin's variables
 
+h1 {
+  color: #b80f0a;
+}
+
 h2,
 h3 {
   color: #003152;
@@ -91,6 +95,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  grid-auto-flow: dense;
 }
 
 .grid-item:hover {
@@ -147,11 +152,6 @@ body {
   flex-shrink: 0;
 }
 
-.about-hero h1,
-.about-values h1 {
-  color: #b80f0a; // header color
-}
-
 .about-values {
   margin-top: 3.5rem;
   margin-bottom: 4rem;
@@ -188,6 +188,15 @@ body {
 .cta p {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+}
+
+.headline {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills {
+  font-style: italic;
 }
 
 // Footer color
