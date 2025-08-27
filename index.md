@@ -60,7 +60,7 @@ projects:
 <!-- Projects columns -->
  <div class="grid-container">
     <div class="grid-item">
-      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
         <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica SILAIS Granada">
         <h3>XV Jornada Científica</h3>
         <p>PowerPoint — Redacción, diseño y presentación persuasiva</p>

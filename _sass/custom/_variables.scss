@@ -66,8 +66,9 @@ body {
 // Grid layout by screen size
 /* Mobile (default): Items stacked in a column */
 .grid-container {
-  display: flex;
+  display: grid;
   flex-direction: column;
+  gap: 2rem;
 }
 
 /* Tablet (700px to 900px): Two-column grid */
@@ -129,6 +130,14 @@ body {
   font-size: 0.9em;
   color: #777;
   padding-bottom: 0rem;
+}
+
+/* Styles for icon images within the grid */
+.grid-icon {
+  width: 40% !important; /* Adjust size as needed */
+  height: auto !important;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .see-more-button {
@@ -226,6 +235,12 @@ $footer-background-color: #003152;
     align-items: center;      
     justify-content: center;  
     width: 100%;
+  }
+
+  /* Styles for icon images within the grid */
+  .grid-icon {
+    margin: 1.5rem auto !important;
+    // padding: 1rem;
   }
   
   .about-hero {
