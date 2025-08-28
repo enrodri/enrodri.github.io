@@ -37,10 +37,10 @@ certifications:
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
         <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
         <h3>Sepsis y choque séptico</h3>
-        <p>PowerPoint, medicina basada en la evidencia</p>
+        <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
       </a>
     </div>
   </div>
@@ -108,6 +108,6 @@ certifications:
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
     <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
-    <a href="/certifications-page/" class="btn btn--primary">Contáctame</a>
+    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

@@ -18,7 +18,7 @@ projects:
   <div>
     <h1>Más allá del estetoscopio: <br>Estadística en salud con Python</h1>
     <p>Hola, mi nombre es Enyel Rodríguez, doctor en medicina y cirugía. Me especializo en <strong>análisis estadístico con Python</strong> para la investigación médica, con un alto grado de dominio de la <strong>metodología</strong>, desarrollo de <strong>protocolo</strong> y análisis estadístico</p>
-    <a href="https://www.google.com/search?q=do+a+barrel+roll&sca_esv=1c4dff7851372e31&hl=es-419&sxsrf=AE3TifMLWrAr_7om8UTxyPTuYpK8GF9fAQ%3A1755648401514&source=hp&ei=kRGlaMevHdX9wbkPh6uC8QM&iflsig=AOw8s4IAAAAAaKUfoW04wX5uFdNgOvhlLfFZiN9xcVE0&ved=0ahUKEwiHvMj6i5iPAxXVfjABHYeVID4Q4dUDCBc&uact=5&oq=do+a+barrel+roll&gs_lp=Egdnd3Mtd2l6IhBkbyBhIGJhcnJlbCByb2xsSNkUUABYwhFwAHgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIAoAIAmAMAkgcAoAcAsgcAuAcAwgcAyAcA&sclient=gws-wiz" class="btn btn--primary">Contáctame</a>
+    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>
 
@@ -74,16 +74,16 @@ projects:
       </a>
     </div>
     <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
         <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
         <h3>Sepsis y choque séptico</h3>
-        <p>PowerPoint, medicina basada en la evidencia</p>
+        <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
       </a>
     </div>
   </div>
 
 <div class="see-more-button">
-  <a href="/certifications-page/" class="btn btn--primary">Ver más proyectos</a>
+  <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
 </div>
 
 <hr class="feature-divider">
@@ -105,6 +105,6 @@ projects:
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
     <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
-    <a href="/certifications-page/" class="btn btn--primary">Contáctame</a>
+    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

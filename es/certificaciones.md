@@ -133,6 +133,6 @@ other_skills:
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
     <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
-    <a href="/certifications-page/" class="btn btn--primary">Contáctame</a>
+    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

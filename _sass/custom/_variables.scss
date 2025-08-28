@@ -207,6 +207,33 @@ body {
 .skills {
   font-style: italic;
 }
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .form-title {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .form-title {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+.form-title p {
+  text-align: center;
+}
+
+.form-title h3 {
+  color: #b80f0a;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.fillout-form {
+  margin-bottom: 1.5rem;
+}
 
 // Footer color
 $footer-background-color: #003152;
