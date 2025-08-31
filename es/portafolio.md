@@ -7,15 +7,15 @@ lang: es
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-portfolio.jpg
-excerpt: "Explora mi portafolio, un reflejo de mi dedicación a la excelencia. Desde proyectos reales hasta reconocimientos destacados, encontrarás la combinación perfecta de habilidades técnicas y compromiso profesional para llevar tus aspiraciones hacia nuevos niveles de éxito."
+excerpt: Explora mi portafolio, y verás cómo mi experiencia se traduce en resultados tangibles. Desde proyectos reales hasta reconocimientos destacados, cada caso es una muestra del potencial que tiene la evidencia para transformar la incertidumbre en éxito. Te invito a ver una muestra de lo que podemos lograr juntos.
 # Projects section
 projects: 
   - title: "Proyectos"
-  - excerpt: 'Imagina cómo mi enfoque integral impulsará tus proyectos de investigación. Desde la manipulación experta de datos con Python, hasta la creación de presentaciones de PowerPoint impactantes y el uso hábil de Excel, te mostraré ejemplos concretos donde he transformado datos crudos en conocimiento valioso, proporcionando una claridad que redefine tus expectativas y desata el potencial de tus proyectos.'
+  - excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'  
 # Certifications section
 certifications: 
   - title: "Certificaciones"
-  - excerpt: 'Explora mis certificaciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia. Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti.'
+  - excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia. Desde el análisis estadístico hasta la comunicación efectiva, cada habilidad es una pieza clave para asegurar que nuestros proyectos sean técnicamente sólidos, bien comunicados y de gran impacto.'
 ---
 
 {% include feature_row id="projects" type="center" %}

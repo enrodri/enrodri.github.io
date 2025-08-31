@@ -63,15 +63,107 @@ body {
     max-width: 900px !important;
 }
 
+// Custom sections
+.hero_solution h1 {
+  color: #003152;
+}
+
+.hero_problem,
+.hero_solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  margin-top: 5rem !important;
+  margin-bottom: 5rem;
+  padding: 0 1rem !important;
+}
+
+// Style for the image container and its background
+.hero__image-wrapper {
+  aspect-ratio: 1 / 1; 
+  width: 100%;
+  max-width: 400px;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// Set the specific image and overlay for each section
+.hero_problem .hero__image-wrapper {
+  background-image: 
+    linear-gradient(rgba(72, 6, 4, 0.4), rgba(72, 6, 4, 0.4)),
+    url('/assets/images/hero_problem.jpg');
+}
+
+.hero_solution .hero__image-wrapper {
+  background-image: 
+    linear-gradient(rgba(0, 19, 32, 0.4), rgba(0, 19, 32, 0.4)),
+    url('/assets/images/hero_solution.jpg');
+}
+
+// Ensure text content is not full width on mobile
+.hero_problem > div:not(.hero__image-wrapper),
+.hero_solution > div:not(.hero__image-wrapper) {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero_problem > div > *:last-child,
+.hero_solution > div > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+// --- Tablet and Desktop (min-width: 768px) ---
+@media screen and (min-width: 768px) {
+  .hero_problem,
+  .hero_solution {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  // Specific order for problem section: image right, text left
+  .hero_problem {
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  // Specific order for solution section: image left, text right
+  .hero_solution {
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  // Adjust text and image size for larger screens
+  .hero_problem > div:not(.hero__image-wrapper),
+  .hero_solution > div:not(.hero__image-wrapper) {
+    max-width: none;
+    text-align: left;
+  }
+
+  .hero__image-wrapper {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+
 // Grid layout by screen size
-/* Mobile (default): Items stacked in a column */
+// Mobile (default): Items stacked in a column
 .grid-container {
   display: grid;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* Tablet (700px to 900px): Two-column grid */
+// Tablet (700px to 900px): Two-column grid
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .grid-container {
     display: grid;
@@ -80,7 +172,7 @@ body {
   }
 }
 
-/* Desktop (901px and up): Three-column grid */
+// Desktop (901px and up): Three-column grid
 @media screen and (min-width: 901px) {
   .grid-container {
     display: grid;
@@ -132,9 +224,9 @@ body {
   padding-bottom: 0rem;
 }
 
-/* Styles for icon images within the grid */
+// Styles for icon images within the grid
 .grid-icon {
-  width: 40% !important; /* Adjust size as needed */
+  width: 40% !important; // Adjust size as needed
   height: auto !important;
   margin: 0 auto;
   padding: 1rem;
@@ -264,12 +356,29 @@ $footer-background-color: #003152;
     width: 100%;
   }
 
-  /* Styles for icon images within the grid */
+  // Styles for icon images within the grid
   .grid-icon {
     margin: 1.5rem auto !important;
     // padding: 1rem;
   }
   
+  .hero_problem,
+  .hero_solution {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    min-height: unset;
+    margin-top: 0;
+  }
+
+  .hero_problem img,
+  .hero_solution img {
+    width: 80vw;
+    max-width: 400px;
+    margin: 1.5rem 0rem;
+  }
+
   .about-hero {
     flex-direction: column;
     align-items: center;

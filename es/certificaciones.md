@@ -7,7 +7,7 @@ lang: es
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-certifications.jpg
-excerpt: "Explora mis condecoraciones, testimonios tangibles de mi compromiso inquebrantable con la excelencia.Estas distinciones garantizan que tus proyectos se desarrollen con la más alta calidad y profesionalismo, asegurando resultados excepcionales para ti."
+excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia. <br>Desde el análisis estadístico hasta la comunicación efectiva, cada habilidad es una pieza clave para asegurar que nuestros proyectos sean técnicamente sólidos, bien comunicados y de gran impacto.'
 # Certifications section
 research_and_public-health: 
   - title: "Investigación y salud pública"
@@ -20,8 +20,8 @@ other_skills:
 <!-- Adds top margin to the feature divider -->
 <style>
 .feature-divider {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 .cta {
