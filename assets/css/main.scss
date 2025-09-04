@@ -9,6 +9,13 @@ search: false
 @import "custom/variables";
 @import "minimal-mistakes"; // main partials
 
+@media screen and (max-width: 1024px) {
+  // Styles for the hamburger menu on smaller screens
+  .masthead__menu-item {
+    background-color: #003152;
+  }
+}
+
 .masthead {
   position: sticky;
   top: 0;

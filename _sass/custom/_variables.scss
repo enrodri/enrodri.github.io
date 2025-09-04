@@ -34,7 +34,8 @@ body {
   min-height: calc(100vh - 60px);
 }
 
-.custom-splash-hero img {
+.custom-splash-hero img,
+.vcard img {
   width: 500px;
   max-width: 90vw;
   height: auto;
@@ -42,7 +43,8 @@ body {
   flex-shrink: 0;
 }
 
-.custom-splash-hero > div {
+.custom-splash-hero > div,
+.vcard > div {
   min-width: 250px;
   flex: 1 1 300px;
   margin-bottom: 0 !important;
@@ -54,7 +56,8 @@ body {
   color: #ffffff; // White color for the text content
 }
 
-.custom-splash-hero > div > *:last-child {
+.custom-splash-hero > div > *:last-child,
+.vcard > div > *:last-child {
   margin-bottom: 0 !important;
 }
 
@@ -299,6 +302,95 @@ body {
 .skills {
   font-style: italic;
 }
+
+.vcard {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  gap: 2rem;
+  background: 
+      linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+      url('/assets/images/vcard_background.png');
+  padding: 2.5rem;
+  margin-bottom: 2rem; // Increased bottom margin after the hero section
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: calc(100vh - 60px);
+}
+
+// Grid layout by screen size
+// Mobile (default): Items stacked in a column
+.social-container {
+  display: grid;
+  flex-direction: column;
+  gap: 2rem;
+  // border: 2px solid #a9a9a9;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  // border-radius: 10px;
+}
+
+// Tablet (700px to 900px): Two-column grid
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+// Desktop (901px and up): Three-column grid
+@media screen and (min-width: 901px) {
+  .social-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+}
+
+.social-item {
+  flex: 1 1 300px; // This makes the columns responsive
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  grid-auto-flow: dense;
+  // margin: 1rem 0;
+}
+
+.social-item h3 {
+  margin: 0 !important
+}
+
+.social-item p {
+  color: #777 !important
+}
+
+.social-item a {
+  text-decoration: none; // Removes the underline
+  color: inherit; // Makes the link color the same as the parent text color
+  display: block; // Makes the entire area clickable
+}
+
+.social-container a:hover {
+  text-decoration: none !important;
+}
+
+.social-item svg {
+  display: block;
+  width: 50%;
+  height: auto;
+  max-width: 100px;
+  margin: 0 auto;
+  fill:#003152;
+  padding-top: 1rem;
+}
+
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .form-title {
     padding-left: 4rem;
@@ -336,7 +428,8 @@ $footer-background-color: #003152;
 
 // Responsive: Stack columns on small screens
 @media (max-width: 1100px) {
-  .custom-splash-hero {
+  .custom-splash-hero,
+  .vcard {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -344,15 +437,21 @@ $footer-background-color: #003152;
     min-height: unset;
   }
   
-  .custom-splash-hero img {
+  .vcard {
+    margin-bottom: 0 !important;
+  }
+
+  .custom-splash-hero img,
+  .vcard img {
     width: 80vw;
     max-width: 400px;
     margin: 1.5rem 0rem;
     }
     
-  .custom-splash-hero > div {
-    align-items: center;      
-    justify-content: center;  
+  .custom-splash-hero > div,
+  .vcard > div {
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
 

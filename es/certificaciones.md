@@ -11,10 +11,13 @@ excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un comp
 # Certifications section
 research_and_public-health: 
   - title: "Investigación y salud pública"
+  - excerpt: "Enfocadas en los desafíos más apremiantes, estas credenciales me permiten abordar problemas complejos de salud pública con el rigor de la evidencia científica,  asegurando que nuestras metas se conviertan en acciones con un impacto real."
 statistics_and_data:
   - title: "Estadística y datos"
+  - excerpt: "La estadística no es solo mi herramienta, es mi lenguaje. Con ella, garantizo que cada interpretación de los datos sea sólida, rigurosa y, sobre todo, útil para nuestros objetivos."
 other_skills: 
   - title: "Otras habilidades"
+  - excerpt: "La combinación de estas habilidades me permite ser un puente entre el análisis y la acción, asegurando que tus datos no se queden en un reporte, sino que se conviertan en decisiones impactantes."
 ---
 
 <!-- Adds top margin to the feature divider -->

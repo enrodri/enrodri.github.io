@@ -1,24 +1,41 @@
 ---
 layout: splash
-title: "Contacto"
-permalink: /es/contacto/
+title: Enyel Rodríguez
+permalink: /es/vcard/
 lang: es
-header:
-  overlay_filter: rgba(0, 19, 32, 0.8)
-  overlay_image: /assets/images/splash-contact.jpg
-excerpt: "Cada gran proyecto comienza con una conversación. Has visto mi dedicación a la excelencia y mi enfoque en resultados de alto impacto. Ahora, es tu turno de compartir tus metas. Conversemos. Juntos podemos explorar cómo mis habilidades pueden convertirse en la pieza clave para que tu proyecto sea exitoso y tenga un impacto duradero."
+author_profile: false
 social:
   - title: "¡Conéctate conmigo!"
+# Certifications section
+certifications: 
+  - title: "Certificaciones"
+  - excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia. Desde el análisis estadístico hasta la comunicación efectiva, cada habilidad es una pieza clave para asegurar que nuestros proyectos sean técnicamente sólidos, bien comunicados y de gran impacto.'
+# Projects section
+projects: 
+  - title: "Proyectos"
+  - excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'     
 ---
-
-<div class="form-title">
-  <h3>Transformemos tus ideas en acciones</h3>
-  <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+<div class="vcard">
+  <img src="/assets/images/web_hero.png" alt="Foto de perfil">
+  <div class="vcard-info">
+    <h1>Dr. Enyel A. Rodríguez G.</h1>
+    <h2>Médico general y científico de datos</h2>
+    <p>Ayudo a investigadores y organizaciones de salud a transformar sus <strong>datos</strong> en descubrimientos valiosos y a tomar decisiones estratégicas basadas en <strong>evidencia</strong> sólida.</p>
+    <!-- <div class="notice">
+        <p>"El buen médico trata la enfermedad, el gran médico trata al paciente que tiene la enfermedad.” <br>- Sir William Osler</p>
+    </div> -->
+    <div>
+        <a href="https://wa.me/85365685" class="btn btn--primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+        <a href="/es/contacto/" class="btn btn--primary">
+            <i class="fa-regular fa-envelope"></i>
+            Correo
+        </a>
+    </div>
+  </div>
 </div>
-
-<div class="fillout-form" style="width:100%;height:500px;" data-fillout-id="5A9k43juN4us" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
-
-{% include fillout-script.html %}
 
 <!-- Social networks section -->
 {% include feature_row id="social" type="center" %}
@@ -59,4 +76,70 @@ social:
       <p>X</p>
     </a>
   </div>
+</div>
+
+<hr class="feature-divider">
+
+{% include feature_row id="certifications" type="center" %}
+
+<!-- Certifications columns -->
+ <div class="grid-container">
+    <div class="grid-item">
+      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+        <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
+        <h3>XV Jornada Científica <br> 1er lugar</h3>
+        <p>SILAIS Granada</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+        <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
+        <h3>Bioestadística en salud pública</h3>
+      <p>Johns Hopkins University</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+        <h3>Estadística con Python</h3>
+        <p>University of Michigan</p>
+      </a>
+    </div>
+  </div>
+
+<div class="see-more-button">
+  <a href="/es/portafolio/certificaciones/" class="btn btn--primary">Ver más certificaciones</a>
+</div>
+
+<hr class="feature-divider">
+
+{% include feature_row id="projects" type="center" %}
+
+<!-- Projects columns -->
+ <div class="grid-container">
+    <div class="grid-item">
+      <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
+        <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica SILAIS Granada">
+        <h3>XV Jornada Científica</h3>
+        <p>PowerPoint — Redacción, diseño y presentación persuasiva</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+        <img src="/assets/images/certification_biostatistics.jpg" alt="Proyecto: NHANES">
+        <h3>NHANES</h3>
+      <p>Python — Pandas, statmodels, seaborn</p>
+      </a>
+    </div>
+    <div class="grid-item">
+      <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
+        <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
+        <h3>Sepsis y choque séptico</h3>
+        <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
+      </a>
+    </div>
+  </div>
+
+<div class="see-more-button">
+  <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
 </div>
