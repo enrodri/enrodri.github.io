@@ -26,10 +26,6 @@ other_skills:
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
-
-.cta {
-  margin-top: 5rem !important;
-}
 </style>
 
 {% include feature_row id="research_and_public-health" type="center" %}
