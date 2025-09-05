@@ -15,6 +15,12 @@ projects:
   - title: "Proyectos"
   - excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'     
 ---
+<style>
+.hero-about {
+  margin-bottom: 5rem;
+}
+</style>
+
 <div class="vcard">
   <img src="/assets/images/web_hero.png" alt="Foto de perfil">
   <div class="vcard-info">
@@ -142,4 +148,16 @@ projects:
 
 <div class="see-more-button">
   <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
+</div>
+
+<!-- About section -->
+<div class="hero-about">
+  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <div>
+    <h1>Acerca de mí</h1>
+    <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
+    <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
+    <h2>Del saber al hacer: Una integración práctica</h2>
+    <p>Desde la bioestadística hasta la programación con Python, mi enfoque siempre ha sido traducir el saber en acciones tangibles que impacten positivamente en la vida de las personas y en el avance de la medicina.</p>
+  </div>
 </div>
