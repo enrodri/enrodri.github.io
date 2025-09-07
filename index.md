@@ -114,7 +114,7 @@ projects:
 <hr class="feature-divider">
 
 <!-- About section -->
-<div class="hero-about">
+<div class="about-hero">
   <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
   <div>
     <h1>Acerca de mí</h1>
