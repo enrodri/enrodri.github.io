@@ -3,6 +3,7 @@ layout: splash
 title: "Certificaciones"
 permalink: /es/portafolio/certificaciones/
 lang: es
+author_profile: false
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)

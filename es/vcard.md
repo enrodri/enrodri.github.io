@@ -16,7 +16,7 @@ projects:
   - excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'     
 ---
 <style>
-.hero-about {
+.about-hero {
   margin-bottom: 5rem;
 }
 </style>
@@ -149,6 +149,8 @@ projects:
 <div class="see-more-button">
   <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
 </div>
+
+<hr class="feature-divider">
 
 <!-- About section -->
 <div class="about-hero">

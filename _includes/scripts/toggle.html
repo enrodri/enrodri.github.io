@@ -1,0 +1,14 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const headings = document.querySelectorAll('.toggle-heading');
+
+    headings.forEach(heading => {
+      heading.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+
+        this.classList.toggle('is-expanded');
+        content.classList.toggle('is-expanded');
+      });
+    });
+  });
+</script>
