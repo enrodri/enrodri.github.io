@@ -41,6 +41,11 @@ highlights:
   margin-bottom: 2rem;
 }
 
+.story-divider {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
 .cta {
   margin-top: 4rem !important;
 }
@@ -128,7 +133,7 @@ highlights:
     </div>
   </div>
 
-<hr class="feature-divider">
+<hr class="story-divider">
 
 <div>
   <h2>La Solución: De la información al impacto</h2>
