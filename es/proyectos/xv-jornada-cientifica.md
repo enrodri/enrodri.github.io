@@ -73,17 +73,17 @@ highlights:
 
 <div class="grid-container">
     <div class="grid-item">
-        <img src="/assets/images/text.png" alt="Imagen: Mucho texto" class="grid-icon">
+        <img src="/assets/images/event.png" alt="Imagen: Mucho texto" class="grid-icon">
         <h3>Empatía con la Audiencia</h3>
         <p>Identifiqué las motivaciones y preguntas de mi público para estructurar la narrativa alrededor de sus necesidades, no solo de mis datos.</p>
     </div>
     <div class="grid-item">
-        <img src="/assets/images/decoration.png" alt="Imagen: Usar mucha decoración" class="grid-icon">
+        <img src="/assets/images/timeline.png" alt="Imagen: Usar mucha decoración" class="grid-icon">
         <h3>El Hilo Narrativo</h3>
         <p>Apliqué la estructura de <strong>principio, clímax y desenlace</strong> para transformar cifras en una historia convincente que generara un sentido de urgencia y relevancia.</p>
     </div>
     <div class="grid-item">
-        <img src="/assets/images/reading.png" alt="Imagen: Lectura de láminas" class="grid-icon">
+        <img src="/assets/images/view.png" alt="Imagen: Lectura de láminas" class="grid-icon">
          <h3>Simplificación Visual</h3>
         <p>El diseño visual se planificó para reducir la carga cognitiva. Cada lámina, cada gráfico, fue curado para dirigir la atención y reforzar un solo mensaje clave.</p>
     </div>

@@ -26,7 +26,7 @@ certifications:
       <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
         <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica SILAIS Granada">
         <h3>XV Jornada Científica</h3>
-        <p>PowerPoint — Redacción, diseño y presentación persuasiva</p>
+        <p>PowerPoint — Diseño de Presentaciones, Redacción Persuasiva, Comunicación de Alto Impacto</p>
       </a>
     </div>
     <div class="grid-item">
