@@ -159,6 +159,10 @@ highlights:
 
 {% include gallery id="highlights" %}
 
+<div class="see-more-button">
+  <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver todas las láminas</a>
+</div>
+
   <!-- CTA section -->
 <div class="cta">
   <div>

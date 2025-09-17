@@ -32,14 +32,14 @@ presentations:
       <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
         <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica SILAIS Granada">
         <h3>XV Jornada Científica</h3>
-        <p>PowerPoint — Redacción, diseño y presentación persuasiva</p>
+        <p>Síntesis de Evidencia, Análisis de Ensayos Clínicos, Comunicación Científica, Presentaciones de Alto Impacto</p>
       </a>
     </div>
     <div class="grid-item">
       <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
         <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
         <h3>Sepsis y choque séptico</h3>
-        <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
+        <p>Síntesis de Evidencia, Análisis de Ensayos Clínicos, Comunicación Científica, Presentaciones de Alto Impacto</p>
       </a>
     </div>
   </div>

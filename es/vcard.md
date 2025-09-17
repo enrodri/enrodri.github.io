@@ -27,9 +27,6 @@ projects:
     <h1>Dr. Enyel A. Rodríguez G.</h1>
     <h2>Médico general y científico de datos</h2>
     <p>Ayudo a investigadores y organizaciones de salud a transformar sus <strong>datos</strong> en descubrimientos valiosos y a tomar decisiones estratégicas basadas en <strong>evidencia</strong> sólida.</p>
-    <!-- <div class="notice">
-        <p>"El buen médico trata la enfermedad, el gran médico trata al paciente que tiene la enfermedad.” <br>- Sir William Osler</p>
-    </div> -->
     <div>
         <a href="https://wa.me/85365685" class="btn btn--primary">
             <i class="fa-brands fa-whatsapp"></i>
@@ -141,7 +138,7 @@ projects:
       <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
         <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
         <h3>Sepsis y choque séptico</h3>
-        <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
+        <p>PowerPoint — Diseño de Presentaciones, Redacción Persuasiva, Comunicación de Alto Impacto</p>
       </a>
     </div>
   </div>

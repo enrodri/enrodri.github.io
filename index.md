@@ -102,7 +102,7 @@ projects:
     <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
       <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
       <h3>Sepsis y choque séptico</h3>
-      <p>PowerPoint — Medicina basada en la evidencia, tablas, gráficas</p>
+      <p>Síntesis de Evidencia, Análisis de Ensayos Clínicos, Comunicación Científica, Presentaciones de Alto Impacto</p>
     </a>
   </div>
 </div>
