@@ -1,21 +1,29 @@
-// Override the "contrast" skin's variables
+// ===============================================
+// BASE & GLOBAL OVERRIDES
+// ===============================================
 
+// Override the "contrast" skin's variables and default theme headings
 h1 {
-  color: #b80f0a;
+  color: #b80f0a; /* Custom Primary Accent Color */
 }
 
 h2,
 h3 {
-  color: #003152;
+  color: #003152; /* Custom Secondary Accent Color */
 }
 
 body {
-  overflow-x: hidden; // Prevents hero background overflow
+  // Prevents horizontal scrolling caused by 100vw elements (like the hero)
+  overflow-x: hidden; 
 }
 
+// ===============================================
+// CUSTOM HERO/SPLASH SECTION (.custom-splash-hero)
+// Used on the homepage for the main banner
+// ===============================================
+
 .custom-splash-hero {
-  display: flex;
-  align-items: center;
+  // Full-width stretch technique
   width: 100vw;
   max-width: 100vw;
   position: relative;
@@ -23,39 +31,49 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  
+  // Flex layout and styling
+  display: flex;
+  align-items: center;
   gap: 2rem;
-  background: 
-      linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
-      url('/assets/images/splash_white.jpeg') center/cover no-repeat;
   padding: 2.5rem;
-  margin-bottom: 2rem; // Increased bottom margin after the hero section
+  margin-bottom: 2rem; 
   box-sizing: border-box;
   flex-wrap: wrap;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px); // Full viewport height minus header
+  
+  // Background with transparent dark overlay
+  background: 
+    linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
+    url('/assets/images/splash_white.jpeg') center/cover no-repeat;
 }
 
+// Image and VCard Image Styling
 .custom-splash-hero img,
 .vcard img {
   width: 500px;
   max-width: 90vw;
   height: auto;
   border-radius: 1rem;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevents image from shrinking below its width */
 }
 
+// Text/Content Container Styling
 .custom-splash-hero > div,
 .vcard > div {
   min-width: 250px;
-  flex: 1 1 300px;
+  flex: 1 1 300px; /* Allows content to grow, setting a 300px base */
   margin-bottom: 0 !important;
   padding: 0 !important;
 }
 
+// Text Color Overrides for the Dark Hero Background
 .custom-splash-hero h1,
 .custom-splash-hero p {
-  color: #ffffff; // White color for the text content
+  color: #ffffff; 
 }
 
+// Removes bottom margin from the last element in the hero content div
 .custom-splash-hero > div > *:last-child,
 .vcard > div > *:last-child {
   margin-bottom: 0 !important;
@@ -63,14 +81,19 @@ body {
 
 // Custom splash text width
 .page__hero--overlay .page__lead {
-    max-width: 900px !important;
+  max-width: 900px !important;
 }
 
-// Custom sections
+// ===============================================
+// CUSTOM SECTIONS: PROBLEM/SOLUTION BLOCKS
+// ===============================================
+
+// Primary Title for Solution Section
 .hero_solution h1 {
   color: #003152;
 }
 
+// Default Mobile Layout (Stacked Column)
 .hero_problem,
 .hero_solution {
   display: flex;
@@ -83,7 +106,7 @@ body {
   padding: 0 1rem !important;
 }
 
-// Style for the image container and its background
+// Style for the image container (ensures a square shape)
 .hero__image-wrapper {
   aspect-ratio: 1 / 1; 
   width: 100%;
@@ -96,7 +119,7 @@ body {
   background-repeat: no-repeat;
 }
 
-// Set the specific image and overlay for each section
+// Set specific images and overlays for each section
 .hero_problem .hero__image-wrapper {
   background-image: 
     linear-gradient(rgba(72, 6, 4, 0.4), rgba(72, 6, 4, 0.4)),
@@ -109,13 +132,14 @@ body {
     url('/assets/images/hero_solution.jpg');
 }
 
-// Ensure text content is not full width on mobile
+// Constraint and alignment for the text content
 .hero_problem > div:not(.hero__image-wrapper),
 .hero_solution > div:not(.hero__image-wrapper) {
   max-width: 600px;
   text-align: center;
 }
 
+// Removes bottom margin from the last element in the content div
 .hero_problem > div > *:last-child,
 .hero_solution > div > *:last-child {
   margin-bottom: 0 !important;
@@ -125,7 +149,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero_problem,
   .hero_solution {
-    flex-direction: row;
+    flex-direction: row; /* Horizontal layout */
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
@@ -158,8 +182,11 @@ body {
   }
 }
 
-// Grid layout by screen size
-// Mobile (default): Items stacked in a column
+// ===============================================
+// PROJECT/CERTIFICATION GRID LAYOUT
+// ===============================================
+
+// Default Mobile Layout: Items stacked in a column
 .grid-container {
   display: grid;
   flex-direction: column;
@@ -185,7 +212,7 @@ body {
 }
 
 .grid-item {
-  flex: 1 1 300px; // This makes the columns responsive
+  flex: 1 1 300px; 
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
@@ -195,13 +222,13 @@ body {
 }
 
 .grid-item:hover {
-  transform: translateY(-5px); // Lift effect on hover
+  transform: translateY(-5px); 
 }
 
 .grid-item a {
   display: block;
   text-decoration: none;
-  color: transparent;
+  color: transparent; /* Ensures content color is defined by child elements */
 }
 
 // Removes underline on hover for all links in the grid
@@ -229,16 +256,21 @@ body {
 
 // Styles for icon images within the grid
 .grid-icon {
-  width: 40% !important; // Adjust size as needed
+  width: 40% !important; 
   height: auto !important;
   margin: 0 auto;
+  fill:#003152; /* Fills SVG icons with primary color */
   padding: 1rem;
 }
 
 .see-more-button {
   margin-top: 1.5rem;
-  margin-bottom: 3rem; // Increased bottom margin after the section
+  margin-bottom: 3rem; 
 }
+
+// ===============================================
+// ABOUT PAGE SECTIONS
+// ===============================================
 
 .about-hero {
   margin-top: 4rem;
@@ -268,8 +300,12 @@ body {
   margin-bottom: 0 !important;
 }
 
+// ===============================================
+// CALL TO ACTION (CTA) BAR
+// ===============================================
+
 .cta {
-  text-align: center;
+  // Full-width stretch technique
   width: 100vw;
   max-width: 100vw;
   position: relative;
@@ -277,19 +313,24 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  
+  // Layout and styling
+  text-align: center;
   gap: 2rem;
-  background: 
-      linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
-      url('/assets/images/cta.jpg') center/cover no-repeat;
   padding: 3rem;
   box-sizing: border-box;
   flex-wrap: wrap;
   margin-top: 4em;
+  
+  // Background with transparent dark overlay
+  background: 
+    linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
+    url('/assets/images/cta.jpg') center/cover no-repeat;
 }
 
 .cta h3,
 .cta p {
-  color: #ffffff; // White color for the text content
+  color: #ffffff;
   margin-top: 0 !important;
 }
 
@@ -311,9 +352,12 @@ body {
   font-style: italic;
 }
 
+// ===============================================
+// VCard/About Me Banner
+// ===============================================
+
 .vcard {
-  display: flex;
-  align-items: center;
+  // Full-width stretch technique
   width: 100vw;
   max-width: 100vw;
   position: relative;
@@ -321,30 +365,37 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  
+  // Flex layout and styling
+  display: flex;
+  align-items: center;
   gap: 2rem;
-  background: 
-      linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-      url('/assets/images/vcard_background.png');
   padding: 2.5rem;
-  margin-bottom: 2rem; // Increased bottom margin after the hero section
+  margin-bottom: 2rem; 
   box-sizing: border-box;
   flex-wrap: wrap;
   min-height: calc(100vh - 60px);
+  
+  // Background with semi-transparent white overlay
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('/assets/images/vcard_background.png');
 }
 
-// Grid layout by screen size
-// Mobile (default): Items stacked in a column
+// ===============================================
+// SOCIAL ICONS GRID (Customized)
+// ===============================================
+
+// Default Mobile Layout: Items stacked in a column
 .social-container {
   display: grid;
   flex-direction: column;
   gap: 2rem;
-  // border: 2px solid #a9a9a9;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  // border-radius: 10px;
 }
 
-// Tablet (700px to 900px): Two-column grid
+// Tablet (700px to 900px): Three-column grid
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .social-container {
     display: grid;
@@ -353,7 +404,7 @@ body {
   }
 }
 
-// Desktop (901px and up): Three-column grid
+// Desktop (901px and up): Five-column grid
 @media screen and (min-width: 901px) {
   .social-container {
     display: grid;
@@ -363,12 +414,11 @@ body {
 }
 
 .social-item {
-  flex: 1 1 300px; // This makes the columns responsive
+  flex: 1 1 300px;
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
   grid-auto-flow: dense;
-  // margin: 1rem 0;
 }
 
 .social-item h3 {
@@ -380,9 +430,9 @@ body {
 }
 
 .social-item a {
-  text-decoration: none; // Removes the underline
-  color: inherit; // Makes the link color the same as the parent text color
-  display: block; // Makes the entire area clickable
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
 }
 
 .social-container a:hover {
@@ -399,6 +449,11 @@ body {
   padding-top: 1rem;
 }
 
+// ===============================================
+// CONTACT FORM SECTION
+// ===============================================
+
+// Tablet padding for form text
 @media screen and (min-width: 700px) and (max-width: 900px) {
   .form-title {
     padding-left: 4rem;
@@ -406,6 +461,7 @@ body {
   }
 }
 
+// Desktop padding for form text
 @media screen and (min-width: 901px) {
   .form-title {
     padding-left: 9rem;
@@ -426,6 +482,10 @@ body {
 .fillout-form {
   margin-bottom: 1.5rem;
 }
+
+// ===============================================
+// ACCORDION/TOGGLE STYLES (FAQ)
+// ===============================================
 
 .toggle-container {
   border: 1px solid var(--border-color, #e0e0e0);
@@ -454,7 +514,7 @@ body {
 }
 
 .toggle-content {
-  display: none;
+  display: none; /* Hidden by default */
   padding: 0 1rem;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
@@ -470,14 +530,22 @@ body {
   transform: translateY(-50%) rotate(180deg);
 }
 
-// Footer color
+// ===============================================
+// GLOBAL FOOTER STYLES
+// ===============================================
+
+// Variable to set the footer background (Minimal Mistakes uses this)
 $footer-background-color: #003152;
 
 #footer {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
-// Responsive: Stack columns on small screens
+// ===============================================
+// RESPONSIVE FALLBACKS (Old/Generic Media Queries)
+// ===============================================
+
+// Generic max-width media query for structural elements
 @media (max-width: 1100px) {
   .custom-splash-hero,
   .vcard {
@@ -509,7 +577,6 @@ $footer-background-color: #003152;
   // Styles for icon images within the grid
   .grid-icon {
     margin: 1.5rem auto !important;
-    // padding: 1rem;
   }
   
   .hero_problem,
@@ -546,24 +613,44 @@ $footer-background-color: #003152;
   }
 }
 
-// 4-column footer layout - MOBILE FIRST
+// ===============================================
+// CUSTOM FOOTER GRID (MOBILE FIRST)
+// ===============================================
 
+// BASE STYLES (Mobile: 1-Column Stacked)
 .footer-grid {
   display: grid;
-  // Stacked columns for mobile (1fr is 1 column)
   grid-template-columns: 1fr; 
   gap: 2rem;
-  padding: 2rem 1rem; /* Added horizontal padding for mobile */
+  padding: 2rem 1rem;
   max-width: var(--max-width, 1400px);
   margin: 0 auto;
-  text-align: center; // Default alignment for stacked mobile columns
+  text-align: center;
+}
+
+.footer-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.footer-logo-col img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-logo-col .btn--primary {
+  padding: 0.5em 1em !important; 
+  font-size: 0.8rem; 
+  width: auto;
+  margin: 0.7rem 0;
 }
 
 .footer-col h4 {
   color: var(--text-color-light, #fff); 
-  margin: 0;
-  // Add a small bottom margin on mobile to separate from the list
-  margin-bottom: 0.5rem; 
+  margin: 0 0 0.5rem 0; 
 }
 
 .footer-col ul {
@@ -583,58 +670,36 @@ $footer-background-color: #003152;
   color: #fff;
 }
 
-.footer-logo-col img {
-  width: 4.5rem;
-  height: 4.5rem;
-  margin-bottom: 0.7rem;
-}
-
-.footer-cta-col {
-  // On mobile, force the CTA column to be first visually
-  order: -1; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; // Center the button on mobile
-  // Add a little extra space after the CTA to separate it from the next column
-  margin-bottom: 2rem; 
-}
-
-.footer-cta-col .btn--primary {
-  padding: 0.5em 1em !important; 
-  font-size: 0.8rem; 
-  width: auto;
-}
-
+// TABLET & DESKTOP STYLES (min-width: 501px)
 @media screen and (min-width: 501px) {
   .footer-grid {
-    // Two columns on mid-sized screens
-    grid-template-columns: repeat(2, 1fr); 
-    text-align: left; // Reset text alignment for two-column view
+    /* 3 Content Columns (1fr each) + 1 Gap Track (4rem) = 4 Tracks Total */
+    grid-template-columns: 1fr 4rem 1fr 1fr; 
+    gap: 0;
+    text-align: left; 
+    padding: 2rem 0;
   }
   
-  .footer-cta-col {
-    order: unset; // Reset order to flow naturally after the logo column
-    margin-bottom: 0;
+  // Alignment reset for all columns on larger screens
+  .footer-col {
+    text-align: left;
+  }
+  
+  // Logo/CTA Column Alignment (Left-aligned)
+  .footer-logo-col {
     align-items: flex-start; 
     text-align: left;
   }
 
-  // // Center logo on the new 2-column layout (if it's in a single cell)
-  // .footer-grid > .footer-col:first-child {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  // }
-}
-
-@media screen and (min-width: 901px) {
-  .footer-grid {
-    // Four columns for large screens
-    grid-template-columns: repeat(4, 1fr);
-    padding: 2rem 0; // Reset padding to original value
+  /* GRID POSITIONING: Must force link columns to skip the 4rem gap track */
+  
+  // Portafolio column (HTML Child #2 -> Grid Track 3)
+  .footer-grid > .footer-col:nth-child(2) { 
+    grid-column: 3 / span 1; 
   }
-
-  .footer-logo-col img {
-  text-align: left;
+  
+  // Explora column (HTML Child #3 -> Grid Track 4)
+  .footer-grid > .footer-col:nth-child(3) { 
+    grid-column: 4 / span 1; 
   }
 }
