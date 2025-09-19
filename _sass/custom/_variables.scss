@@ -545,3 +545,96 @@ $footer-background-color: #003152;
     margin: 1.5rem 0rem;
   }
 }
+
+// 4-column footer layout - MOBILE FIRST
+
+.footer-grid {
+  display: grid;
+  // Stacked columns for mobile (1fr is 1 column)
+  grid-template-columns: 1fr; 
+  gap: 2rem;
+  padding: 2rem 1rem; /* Added horizontal padding for mobile */
+  max-width: var(--max-width, 1400px);
+  margin: 0 auto;
+  text-align: center; // Default alignment for stacked mobile columns
+}
+
+.footer-col h4 {
+  color: var(--text-color-light, #fff); 
+  margin: 0;
+  // Add a small bottom margin on mobile to separate from the list
+  margin-bottom: 0.5rem; 
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.7rem;
+}
+
+.footer-col a {
+  color: rgba(255, 255, 255, 0.7); 
+  text-decoration: none;
+  display: block; 
+  padding: 0;
+}
+
+.footer-col a:hover {
+  color: #fff;
+}
+
+.footer-logo-col img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-cta-col {
+  // On mobile, force the CTA column to be first visually
+  order: -1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center the button on mobile
+  // Add a little extra space after the CTA to separate it from the next column
+  margin-bottom: 2rem; 
+}
+
+.footer-cta-col .btn--primary {
+  padding: 0.5em 1em !important; 
+  font-size: 0.8rem; 
+  width: auto;
+}
+
+@media screen and (min-width: 501px) {
+  .footer-grid {
+    // Two columns on mid-sized screens
+    grid-template-columns: repeat(2, 1fr); 
+    text-align: left; // Reset text alignment for two-column view
+  }
+  
+  .footer-cta-col {
+    order: unset; // Reset order to flow naturally after the logo column
+    margin-bottom: 0;
+    align-items: flex-start; 
+    text-align: left;
+  }
+
+  // // Center logo on the new 2-column layout (if it's in a single cell)
+  // .footer-grid > .footer-col:first-child {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  // }
+}
+
+@media screen and (min-width: 901px) {
+  .footer-grid {
+    // Four columns for large screens
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0; // Reset padding to original value
+  }
+
+  .footer-logo-col img {
+  text-align: left;
+  }
+}
