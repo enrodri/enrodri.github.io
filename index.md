@@ -62,7 +62,7 @@ projects:
       <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
         <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
         <h3>Bioestadística en salud pública</h3>
-      <p>Johns Hopkins University</p>
+        <p>Johns Hopkins University</p>
       </a>
     </div>
     <div class="grid-item">
