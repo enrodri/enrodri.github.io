@@ -193,8 +193,8 @@ body {
   gap: 2rem;
 }
 
-// Tablet (700px to 900px): Two-column grid
-@media screen and (min-width: 700px) and (max-width: 900px) {
+// Tablet (701px to 900px): Two-column grid
+@media screen and (min-width: 701px) and (max-width: 900px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -396,7 +396,7 @@ body {
 }
 
 // Tablet (700px to 900px): Three-column grid
-@media screen and (min-width: 700px) and (max-width: 900px) {
+@media screen and (min-width: 701px) and (max-width: 900px) {
   .social-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -617,7 +617,7 @@ $footer-background-color: #003152;
 // CUSTOM FOOTER GRID (MOBILE FIRST)
 // ===============================================
 
-// BASE STYLES (Mobile: 1-Column Stacked)
+// BASE STYLES (Mobile: 1-Column Stacked - Order determined by HTML)
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr; 
@@ -627,6 +627,10 @@ $footer-background-color: #003152;
   margin: 0 auto;
   text-align: center;
 }
+
+// ===============================================
+// MOBILE-SPECIFIC STYLES
+// ===============================================
 
 .footer-logo-col {
   display: flex;
@@ -641,13 +645,22 @@ $footer-background-color: #003152;
   margin-bottom: 0.7rem;
 }
 
-.footer-logo-col .btn--primary {
+// CTA Column on mobile (placed after logo due to HTML order)
+.footer-cta-col {
+    // Ensuring the button is centered in its own row on mobile
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer-cta-col .btn--primary {
   padding: 0.5em 1em !important; 
   font-size: 0.8rem; 
   width: auto;
-  margin: 0.7rem 0;
+  margin: 0; 
 }
 
+// Standard Link Column Styles
 .footer-col h4 {
   color: var(--text-color-light, #fff); 
   margin: 0 0 0.5rem 0; 
@@ -670,36 +683,70 @@ $footer-background-color: #003152;
   color: #fff;
 }
 
-// TABLET & DESKTOP STYLES (min-width: 501px)
-@media screen and (min-width: 501px) {
+
+// =====================================================
+// TABLET STYLES (4-Column Layout - min-width: 701px)
+// =====================================================
+
+@media screen and (min-width: 701px) {
   .footer-grid {
-    /* 3 Content Columns (1fr each) + 1 Gap Track (4rem) = 4 Tracks Total */
-    grid-template-columns: 1fr 4rem 1fr 1fr; 
-    gap: 0;
-    text-align: left; 
+    // 4 equal columns for tablet size
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: "logo portfolio explore cta"; // Uses 4 areas
+    gap: 1.5rem; 
     padding: 2rem 0;
+    text-align: left; 
   }
   
-  // Alignment reset for all columns on larger screens
+  // Alignment reset
   .footer-col {
     text-align: left;
+    display: block; 
   }
   
-  // Logo/CTA Column Alignment (Left-aligned)
-  .footer-logo-col {
-    align-items: flex-start; 
-    text-align: left;
+  // Position the four elements in the 4-track grid (same as previous fix)
+  .footer-logo-col   { grid-area: logo; }
+  .footer-portfolio-col { grid-area: portfolio; }
+  .footer-explore-col   { grid-area: explore; }
+  .footer-cta-col       { grid-area: cta; }
+
+  // General desktop/tablet alignment styles
+  .footer-logo-col { align-items: flex-start; text-align: left; }
+  .footer-cta-col  { justify-content: flex-end; align-items: flex-start; }
+  .footer-cta-col .btn--primary { font-size: 0.9rem; }
+}
+
+// ===============================================================
+// DESKTOP ASYMMETRIC STYLES (5-Track Layout - min-width: 901px)
+// ===============================================================
+@media screen and (min-width: 901px) {
+  .footer-grid {
+    // Defines 5 tracks:
+    // Track 1: auto (Logo width)
+    // Track 2: 0.5fr (The intentional "space" gap)
+    // Track 3: 1fr (Portfolio)
+    // Track 4: 1fr (Explore)
+    // Track 5: auto (CTA width)
+    grid-template-columns: auto 0.5fr 1fr 1fr auto;
+    
+    // Assigns the 4 elements to 4 of the 5 available tracks
+    grid-template-areas: "logo space portfolio explore cta"; 
+    
+    // Reduces the gap between grid items now that we have intentional tracks for spacing
+    gap: 0; 
   }
 
-  /* GRID POSITIONING: Must force link columns to skip the 4rem gap track */
+  // The grid-area assignments only need to be redefined if the names change, 
+  // but we can repeat them here for clarity and to ensure the new `grid-template-areas` is used.
+  .footer-logo-col   { grid-area: logo; }
+  .footer-portfolio-col { grid-area: portfolio; }
+  .footer-explore-col   { grid-area: explore; }
+  .footer-cta-col       { grid-area: cta; }
   
-  // Portafolio column (HTML Child #2 -> Grid Track 3)
-  .footer-grid > .footer-col:nth-child(2) { 
-    grid-column: 3 / span 1; 
-  }
-  
-  // Explora column (HTML Child #3 -> Grid Track 4)
-  .footer-grid > .footer-col:nth-child(3) { 
-    grid-column: 4 / span 1; 
+  // You may want to refine alignment for the CTA to ensure it looks good 
+  // since it's now in an 'auto' column
+  .footer-cta-col {
+    justify-content: flex-end; 
+    align-items: flex-end;
   }
 }
