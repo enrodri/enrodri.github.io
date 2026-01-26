@@ -7,12 +7,12 @@ story-1:
   - image_path: /assets/images/about_story-1.jpeg
     alt: "Foto: Entrega de galardón de XV Jornada científica SILAIS Granada"
     title: "El arte de persuadir con evidencia"
-    excerpt: "Este galardón por el <strong>Primer lugar en la XV Jornada Científica SILAIS Granada</strong> es mucho más que un simple premio por mi investigación. Lo considero una validación tangible de <strong>mi capacidad para transformar datos complejos en narrativas convincentes</strong> que resuenan en la gente.<br><br>Con este reconocimiento se demuestra que el impacto real de la ciencia no reside únicamente en su rigor, sino en el poder de comunicarla de forma persuasiva para inspirar a otros a tomar acciones basadas en evidencia sólida."
+    excerpt: "Este galardón por el <strong>Primer lugar en la XV Jornada Científica SILAIS Granada</strong> es mucho más que un simple premio por mi investigación. Lo considero una validación tangible de <strong>mi capacidad para transformar datos complejos en narrativas convincentes</strong> que resuenan en la gente.<br><br>Con este reconocimiento se demuestra que el impacto real de la ciencia no reside únicamente en su rigor, sino en el poder de comunicarla de forma persuasiva para inspirar decisiones clínicas más seguras basadas en evidencia sólida."
 story-2: 
   - image_path: /assets/images/about_story-2.jpeg
     alt: "Foto: Brigada de Cardiología, People's health for Leon"
     title: "Uniendo pasiones por la salud del corazón"
-    excerpt: 'Mi experiencia con la brigada de cardiología <strong>"Project Health for Leon"</strong> no fue solo una misión médica; fue una lección de vida que atesoraré por siempre. Me demostró que la unión de talentos es el camino para humanizar la atención médica, logrando un impacto profundo en la vida de los pacientes y sus familias.<br><br>Es un recordatorio de que <strong>las mejores soluciones nacen de la colaboración y el trabajo en equipo</strong>, que es lo que me motiva a seguir adelante.'
+    excerpt: 'Mi experiencia con la brigada de cardiología <strong>"Project Health for Leon"</strong> no fue solo una misión médica; fue una lección de vida que atesoraré por siempre. Me demostró que la unión de talentos es el camino para humanizar la atención médica, logrando un impacto profundo en la vida de los pacientes y sus familias.<br><br>Fue precisamente en este entorno de alta presión donde, tras explorar inicialmente la base de datos, surgió la incógnita: ¿Existirá algún índice o indicador que nos permita hacer triage de forma oportuna en entornos de recursos limitados? De esa necesidad de convertir la incertidumbre en precisión nació el <strong>Índice de carga farmacológica</strong>.'
 story-3: 
   - image_path: /assets/images/about_story-3.jpeg
     alt: "Foto: Conversatorio sobre Síndrome Antifosfolípido en el Embarazo"
@@ -73,26 +73,26 @@ books:
 {% include feature_row id="books" type="center" %}
 
 <!-- Other skills columns -->
-<div class="grid-container">
+<div class="grid-container books-grid">
   <div class="grid-item">
       <a href="https://www.amazon.es/Complicaciones-Confesiones-cirujano-imperfecta-Conjeturas/dp/8495348519">
         <img src="/assets/images/books_es_complications.jpg" alt="Libro: Complicaciones, Atul Gawande">
         <br>
-        <p>Complicaciones es una recopilación de historias de médicos y pacientes, historias dramáticas y reveladoras que demuestran que se cometen errores mortales y que incluso los médicos más expertos pueden equivocarse. </p>
+        <p>Este libro me ha enseñado que la psicología humana —tanto del médico como del paciente— juega un papel crítico en los resultados clínicos. A través de sus páginas, comprendí cómo las heurísticas pueden salvar vidas o conducir al error, subrayando la importancia de sistemas que apoyen el juicio humano.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.com.mx/Por-qué-fracasan-los-países-ebook/dp/B0093HJKXE">
         <img src="/assets/images/books_es_failure.jpg" alt="Libro: Por qué fracasan los países">
          <br>
-         <p>Por qué fracasan los países propone una nueva y convincente teoría: la prosperidad no se debe al clima, a la geografía o a la cultura, sino a las políticas dictaminadas por las instituciones de cada país. </p>
+         <p>Me ha enseñado que los problemas sociales y de salud son demasiado sistémicos como para caer en el sesgo de hipersimplificar sus causas. Entender la complejidad de las instituciones y la economía es vital para diseñar soluciones que no solo sean parches, sino cambios estructurales.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.es/Influencia-Psicologia-Persuasion-Robert-B-Cialdini/dp/849139690X">
         <img src="/assets/images/books_es_influence.jpg" alt="Libro: Influencia. La psicología de la persuasión">
         <br>
-        <p>Cialdini explica, con rigor científico y de forma sencilla, cómo provocar en las personas la respuesta deseada y cómo protegerse ante intentos poco éticos de persuasión.</p>
+        <p>A través de Cialdini, profundicé en cómo la psicología humana puede ser sugestiva al intentar aliviar la carga cognitiva y tomar atajos en la toma de decisiones. Es una guía esencial para usar la persuasión de forma ética en la salud y entender los mecanismos detrás de nuestras elecciones.</p>
       </a>
   </div>
 </div>
@@ -101,7 +101,14 @@ books:
 <div class="cta">
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
-    <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+    <p>
+      Creo firmemente que <strong>los grandes descubrimientos nacen de la colaboración y la visión compartida</strong>. 
+      Debido a mi compromiso con la precisión técnica, acepto un número limitado de desafíos en paralelo, 
+      asegurando que cada proyecto reciba el rigor y la profundidad que merece.
+    </p>
+    <p>
+      <strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong>
+    </p>
     <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

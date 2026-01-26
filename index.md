@@ -17,7 +17,7 @@ projects:
   <img src="/assets/images/web_hero.png" alt="Foto de perfil">
   <div>
     <h1>Más allá del estetoscopio: <br>Evidencia con estadística en salud</h1>
-    <p>Soy Enyel Rodríguez, médico y científico de datos. Ayudo a investigadores y organizaciones de salud a transformar sus <strong>datos</strong> en descubrimientos valiosos y a tomar decisiones estratégicas basadas en <strong>evidencia</strong> sólida.</p>
+    <p>Soy Enyel Rodríguez, médico y analista de datos. Ayudo a transformar la <strong>complejidad clínica</strong> en <strong>modelos explicativos y predictivos</strong> que contribuyen a tomar decisiones estratégicas que impacten en las vidas de los pacientes.</p>
     <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>
@@ -50,29 +50,32 @@ projects:
 {% include feature_row id="certifications" type="center" %}
 
 <!-- Certifications columns -->
- <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-        <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
-        <h3>XV Jornada Científica <br> 1er lugar</h3>
-        <p>SILAIS Granada</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-        <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
-        <h3>Bioestadística en salud pública</h3>
-        <p>Johns Hopkins University</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-        <h3>Estadística con Python</h3>
-        <p>University of Michigan</p>
-      </a>
-    </div>
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
+      <h3>Primer lugar</h3>
+      <p>XV Jornada Científica, SILAIS Granada</p>
+      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
+    </a>
   </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
+      <h3>Bioestadística en salud pública</h3>
+      <p>Johns Hopkins University</p>
+      <p>Inferencia estadística, métodos de regresión y análisis de supervivencia.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+      <h3>Estadística con Python</h3>
+      <p>University of Michigan</p>
+      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
+    </a>
+  </div>
+</div>
 
 <div class="see-more-button">
   <a href="/es/portafolio/certificaciones/" class="btn btn--primary">Ver más certificaciones</a>
@@ -85,24 +88,27 @@ projects:
 <!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
-      <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica SILAIS Granada">
-      <h3>XV Jornada Científica</h3>
-      <p>PowerPoint — Diseño de Presentaciones, Redacción Persuasiva, Comunicación de Alto Impacto</p>
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/mbi_triage.png" alt="Proyecto: MBI">
+      <h3>Índice de carga farmacológica e intervenciones cardíacas</h3>
+      <p>Desarrollo de ingeniería de características e imputación "Natural Normal" para corregir sesgos en entornos clínicos de alta presión.</p>
+      <p><strong>Impacto:</strong> 85% de precisión en la detección de remodelación cardíaca avanzada en triaje preclínico</p>
     </a>
   </div>
   <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-      <img src="/assets/images/certification_biostatistics.jpg" alt="Proyecto: NHANES">
-      <h3>NHANES</h3>
-      <p>Python — Pandas, statmodels, seaborn</p>
+    <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
+      <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica">
+      <h3>Farmacovigilancia y narrativa clínica</h3>
+      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
+      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
     </a>
   </div>
   <div class="grid-item">
     <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
       <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
-      <h3>Sepsis y choque séptico</h3>
-      <p>Síntesis de Evidencia, Análisis de Ensayos Clínicos, Comunicación Científica, Presentaciones de Alto Impacto</p>
+      <h3>Evidencia crítica en Choque Séptico</h3>
+      <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
+      <p><strong>Impacto:</strong> Síntesis de protocolos de vanguardia para el manejo avanzado del choque séptico.</p>
     </a>
   </div>
 </div>
@@ -121,7 +127,7 @@ projects:
     <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
     <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
     <h2>Del saber al hacer: Una integración práctica</h2>
-    <p>Desde la bioestadística hasta la programación con Python, mi enfoque siempre ha sido traducir el saber en acciones tangibles que impacten positivamente en la vida de las personas y en el avance de la medicina.</p>
+    <p>Mi trayectoria es la prueba que el rigor estadístico y la intuición clínica no son opuestos, sino el camino de avanzar en la medicina moderna basada en la evidencia.</p>
   </div>
 </div>
 
@@ -129,7 +135,14 @@ projects:
 <div class="cta">
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
-    <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+    <p>
+      Creo firmemente que <strong>los grandes descubrimientos nacen de la colaboración y la visión compartida</strong>. 
+      Debido a mi compromiso con la precisión técnica, acepto un número limitado de desafíos en paralelo, 
+      asegurando que cada proyecto reciba el rigor y la profundidad que merece.
+    </p>
+    <p>
+      <strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong>
+    </p>
     <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

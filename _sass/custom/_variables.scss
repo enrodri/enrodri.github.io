@@ -268,6 +268,29 @@ body {
   margin-bottom: 3rem; 
 }
 
+/* Cards' simetry with top prioritization */
+
+.grid-item {
+  // We point the image inside the cards
+  a > img, 
+  .card-image img {
+    width: 100%;
+    height: 220px;       /* Fixed height to ensure simetry */
+    object-fit: cover;   /* Fills spaces without deforming */
+    object-position: top; /* Prioritizes top border */
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee; /* Optional: sutble line to separate text */
+  }
+}
+
+// Exception for books
+.books-grid.grid-container .grid-item img {
+  height: auto !important;      /* Keeps original height */
+  object-fit: contain !important; /* Doesn't crop the original image */
+  border-bottom: none;           /* Border cleansing if any */
+}
+
 // ===============================================
 // ABOUT PAGE SECTIONS
 // ===============================================

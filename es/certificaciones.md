@@ -33,34 +33,38 @@ other_skills:
 
 <!-- Research and public health columns -->
  <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-        <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
-        <h3>XV Jornada Científica <br> 1er lugar</h3>
-        <p>SILAIS Granada</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-        <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
-        <h3>Bioestadística en salud pública</h3>
+  <div class="grid-item">
+    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
+      <h3>Primer lugar</h3>
+      <p>XV Jornada Científica, SILAIS Granada</p>
+      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
+      <h3>Bioestadística en salud pública</h3>
       <p>Johns Hopkins University</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/verify/PR8EM6PJTQ9F">
-        <img src="/assets/images/certification_meta-analysis.png" alt="Certificación: Introducción a revisión sistemática y metaanálisis">
-        <h3>Introducción a revisión sistemática y metaanálisis</h3>
-        <p>Johns Hopkins University</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/JAOGI855KZXS">
-        <img src="/assets/images/certification_healthcare-management.png" alt="Certificación: Gerencia y finanzas en salud">
-        <h3>Gerencia y finanzas en salud</h3>
-        <p>University of Michigan</p>
-      </a>
-    </div>
+      <p>Inferencia estadística, métodos de regresión y análisis de supervivencia.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/verify/PR8EM6PJTQ9F">
+      <img src="/assets/images/certification_meta-analysis.png" alt="Certificación: Introducción a revisión sistemática y metaanálisis">
+      <h3>Introducción a revisión sistemática y metaanálisis</h3>
+      <p>Johns Hopkins University</p>
+      <p>Revisiones sistemáticas, metaanálisis y evaluación de sesgos</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/JAOGI855KZXS">
+      <img src="/assets/images/certification_healthcare-management.png" alt="Certificación: Gerencia y finanzas en salud">
+      <h3>Gerencia y finanzas en salud</h3>
+      <p>University of Michigan</p>
+      <p>Planificación estratégica y análisis de costos para organizaciones de salud.</p>
+    </a>
+  </div>
   </div>
 
 <hr class="feature-divider">
@@ -68,22 +72,24 @@ other_skills:
 {% include feature_row id="statistics_and_data" type="center" %}
 
 <!-- Statistics and data columns -->
-  <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-        <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-        <h3>Estadística con Python</h3>
-        <p>University of Michigan</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
-        <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
-        <h3>Excel de todos los días</h3>
-        <p>University of Colorado Boulder</p>
-      </a>
-    </div>
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+      <h3>Estadística con Python</h3>
+      <p>University of Michigan</p>
+      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
+    </a>
   </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
+      <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
+      <h3>Excel de todos los días</h3>
+      <p>University of Colorado Boulder</p>
+      <p>Funciones lógicas avanzadas, validación de datos´y tablas dinámicas</p>
+    </a>
+  </div>
+</div>
 
 <hr class="feature-divider">
 
@@ -96,6 +102,7 @@ other_skills:
         <img src="/assets/images/certification_speaking-presenting.jpg" alt="Certificación: Experto en palabras: Hablar y presentar">
         <h3>Experto en palabras: Hablar y presentar</h3>
         <p>University of Michigan</p>
+        <p>Arquitectura de mensajes de impacto y técnicas de entrega para discursos públicos.</p>
       </a>
   </div>
   <div class="grid-item">
@@ -103,6 +110,7 @@ other_skills:
         <img src="/assets/images/certification_slide-design.jpg" alt="Certificación: Habilidades en presentación: Diseñando láminas">
         <h3>Habilidades en presentación: Diseñando láminas</h3>
         <p>National Research Tomsk State University</p>
+        <p>Jerarquía visual y arquitectura de diapositivas para audiencias expertas.</p>
       </a>
   </div>
   <div class="grid-item">
@@ -110,6 +118,7 @@ other_skills:
         <img src="/assets/images/certification_storytelling.jpg" alt="Certificación: Escritura de discursos y redacción de historias">
         <h3>Escritura de discursos y redacción de historias</h3>
         <p>National Research Tomsk State University</p>
+        <p>Redacción de narrativas persuasivas y arquitectura de historias de impacto.</p>
       </a>
   </div>
   <div class="grid-item">
@@ -117,6 +126,7 @@ other_skills:
         <img src="/assets/images/certification_python-everyone.jpg" alt="Certificación: Python para todos">
         <h3>Python para todos</h3>
         <p>University of Michigan</p>
+        <p>Lógica de programación, algoritmos fundamentales y procesamiento lógico de información con Python.</p>
       </a>
   </div>
   <div class="grid-item">
@@ -124,6 +134,7 @@ other_skills:
         <img src="/assets/images/efset_c2.jpg" alt="Certificación: Nivel de Inglés C2. Certificado EF SET">
         <h3>Nivel de Inglés C2</h3>
         <p>EF Standard English Test</p>
+        <p>Capacidad de síntesis avanzada y comunicación fluida en entornos complejos.</p>
       </a>
   </div>
 </div>
@@ -132,7 +143,14 @@ other_skills:
 <div class="cta">
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
-    <p>Es hora de convertir tus ideas en realidad. Contáctame ahora y juntos daremos vida a tus proyectos con creatividad y profesionalismo.</p>
+    <p>
+      Creo firmemente que <strong>los grandes descubrimientos nacen de la colaboración y la visión compartida</strong>. 
+      Debido a mi compromiso con la precisión técnica, acepto un número limitado de desafíos en paralelo, 
+      asegurando que cada proyecto reciba el rigor y la profundidad que merece.
+    </p>
+    <p>
+      <strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong>
+    </p>
     <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>
