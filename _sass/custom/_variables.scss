@@ -259,7 +259,7 @@ body {
   width: 40% !important; 
   height: auto !important;
   margin: 0 auto;
-  fill:#003152; /* Fills SVG icons with primary color */
+  fill:#003152;
   padding: 1rem;
 }
 
@@ -268,27 +268,102 @@ body {
   margin-bottom: 3rem; 
 }
 
-/* Cards' simetry with top prioritization */
+// Cards' simetry with top prioritization
 
 .grid-item {
   // We point the image inside the cards
   a > img, 
   .card-image img {
     width: 100%;
-    height: 220px;       /* Fixed height to ensure simetry */
-    object-fit: cover;   /* Fills spaces without deforming */
-    object-position: top; /* Prioritizes top border */
+    height: 220px;       
+    object-fit: cover;   
+    object-position: top; 
     display: block;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #eee; /* Optional: sutble line to separate text */
   }
 }
 
 // Exception for books
 .books-grid.grid-container .grid-item img {
-  height: auto !important;      /* Keeps original height */
-  object-fit: contain !important; /* Doesn't crop the original image */
-  border-bottom: none;           /* Border cleansing if any */
+  height: auto !important;      
+  object-fit: contain !important; 
+  border-bottom: none;           
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+    align-items: stretch; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #e1e4e8;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  height: 100%; /* Uses all available space */
+}
+
+.card:hover { 
+  transform: translateY(-5px); 
+}
+
+.card h3 {
+  margin-top: 0; 
+  color: #003152; 
+  border-bottom: 2px solid #003152; 
+  padding-bottom: 0.5rem; 
+}
+
+.card p {
+  margin-bottom: 0; 
+  flex-grow: 1;    /* Pushes content to fill the card */
+}
+
+.card strong {
+  color: #b80f0a;
+}
+
+.pull-quote {
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f3f5f7;
+    border-radius: 15px;
+    margin: 4rem 0;
+    font-weight: 300;
+  }
+
+.pull-quote strong {
+  color: #b80f0a
+}
+
+.skills-bar {
+  background-color: #f3f5f7;
+  color: #1a1a1a;
+  padding: 1.5rem; 
+  border-radius: 8px;
+  margin-bottom: 3rem;
+
+  // We convert the container to Flex for centering
+  display: flex;
+  align-items: center; 
+  min-height: 4rem; // Ensures a consistent base size
+
+  p {
+    margin: 0 !important; // Makes sure the theme doesn't add margin
+    line-height: 1.2;      
+  }
+
+  strong {
+    color: #003152;
+    padding-right: 0.5rem; 
+  }
 }
 
 // ===============================================
@@ -422,7 +497,7 @@ body {
 @media screen and (min-width: 701px) and (max-width: 900px) {
   .social-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
@@ -431,7 +506,7 @@ body {
 @media screen and (min-width: 901px) {
   .social-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
 }

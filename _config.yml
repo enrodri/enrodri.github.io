@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "es"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Enyel Rodríguez"
 title_separator          : "-"
@@ -220,7 +220,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
+  math_engine: katex
 
 # Sass/SCSS
 sass:
@@ -326,3 +326,11 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "es" # your spanish folder
+    values:
+      lang: "es"
+  - scope:
+      path: "en" # your english folder
+    values:
+      lang: "en"

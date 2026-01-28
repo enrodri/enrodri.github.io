@@ -78,7 +78,7 @@ projects:
 </div>
 
 <div class="see-more-button">
-  <a href="/es/portafolio/certificaciones/" class="btn btn--primary">Ver más certificaciones</a>
+  <a href="/es/portfolio/certifications/" class="btn btn--primary">Ver más certificaciones</a>
 </div>
 
 <hr class="feature-divider">
@@ -88,7 +88,7 @@ projects:
 <!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+    <a href="/es/portfolio/projects/mbi/">
       <img src="/assets/images/mbi_triage.png" alt="Proyecto: MBI">
       <h3>Índice de carga farmacológica e intervenciones cardíacas</h3>
       <p>Desarrollo de ingeniería de características e imputación "Natural Normal" para corregir sesgos en entornos clínicos de alta presión.</p>
@@ -96,15 +96,15 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portafolio/proyectos/xv-jornada-cientifica/">
-      <img src="/assets/images/project_scientific-fair.png" alt="Proyecto: XV Jornada Científica">
+    <a href="/es/portfolio/projects/pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
       <h3>Farmacovigilancia y narrativa clínica</h3>
       <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
       <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portafolio/proyectos/sepsis-y-choque-septico/">
+    <a href="/es/portfolio/projectos/sepsis/">
       <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
       <h3>Evidencia crítica en Choque Séptico</h3>
       <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
@@ -114,7 +114,7 @@ projects:
 </div>
 
 <div class="see-more-button">
-  <a href="/es/portafolio/proyectos/" class="btn btn--primary">Ver más proyectos</a>
+  <a href="/es/portfolio/projects/" class="btn btn--primary">Ver más proyectos</a>
 </div>
 
 <hr class="feature-divider">
@@ -143,6 +143,6 @@ projects:
     <p>
       <strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong>
     </p>
-    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
+    <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

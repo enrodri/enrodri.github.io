@@ -7,18 +7,18 @@ author_profile: false
 # Certifications section
 certifications: 
   - title: "Certifications"
-  - excerpt: "My certifications aren't just credentials; they are proof of an unwavering commitment to excellence. From statistical analysis to effective communication, every skill is a key piece in ensuring our projects are technically sound, well-communicated, and high-impact."
+  - excerpt: "My certifications are not just credentials; they are proof of an unwavering commitment to excellence. From statistical analysis to effective communication, each skill is a key piece in ensuring our projects are technically sound, well-communicated, and high-impact."
 # Projects section
 projects: 
   - title: "Projects"
-  - excerpt: 'My projects are more than just a summary of my work; they are a testament to my dedication to achieving high-impact results. Through every analysis, my goal is to ensure that data is not only correct but tells a compelling, evidence-backed story capable of inspiring action and innovation.'  
+  - excerpt: "My projects are not just a summary of my work; they are a testament to my dedication to achieving high-impact results. Through every analysis, my goal is to ensure that data is not only correct but tells a compelling story backed by evidence, capable of inspiring action and innovation."  
 ---
 <div class="custom-splash-hero">
-  <img src="/assets/images/web_hero.png" alt="Foto de perfil">
+  <img src="/assets/images/web_hero.png" alt="Profile picture">
   <div>
-    <h1>Beyond the Stethoscope: <br>Evidence with Health Statistics</h1>
-    <p>I am Enyel Rodríguez, a physician and data scientist. I help researchers and healthcare organizations transform their <strong>data</strong> into valuable discoveries and make strategic decisions based on solid <strong>evidence</strong>.</p>
-    <a href="/en/contact/" class="btn btn--primary">Contact Me</a>
+    <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
+    <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>
+    <a href="/en/contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>
 
@@ -26,9 +26,9 @@ projects:
   <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.jpg"></div>
   <div>
     <h1>The Price of Uncertainty</h1>
-    <p>In critical decision-making, evidence is the only sure path. But what happens if that evidence isn't solid?</p>
-    <p>A flawed data analysis can lead to incorrect interpretations, the loss of valuable insights, and, most worryingly, to ill-informed decisions that directly affect patients and your organization's growth.</p>
-    <p>Hard work without rigorous analysis may not be enough. Uncertainty isn't just an inconvenience—it's a risk.</p>
+    <p>In critical decision-making, evidence is the only safe path. But what happens if that evidence is not solid?</p>
+    <p>Flawed data analysis can lead to incorrect interpretations, the loss of valuable perspectives, and, most worryingly, ill-informed decisions that directly affect patients and your organization's growth.</p>
+    <p>Hard work without rigorous analysis may not be enough. Uncertainty is not just a nuisance, it is a risk.</p>
   </div>
 </div>
 
@@ -37,11 +37,11 @@ projects:
 <div class="hero_solution">
   <div class="hero__image-wrapper" data-image-src="/assets/images/hero_solution.jpg"></div>
   <div>
-    <h1>Success: When Evidence Guides You</h1>
+    <h1>Success: When evidence guides you</h1>
     <p>Imagine a scenario where your data gives you the answers you need, when you need them.</p>
-    <p>Success is having a clear understanding of the information you already possess, discovering insights you never knew existed. It's moving from uncertainty to certainty.</p>
-    <p>This translates into intelligent strategic decisions that boost efficiency, optimize growth, and, most importantly, improve patient outcomes. </p>
-    <p>With a solid foundation of evidence, your decisions will not only be correct but will also inspire confidence and leadership.</p>
+    <p>Success is having a clear understanding of the information you already have, discovering perspectives you didn't even know existed. It's moving from uncertainty to certainty.</p>
+    <p>This translates into smart strategic decisions that drive efficiency, optimize growth and, most importantly, improve patient outcomes.</p>
+    <p>With a solid foundation of evidence, your decisions will not only be correct, but will also inspire confidence and leadership.</p>
   </div>
 </div>
 
@@ -49,87 +49,96 @@ projects:
 
 {% include feature_row id="certifications" type="center" %}
 
-<!-- Certifications columns -->
- <div class="grid-container">
-    <div class="grid-item">
-      <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-        <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV Scientific Conference SILAIS Granada — 1st Place">
-        <h3>XV Scientific Conference <br> 1st Place</h3>
-        <p>SILAIS Granada</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-        <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
-        <h3>Biostatistics in Public Health</h3>
-        <p>Johns Hopkins University</p>
-      </a>
-    </div>
-    <div class="grid-item">
-      <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-        <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
-        <h3>Statistics with Python</h3>
-        <p>University of Michigan</p>
-      </a>
-    </div>
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV SILAIS Granada Scientific Conference — 1st place">
+      <h3>First Place</h3>
+      <p>XV Scientific Conference, SILAIS Granada</p>
+      <p>Transformation of pharmacovigilance metrics into a clear visual narrative</p>
+    </a>
   </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
+      <h3>Biostatistics in Public Health</h3>
+      <p>Johns Hopkins University</p>
+      <p>Statistical inference, regression methods, and survival analysis.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
+      <h3>Statistics with Python</h3>
+      <p>University of Michigan</p>
+      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
+    </a>
+  </div>
+</div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/certifications/" class="btn btn--primary">View more certifications</a>
+  <a href="/en/portfolio/certifications/" class="btn btn--primary">See more certifications</a>
 </div>
 
 <hr class="feature-divider">
 
 {% include feature_row id="projects" type="center" %}
 
-<!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/en/portfolio/projects/xv-scientific-conference/">
-      <img src="/assets/images/project_scientific-fair.png" alt="Project: XV Scientific Conference SILAIS Granada">
-      <h3>XV Scientific Conference</h3>
-      <p>PowerPoint — Presentation Design, Persuasive Writing, High-Impact Communication</p>
+    <a href="/en/portfolio/projects/mbi-cardio-2025">
+      <img src="/assets/images/mbi_triage.png" alt="Project: MBI">
+      <h3>Medication Burden Index and Cardiac Interventions</h3>
+      <p>Implementation of feature engineering and 'Natural Normal' imputation to correct biases in high-pressure clinical settings.</p>
+      <p><strong>Impact:</strong> 85% accuracy in detecting advanced cardiac remodeling in preclinical triage</p>
     </a>
   </div>
   <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-      <img src="/assets/images/certification_biostatistics.jpg" alt="Project: NHANES">
-      <h3>NHANES</h3>
-      <p>Python — Pandas, statmodels, seaborn</p>
+    <a href="/en/portfolio/projects/xv-scientific-symposium/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
+      <h3>Pharmacovigilance and Clinical Narrative</h3>
+      <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
+      <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
     </a>
   </div>
   <div class="grid-item">
     <a href="/en/portfolio/projects/sepsis-and-septic-shock/">
-      <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and Septic Shock">
-      <h3>Sepsis and Septic Shock</h3>
-      <p>Evidence Synthesis, Clinical Trial Analysis, Scientific Communication, High-Impact Presentations</p>
+      <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and septic shock">
+      <h3>Critical Evidence in Septic Shock</h3>
+      <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
+      <p><strong>Impact:</strong> Synthesis of cutting-edge protocols for the advanced management of septic shock.</p>
     </a>
   </div>
 </div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/projects/" class="btn btn--primary">View more projects</a>
+  <a href="/en/portfolio/projects/" class="btn btn--primary">See more projects</a>
 </div>
 
 <hr class="feature-divider">
 
-<!-- About section -->
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <img src="/assets/images/web_hero-about.png" alt="About me">
   <div>
     <h1>About Me</h1>
-    <h2>“The doctor who only knows medicine, doesn't even know medicine” — José de Letamendi</h2>
-    <p>For me, being a physician goes beyond clinical practice; every experience has been an opportunity to learn valuable lessons about the complexity of the world around us and how we can integrate that knowledge into healthcare.</p>
-    <h2>From Knowing to Doing: A Practical Integration</h2>
-    <p>From biostatistics to programming with Python, my focus has always been on translating knowledge into tangible actions that positively impact people's lives and the advancement of medicine.</p>
+    <h2>“The physician who only knows medicine, knows not even medicine” — José de Letamendi</h2>
+    <p>To me, being a doctor goes beyond clinical practice; every experience has been an opportunity to learn valuable lessons about the complexity of the world around us and how we can integrate that knowledge into healthcare.</p>
+    <h2>Translating Knowledge into Action</h2>
+    <p>My career path is proof that statistical rigor and clinical intuition are not opposites, but the way forward in modern evidence-based medicine.</p>
   </div>
 </div>
 
-<!-- CTA section -->
 <div class="cta">
   <div>
-    <h3>Let's transform your ideas into action</h3>
-    <p>It's time to turn your ideas into reality. Contact me now, and together we will bring your projects to life with creativity and professionalism.</p>
-    <a href="/en/contact/" class="btn btn--primary">Contact Me</a>
+    <h3>Let's transform your ideas into actions</h3>
+    <p>
+      I firmly believe that <strong>great discoveries are born from collaboration and shared vision</strong>. 
+      Due to my commitment to technical precision, I accept a limited number of challenges in parallel, 
+      ensuring that each project receives the rigor and depth it deserves.
+    </p>
+    <p>
+      <strong>If you are ready to turn data into actions, I would love to hear your proposal.</strong>
+    </p>
+    <a href="/en/contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>

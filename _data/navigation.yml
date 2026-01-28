@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "Portafolio"
-    url: /es/portafolio/
+    url: /es/portfolio/
   - title: "Acerca de mí"
-    url: /es/acerca-de/
+    url: /es/about/
   - title: "Preguntas frecuentes"
-    url: /es/preguntas-frecuentes/
+    url: /es/faq/
