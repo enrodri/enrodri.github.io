@@ -15,8 +15,6 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
-gem "kramdown-math-katex"
-gem "jekyll-polyglot"
 
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -28,4 +26,6 @@ gem "jekyll-polyglot"
 # If you have any other plugins, put them here!
 # Cf. https://jekyllrb.com/docs/plugins/installation/
 group :jekyll_plugins do
+    gem "kramdown-math-katex"
+    gem "jekyll-polyglot"
 end
