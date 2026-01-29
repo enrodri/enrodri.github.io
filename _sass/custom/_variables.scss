@@ -848,3 +848,79 @@ $footer-background-color: #003152;
     align-items: flex-end;
   }
 }
+
+@media (min-width: 768px) {
+.greedy-nav {
+  button.greedy-nav__toggle {
+    display: none !important; 
+  }
+
+  .visible-links {
+    display: flex !important; 
+    visibility: visible !important;
+  }
+
+  .hidden-links {
+    display: none !important;
+  }
+}
+
+// In case nav elements go on top of each other on tablet
+@media (max-width: 1024px) {
+  .greedy-nav .visible-links li {
+    margin-right: 1em; 
+    font-size: 0.9em;
+  }
+}
+}
+
+// Styles for the button language switch
+.lang-switch-btn {
+  border: 1.5px solid #ffffff !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.lang-switch-btn:hover {
+  background-color: #00548d !important;
+  border-color: #ffffff !important;
+}
+
+/* Contenedor principal de los botones del footer */
+.footer-actions-stack {
+  display: flex;
+  flex-direction: column; /* Apilar verticalmente por defecto (Móvil) */
+  align-items: center;    /* Centrar ambos botones en móvil */
+  gap: 10px;              /* Espacio entre botones */
+}
+
+/* Alineación para el Language Switcher */
+.footer-lang-switch-wrapper {
+  display: flex;
+  justify-content: center; /* Centrado en móvil */
+  width: auto;
+}
+
+/* Ajustes para Escritorio */
+@media (min-width: 701px) {
+  .footer-actions-stack {
+    align-items: flex-end; /* Alinear ambos a la derecha en PC */
+  }
+  
+  .footer-lang-switch-wrapper {
+    justify-content: flex-end;
+  }
+}
+
+/* Forzar que el botón de idioma no herede anchos raros */
+.lang-switch-btn {
+  display: inline-block !important;
+  min-width: 60px;
+  max-width: fit-content;
+  text-align: center;
+  padding: 0.4em 0.8em !important;
+}

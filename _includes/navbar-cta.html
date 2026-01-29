@@ -1,1 +1,7 @@
-<a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
+<li class="masthead__menu-item">
+  {% if site.active_lang == 'es' %}
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn--primary">Contáctame</a>
+  {% else %}
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn--primary">Get in Touch</a>
+  {% endif %}
+</li>

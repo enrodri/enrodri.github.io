@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Evidencia en choque séptico"
-permalink: /es/portfolio/projects/sepsis/
+permalink: portfolio/projects/sepsis/
 lang: es
 approach:
   - title: "Metodología: Síntesis y Consenso"

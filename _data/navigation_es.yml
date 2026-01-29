@@ -1,0 +1,8 @@
+# main links
+main:
+  - title: "Portafolio"
+    url: portfolio/
+  - title: "Acerca de mí"
+    url: about/
+  - title: "Preguntas frecuentes"
+    url: faq/

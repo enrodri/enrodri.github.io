@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Índice de carga farmacológica"
-permalink: /es/portfolio/projects/mbi/
+permalink: portfolio/projects/mbi/
 lang: es
 approach:
   - title: "La Arquitectura: <code>ClinicalConfig</code>"

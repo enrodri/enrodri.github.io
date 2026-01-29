@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: FAQ
-permalink: /en/faq/
+permalink: faq/
 lang: en
 author_profile: false
 header:
@@ -82,7 +82,7 @@ excerpt: "Curiosity is the first step toward innovation. In this section, I have
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>
 

@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Projects"
-permalink: /en/portfolio/projects/
+permalink: portfolio/projects/
 lang: en
 # Header 
 header:
@@ -28,7 +28,7 @@ data:
 {% include feature_row id="data" type="center" %}
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/en/portfolio/projects/mbi-cardio-2025/">
+    <a href="portfolio/projects/mbi/">
       <img src="/assets/images/mbi_triage.png" alt="Project: MBI">
       <h3>Medication Burden Index and Cardiac Interventions</h3>
       <p>Development of feature engineering and 'Natural Normal' imputation to correct biases in high-pressure clinical settings.</p>
@@ -41,7 +41,7 @@ data:
 
 <div class="grid-container">
   <div class="grid-item">
-  <a href="/en/portfolio/projects/xv-scientific-symposium/">
+  <a href="portfolio/projects/pharmacovigilance/">
     <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
     <h3>Pharmacovigilance and Clinical Narrative</h3>
     <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
@@ -49,7 +49,7 @@ data:
   </a>
   </div>
   <div class="grid-item">
-  <a href="/en/portfolio/projects/sepsis-and-septic-shock/">
+  <a href="portfolio/projects/sepsis/">
     <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and Septic Shock">
     <h3>Critical Evidence in Septic Shock</h3>
     <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
@@ -70,6 +70,6 @@ data:
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

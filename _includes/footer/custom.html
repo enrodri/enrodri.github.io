@@ -1,28 +1,88 @@
 <!-- start custom footer snippets -->
 <div class="footer-grid">
   <div class="footer-col footer-logo-col">
-    <img src="/assets/images/logo.png" alt="Logo">
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
     <h4>Enyel A. Rodríguez G.</h4>
   </div>
   
-  <div class="footer-col footer-cta-col">
-    <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
+<div class="footer-col footer-cta-col">
+  <div class="footer-actions-stack">
+    {% if site.active_lang == 'es' %}
+      <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
+    {% else %}
+      <a href="/contact/" class="btn btn--primary">Get in Touch</a>
+    {% endif %}
+
+    <div class="footer-lang-switch-wrapper">
+      <a href="#" class="lang-switch-btn btn btn--inverse">
+        {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
+      </a>
+    </div>
   </div>
+</div>
+
+  <!-- <div class="footer-col footer-cta-col">
+    {% if site.active_lang == 'es' %}
+      <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
+    {% else %}
+      <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    {% endif %}
+    <div class="footer-lang-switch-wrapper">
+      <a href="#" class="lang-switch-btn btn btn--inverse">
+        {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
+      </a>
+    </div>
+  </div> -->
 
   <div class="footer-col footer-portfolio-col">
-    <h4><a href="/es/portafolio/">Portafolio</a></h4>
-    <ul>
-      <li><a href="/es/portafolio/proyectos/">Proyectos</a></li>
-      <li><a href="/es/portafolio/certificaciones/">Certificaciones</a></li>
-    </ul>
+    {% if site.active_lang == 'es' %}
+      <h4><a href="/es/portfolio/">Portafolio</a></h4>
+      <ul>
+        <li><a href="/es/portfolio/projects/">Proyectos</a></li>
+        <li><a href="/es/portfolio/certifications/">Certificaciones</a></li>
+      </ul>
+    {% else %}
+      <h4><a href="/portfolio/">Portfolio</a></h4>
+      <ul>
+        <li><a href="/portfolio/projects/">Projects</a></li>
+        <li><a href="/portfolio/certifications/">Certifications</a></li>
+      </ul>
+    {% endif %}
   </div>
   
   <div class="footer-col footer-explore-col">
-    <h4>Explora</h4>
-    <ul>
-      <li><a href="/es/acerca-de/">Acerca de mí</a></li>
-      <li><a href="/es/preguntas-frecuentes/">Preguntas frecuentes</a></li>
-    </ul>
+    {% if site.active_lang == 'es' %}
+      <h4>Explora</h4>
+      <ul>
+        <li><a href="/es/about/">Acerca de mí</a></li>
+        <li><a href="/es/faq/">Preguntas frecuentes</a></li>
+      </ul>
+    {% else %}
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="about/">About me</a></li>
+        <li><a href="faq/">FAQ</a></li>
+      </ul>
+    {% endif %}
   </div>
 </div>
-<!-- end custom footer snippets -->
+
+<script>
+  // Buscamos todos los botones que tengan la clase .lang-switch-btn
+  document.querySelectorAll('.lang-switch-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      let currentUrl = window.location.pathname;
+      let newUrl;
+
+      if (currentUrl.includes('/es/')) {
+        newUrl = currentUrl.replace('/es/', '/');
+      } else {
+        newUrl = currentUrl === '/' ? '/es/' : '/es' + currentUrl;
+      }
+      
+      // Forzamos la redirección limpiando barras dobles
+      window.location.href = newUrl.replace(/\/+/g, '/');
+    });
+  });
+</script>

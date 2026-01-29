@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "About Me"
-permalink: /en/about/
+permalink: about/
 lang: en
 story-1: 
   - image_path: /assets/images/about_story-1.jpeg
@@ -105,6 +105,6 @@ books:
     <p>
       <strong>If you are ready to turn data into actions, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in touch</a>
+    <a href="contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>

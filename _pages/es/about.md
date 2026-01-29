@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Acerca de mí"
-permalink: /es/about/
+permalink: about/
 lang: es
 story-1: 
   - image_path: /assets/images/about_story-1.jpeg

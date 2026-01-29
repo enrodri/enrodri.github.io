@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Preguntas frecuentes
-permalink: /es/faq/
+permalink: faq/
 lang: es
 author_profile: false
 header:

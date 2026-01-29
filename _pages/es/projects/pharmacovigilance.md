@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Farmacovigilancia y narrativa clínica"
-permalink: /es/portfolio/projects/pharmacovigilance/
+permalink: portfolio/projects/pharmacovigilance/
 lang: es
 approach:
   - title: "Metodología: Del Dato a la Decisión"

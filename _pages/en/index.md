@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Enyel Rodríguez
-permalink: /en/
+permalink: /
 lang: en
 author_profile: false    
 # Certifications section
@@ -18,7 +18,7 @@ projects:
   <div>
     <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
     <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>
-    <a href="/en/contact/" class="btn btn--primary">Get in touch</a>
+    <a href="contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>
 
@@ -77,7 +77,7 @@ projects:
 </div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/certifications/" class="btn btn--primary">See more certifications</a>
+  <a href="portfolio/certifications/" class="btn btn--primary">See more certifications</a>
 </div>
 
 <hr class="feature-divider">
@@ -86,7 +86,7 @@ projects:
 
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/en/portfolio/projects/mbi-cardio-2025">
+    <a href="portfolio/projects/mbi/">
       <img src="/assets/images/mbi_triage.png" alt="Project: MBI">
       <h3>Medication Burden Index and Cardiac Interventions</h3>
       <p>Implementation of feature engineering and 'Natural Normal' imputation to correct biases in high-pressure clinical settings.</p>
@@ -94,7 +94,7 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/en/portfolio/projects/xv-scientific-symposium/">
+    <a href="portfolio/projects/pharmacovigilance/">
       <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
       <h3>Pharmacovigilance and Clinical Narrative</h3>
       <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
@@ -102,7 +102,7 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/en/portfolio/projects/sepsis-and-septic-shock/">
+    <a href="portfolio/projects/sepsis/">
       <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and septic shock">
       <h3>Critical Evidence in Septic Shock</h3>
       <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
@@ -112,7 +112,7 @@ projects:
 </div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/projects/" class="btn btn--primary">See more projects</a>
+  <a href="portfolio/projects/" class="btn btn--primary">See more projects</a>
 </div>
 
 <hr class="feature-divider">
@@ -139,6 +139,6 @@ projects:
     <p>
       <strong>If you are ready to turn data into actions, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in touch</a>
+    <a href="contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>

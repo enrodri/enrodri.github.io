@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Evidence in Septic Shock"
-permalink: /en/portfolio/projects/sepsis/
+permalink: portfolio/projects/sepsis/
 lang: en
 approach:
   - title: "Methodology: Synthesis and Consensus"
@@ -110,7 +110,7 @@ highlights:
 {% include gallery id="highlights" %}
 
 <div class="see-more-button">
-  <a href="/en/portfolio/projects/" class="btn btn--primary">View All Slides</a>
+  <a href="portfolio/projects/" class="btn btn--primary">View All Slides</a>
 </div>
 
   <div class="cta">
@@ -120,6 +120,6 @@ highlights:
       Great breakthroughs are born from collaboration. Due to my commitment to technical precision and impactful storytelling, I accept a limited number of projects to ensure the rigor each challenge deserves.
     </p>
     <p><strong>If you are looking to convert complex evidence into strategic decisions, let's talk.</strong></p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

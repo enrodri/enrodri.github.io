@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Proyectos"
-permalink: /es/portfolio/projects/
+permalink: portfolio/projects/
 lang: es
 # Header 
 header:

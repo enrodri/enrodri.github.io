@@ -1,3 +1,4 @@
+{% assign current_page_path = page.url %}
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 
 <div class="masthead">
@@ -11,26 +12,58 @@
           {{ site.masthead_title | default: site.title | escape_once | strip }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
         </a>
+
         <ul class="visible-links">
-          {%- for link in site.data.navigation.main -%}
+          {% comment %} Polyglot logic to pick the right nav file {% endcomment %}
+          {% if site.active_lang == 'es' %}
+            {% assign nav_links = site.data.navigation_es.main %}
+          {% else %}
+            {% assign nav_links = site.data.navigation.main %}
+          {% endif %}
+
+          {% for link in nav_links %}
             <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
+              <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
             </li>
-          {%- endfor -%}
+          {% endfor %}
+
           {% include navbar-cta.html %}
+          
+          <li class="masthead__menu-item">
+            <a href="#" class="lang-switch-btn btn btn--inverse" style="padding: 0.4em 0.8em; font-weight: bold;">
+              {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
+            </a>
+          </li>
+
+          <script>
+            document.getElementById('lang-switch').addEventListener('click', function(e) {
+              e.preventDefault();
+              let currentUrl = window.location.pathname;
+              let newUrl;
+
+              if (currentUrl.includes('/es/')) {
+                // Si estamos en español, quitamos el /es/ para ir a inglés
+                newUrl = currentUrl.replace('/es/', '/');
+              } else {
+                // Si estamos en inglés, añadimos /es/ al principio
+                // Manejamos si estamos en la raíz o en una subpágina
+                newUrl = currentUrl === '/' ? '/es/' : '/es' + currentUrl;
+              }
+              
+              // Limpieza de barras dobles por si acaso
+              window.location.href = newUrl.replace(/\/+/g, '/');
+            });
+          </script>
         </ul>
+
         {% if site.search == true %}
         <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].search_label | default: "Search" }}</span>
           <i class="fas fa-search"></i>
         </button>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].menu_label | default: "Menu" }}</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>

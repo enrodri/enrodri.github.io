@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Contact"
-permalink: /en/contact/
+permalink: contact/
 lang: en
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)

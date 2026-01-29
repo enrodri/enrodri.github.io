@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Medication Burden Index (MBI)"
-permalink: /en/portfolio/projects/mbi/
+permalink: portfolio/projects/mbi/
 lang: en
 approach:
   - title: "The Architecture: <code>ClinicalConfig</code>"
@@ -228,6 +228,6 @@ highlights:
   <div style="text-align: center;">
     <h3>Data Architecture for High-Impact Decisions</h3>
     <p>From data processing to predictive model validation, I transform complex variables into operational clarity. If you are looking for a data architect who understands the strategic value of technical precision, let's talk.</p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

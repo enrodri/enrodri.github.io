@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Portfolio"
-permalink: /en/portfolio/
+permalink: portfolio/
 lang: en
 # Header 
 header:
@@ -48,7 +48,7 @@ certifications:
 </div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/projects/" class="btn btn--primary">View More Projects</a>
+  <a href="portfolio/projects/" class="btn btn--primary">View More Projects</a>
 </div>
 
 <hr class="feature-divider">
@@ -107,7 +107,7 @@ certifications:
 </div>
 
 <div class="see-more-button">
-  <a href="/en/portfolio/certifications/" class="btn btn--primary">View More Certifications</a>
+  <a href="portfolio/certifications/" class="btn btn--primary">View More Certifications</a>
 </div>
 
 <div class="cta">
@@ -121,6 +121,6 @@ certifications:
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

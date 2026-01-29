@@ -15,15 +15,15 @@
 minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "es"
+locale                   : "en"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Enyel Rodríguez"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Enyel A. Rodríguez G."
 description              : "Bioestadística y salud pública"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://enrodri.github.io"
+baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.png"
@@ -229,7 +229,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
+permalink: pretty
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -266,6 +267,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-polyglot
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -326,11 +328,10 @@ defaults:
       comments: # true
       share: true
       related: true
-  - scope:
-      path: "es" # your spanish folder
-    values:
-      lang: "es"
-  - scope:
-      path: "en" # your english folder
-    values:
-      lang: "en"
+
+languages: ["en", "es"]
+default_lang: "en"
+exclude_from_localization: ["assets", "css", "js", "vendor"]
+parallel_localization: false
+lang_from_path: false
+relativize_urls: false

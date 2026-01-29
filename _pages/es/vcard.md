@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Enyel Rodríguez
-permalink: /es/vcard/
+permalink: vcard/
 lang: es
 author_profile: false
 social:

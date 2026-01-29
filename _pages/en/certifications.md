@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Certifications"
-permalink: /en/portfolio/certifications/
+permalink: portfolio/certifications/
 lang: en
 author_profile: false
 # Header 
@@ -146,6 +146,6 @@ other_skills:
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="/en/contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

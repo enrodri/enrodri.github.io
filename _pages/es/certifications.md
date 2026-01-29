@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: "Certificaciones"
-permalink: /es/portfolio/certifications/
+permalink: portfolio/certifications/
 lang: es
 author_profile: false
 # Header 
