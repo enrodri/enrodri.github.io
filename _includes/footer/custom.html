@@ -3,6 +3,11 @@
   <div class="footer-col footer-logo-col">
     <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
     <h4>Enyel A. Rodríguez G.</h4>
+    {% if site.active_lang == 'es' %}
+      <p class="footer-tagline">Arquitectura de Datos para <br>decisiones de Alto Impacto</p>
+    {% else %}
+      <p class="footer-tagline">Data Architecture for <br>High-Impact decisions</p>
+    {% endif %}
   </div>
   
 <div class="footer-col footer-cta-col">

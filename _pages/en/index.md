@@ -14,7 +14,7 @@ projects:
   - excerpt: "My projects are not just a summary of my work; they are a testament to my dedication to achieving high-impact results. Through every analysis, my goal is to ensure that data is not only correct but tells a compelling story backed by evidence, capable of inspiring action and innovation."  
 ---
 <div class="custom-splash-hero">
-  <img src="/assets/images/web_hero.png" alt="Profile picture">
+  <img src="/assets/images/web_hero_eng.png" alt="Profile picture">
   <div>
     <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
     <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>

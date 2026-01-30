@@ -639,6 +639,19 @@ $footer-background-color: #003152;
   margin-top: 0 !important;
 }
 
+.footer-tagline {
+  font-size: 0.75em; /* Ajusta este valor (0.7em - 0.85em) para que sea idéntico a tus links */
+  line-height: 1.4;
+  margin-top: 0.5rem;
+  opacity: 0.8;      /* Opcional: le da un tono ligeramente grisáceo muy elegante */
+  font-family: inherit;
+}
+
+/* Alineación para asegurar que se vea bien en la columna */
+.footer-logo-col p {
+  margin-bottom: 0;
+}
+
 // ===============================================
 // RESPONSIVE FALLBACKS (Old/Generic Media Queries)
 // ===============================================
@@ -874,6 +887,10 @@ $footer-background-color: #003152;
 }
 }
 
+// ===============================================
+// LANG SWITCH STYLES
+// ===============================================
+
 // Styles for the button language switch
 .lang-switch-btn {
   border: 1.5px solid #ffffff !important;
@@ -890,25 +907,25 @@ $footer-background-color: #003152;
   border-color: #ffffff !important;
 }
 
-/* Contenedor principal de los botones del footer */
+// Footer buttons container
 .footer-actions-stack {
   display: flex;
-  flex-direction: column; /* Apilar verticalmente por defecto (Móvil) */
-  align-items: center;    /* Centrar ambos botones en móvil */
-  gap: 10px;              /* Espacio entre botones */
+  flex-direction: column; 
+  align-items: center;    
+  gap: 10px;              
 }
 
-/* Alineación para el Language Switcher */
+// Lang switcher alignment
 .footer-lang-switch-wrapper {
   display: flex;
-  justify-content: center; /* Centrado en móvil */
+  justify-content: center; 
   width: auto;
 }
 
-/* Ajustes para Escritorio */
+// Adjustment for tablet and desktop sizes
 @media (min-width: 701px) {
   .footer-actions-stack {
-    align-items: flex-end; /* Alinear ambos a la derecha en PC */
+    align-items: flex-end; 
   }
   
   .footer-lang-switch-wrapper {
@@ -916,7 +933,6 @@ $footer-background-color: #003152;
   }
 }
 
-/* Forzar que el botón de idioma no herede anchos raros */
 .lang-switch-btn {
   display: inline-block !important;
   min-width: 60px;
