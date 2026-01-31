@@ -23,7 +23,7 @@ projects:
 </div>
 
 <div class="hero_problem">
-  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.jpg"></div>
+  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.png"></div>
   <div>
     <h1>El Precio de la Incertidumbre</h1>
     <p>En la toma de decisiones críticas, la evidencia es el único camino seguro. Pero, ¿qué pasa si esa evidencia no es sólida?</p>
@@ -35,7 +35,7 @@ projects:
 <hr class="feature-divider">
 
 <div class="hero_solution">
-  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_solution.jpg"></div>
+  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_solution.png"></div>
   <div>
     <h1>El éxito: Cuando la evidencia te guía</h1>
     <p>Imagina un escenario donde tus datos te dan las respuestas que necesitas, cuando las necesitas.</p>

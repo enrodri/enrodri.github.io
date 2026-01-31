@@ -23,7 +23,7 @@ projects:
 </div>
 
 <div class="hero_problem">
-  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.jpg"></div>
+  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.png"></div>
   <div>
     <h1>The Price of Uncertainty</h1>
     <p>In critical decision-making, evidence is the only safe path. But what happens if that evidence is not solid?</p>
@@ -35,7 +35,7 @@ projects:
 <hr class="feature-divider">
 
 <div class="hero_solution">
-  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_solution.jpg"></div>
+  <div class="hero__image-wrapper" data-image-src="/assets/images/hero_solution.png"></div>
   <div>
     <h1>Success: When evidence guides you</h1>
     <p>Imagine a scenario where your data gives you the answers you need, when you need them.</p>
