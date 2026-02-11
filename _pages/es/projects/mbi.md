@@ -226,7 +226,7 @@ highlights:
 
 <div class="cta">
   <div style="text-align: center;">
-    <h3>Arquitectura de datos para decisiones de alto impacto</h3>
+    <h3>Potenciando decisiones de alto impacto mediante datos</h3>
     <p>Desde el procesamiento de datos hasta la validación de modelos predictivos, transformo variables complejas en claridad operativa. Si buscas un arquitecto de datos que entienda el valor estratégico de la precisión técnica, hablemos.</p>
     <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
   </div>
