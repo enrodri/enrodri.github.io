@@ -65,6 +65,13 @@ highlights:
     <strong>Tech Stack:</strong> <code>Pandas, NumPy, Statsmodels, Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
+<!-- <div style="background-color: #f0f7ff; border-left: 5px solid #003152; padding: 15px; margin: 20px 0; border-radius: 4px;">
+    <h4 style="margin-top: 0; color: #003152;"><i class="fas fa-info-circle"></i> Peer-Review Status</h4>
+    <p style="margin-bottom: 0; font-size: 0.95em;">
+        Currently undergoing preparation for submission in collaboration with specialists from <strong>UNC Chapel Hill Cardiology</strong>, based on the <strong>Project Health for Leon</strong> mission cohort.
+    </p>
+</div> -->
+
 <h2>The Core of the Analysis: What is the 'Medication Burden Index' (MBI)?</h2>
 <p>
   The <strong>MBI</strong> is a weighted index that quantifies the intensity of a patient's pharmacological treatment. Rather than simply counting pills, the MBI evaluates the "effort" the cardiovascular system is making under medical support.

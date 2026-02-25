@@ -22,12 +22,28 @@ excerpt: "La curiosidad es el primer paso para la innovación. En esta sección,
 
 <div class="toggle-container">
   <h3 class="toggle-heading">
+    ¿Qué es el Análisis de Datos y cómo puede ayudar a mi organización?
+  </h3>
+  <div class="toggle-content">
+      <p>
+          El <strong>Análisis de Datos</strong> es el proceso sistemático de inspeccionar, limpiar y modelar conjuntos de datos para descubrir información accionable. Mientras que los datos brutos le dicen qué sucedió, la analítica le explica <strong>por qué sucedió</strong> y <strong>qué es probable que suceda después</strong>.
+      </p>
+      <p>Para su organización, esto se traduce en beneficios clínicos y operativos tangibles:</p>
+      <ul>
+        <li><strong>Optimización de Recursos:</strong> Identificar qué pacientes requieren intervención urgente para asignar personal especializado y equipos de manera más eficiente.</li>
+        <li><strong>Mejora de la Calidad:</strong> Detectar patrones sutiles en los resultados del tratamiento o reacciones adversas a medicamentos que los reportes estándar podrían pasar por alto.</li>
+        <li><strong>Estrategia Basada en Evidencia:</strong> Pasar de decisiones basadas en la "intuición" a decisiones "impulsadas por datos", reduciendo la variabilidad clínica y mejorando los indicadores clave de desempeño (KPIs) institucionales.</li>
+      </ul>
+  </div>
+
+  <!-- <h3 class="toggle-heading">
     ¿Qué es la ciencia de datos y cómo puede ayudar a mi organización?
   </h3>
   <div class="toggle-content">
     <p>La ciencia de datos es una disciplina que utiliza la tecnología y las matemáticas para analizar grandes cantidades de información y encontrar patrones que las personas no pueden ver a simple vista.</p>
     <p>Imagina que es como tener una lupa gigante para los datos de tu organización: Te ayuda a predecir la propagación de enfermedades o a identificar qué pacientes tienen más riesgo de desarrollar ciertas condiciones, permitiendo una atención más proactiva y, sobre todo, la toma de decisiones clínicas más de mayor impacto para el paciente.</p>
-  </div>
+  </div> -->
+
   <h3 class="toggle-heading">
     ¿Qué software y herramientas utilizas para tu trabajo?
   </h3>
@@ -39,6 +55,7 @@ excerpt: "La curiosidad es el primer paso para la innovación. En esta sección,
       <li><strong>GitHub:</strong> Es una plataforma en línea que utilizo para almacenar y compartir el código de los proyectos de manera segura y eficiente. Es como un disco duro en la nube, pero optimizado para el desarrollo de proyectos.</li>
     </ul>
   </div>
+
   <h3 class="toggle-heading">
   ¿Cómo garantizas la privacidad y seguridad de los datos médicos?
   </h3>
@@ -46,6 +63,7 @@ excerpt: "La curiosidad es el primer paso para la innovación. En esta sección,
     <p>La confidencialidad es la piedra angular de mi práctica. Trabajo bajo protocolos estrictos de <strong>anonimización de datos</strong>, asegurando que ninguna información sensible pueda ser rastreada hasta un paciente individual.</p>
     <p>Además, utilizo entornos de desarrollo seguros y sigo las mejores prácticas de ciberseguridad para el manejo de bases de datos, alineándome con los principios éticos de la investigación médica actual.</p>
   </div>
+
   <h3 class="toggle-heading">
   ¿Qué pasa si mis datos están incompletos o "sucios"?
   </h3>
@@ -53,6 +71,7 @@ excerpt: "La curiosidad es el primer paso para la innovación. En esta sección,
     <p>Es una de las situaciones más comunes en entornos clínicos reales. Mi especialidad es precisamente el manejo de <strong>datos faltantes y sesgos de selección</strong>.</p>
     <p>Utilizo técnicas avanzadas como la <strong>imputación múltiple</strong> y modelos probabilísticos para rescatar información valiosa donde otros verían ruido, permitiendo obtener conclusiones sólidas incluso en condiciones de recursos limitados.</p>
   </div>
+
   <h3 class="toggle-heading">
   ¿Cómo es el proceso de colaboración en un proyecto?
   </h3>

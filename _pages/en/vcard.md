@@ -2,18 +2,18 @@
 layout: splash
 title: Enyel Rodríguez
 permalink: vcard/
-lang: es
+lang: en
 author_profile: false
 social:
-  - title: "¡Conéctate conmigo!"
+  - title: "Let's Connect!"
 # Certifications section
 certifications: 
-  - title: "Certificaciones"
-  - excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia. Desde el análisis estadístico hasta la comunicación efectiva, cada habilidad es una pieza clave para asegurar que nuestros proyectos sean técnicamente sólidos, bien comunicados y de gran impacto.'
+  - title: "Certifications"
+  - excerpt: "My certifications are not just credentials; they are proof of an unwavering commitment to excellence. From statistical analysis to effective communication, each skill is a key piece in ensuring our projects are technically sound, well-communicated, and high-impact."
 # Projects section
 projects: 
-  - title: "Proyectos"
-  - excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'     
+  - title: "Projects"
+  - excerpt: "My projects are not just a summary of my work; they are a testament to my dedication to achieving high-impact results. Through every analysis, my goal is to ensure that data is not only correct but tells a compelling story backed by evidence, capable of inspiring action and innovation."     
 ---
 <style>
 .about-hero {
@@ -22,11 +22,11 @@ projects:
 </style>
 
 <div class="vcard">
-  <img src="/assets/images/web_hero.png" alt="Foto de perfil">
+  <img src="/assets/images/web_hero_eng.png" alt="Profile Picture">
   <div class="vcard-info">
-    <h1>Dr. Enyel A. Rodríguez G.</h1>
-    <h2>Médico general y Analista de datos</h2>
-    <p>Ayudo a investigadores y organizaciones de salud a transformar sus <strong>datos</strong> en descubrimientos valiosos y a tomar decisiones estratégicas basadas en <strong>evidencia</strong> sólida.</p>
+    <h1>Enyel A. Rodríguez G., MD</h1>
+    <h2>Physician & Data Analyst</h2>
+    <p>I help researchers and healthcare organizations transform <strong>complex data</strong> into actionable insights and strategic decisions backed by <strong>solid evidence</strong>.</p>
     <div>
         <a href="https://wa.me/85365685" class="btn btn--primary">
             <i class="fa-brands fa-whatsapp"></i>
@@ -34,7 +34,7 @@ projects:
         </a>
         <a href="mailto:mdenrodriguez@gmail.com" class="btn btn--primary">
             <i class="fa-regular fa-envelope"></i>
-            Correo
+            Email
         </a>
     </div>
   </div>
@@ -82,32 +82,32 @@ projects:
 <div class="grid-container">
   <div class="grid-item">
     <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
-      <h3>Primer lugar</h3>
-      <p>XV Jornada Científica, SILAIS Granada</p>
-      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV SILAIS Granada Scientific Conference — 1st place">
+      <h3>First Place</h3>
+      <p>XV Scientific Conference, SILAIS Granada</p>
+      <p>Transformation of pharmacovigilance metrics into a clear visual narrative</p>
     </a>
   </div>
   <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-      <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
-      <h3>Bioestadística en salud pública</h3>
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
+      <h3>Biostatistics in Public Health</h3>
       <p>Johns Hopkins University</p>
-      <p>Inferencia estadística, métodos de regresión y análisis de supervivencia.</p>
+      <p>Statistical inference, regression methods, and survival analysis.</p>
     </a>
   </div>
   <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-      <h3>Estadística con Python</h3>
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
+      <h3>Statistics with Python</h3>
       <p>University of Michigan</p>
-      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
+      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
     </a>
   </div>
 </div>
 
 <div class="see-more-button">
-  <a href="/es/portfolio/certifications/" class="btn btn--primary">Ver más certificaciones</a>
+  <a href="/portfolio/certifications/" class="btn btn--primary">See more certifications</a>
 </div>
 
 <hr class="feature-divider">
@@ -117,45 +117,45 @@ projects:
 <!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/es/portfolio/projects/mbi/">
-      <img src="/assets/images/mbi_triage.png" alt="Proyecto: MBI">
-      <h3>Índice de carga farmacológica e intervenciones cardíacas</h3>
-      <p>Desarrollo de ingeniería de características e imputación "Natural Normal" para corregir sesgos en entornos clínicos de alta presión.</p>
-      <p><strong>Impacto:</strong> 85% de precisión en la detección de remodelación cardíaca avanzada en triaje preclínico</p>
+    <a href="portfolio/projects/mbi/">
+      <img src="/assets/images/mbi_triage.png" alt="Project: MBI">
+      <h3>Medication Burden Index and Cardiac Interventions</h3>
+      <p>Implementation of feature engineering and 'Natural Normal' imputation to correct biases in high-pressure clinical settings.</p>
+      <p><strong>Impact:</strong> 85% accuracy in detecting advanced cardiac remodeling in preclinical triage</p>
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portfolio/projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-      <h3>Farmacovigilancia y narrativa clínica</h3>
-      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
+    <a href="portfolio/projects/pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
+      <h3>Pharmacovigilance and Clinical Narrative</h3>
+      <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
+      <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portfolio/projects/sepsis/">
-      <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
-      <h3>Evidencia crítica en Choque Séptico</h3>
-      <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
-      <p><strong>Impacto:</strong> Síntesis de protocolos de vanguardia para el manejo avanzado del choque séptico.</p>
+    <a href="portfolio/projects/sepsis/">
+      <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and septic shock">
+      <h3>Critical Evidence in Septic Shock</h3>
+      <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
+      <p><strong>Impact:</strong> Synthesis of cutting-edge protocols for the advanced management of septic shock.</p>
     </a>
   </div>
 </div>
 
 <div class="see-more-button">
-  <a href="/es/portfolio/projects/" class="btn btn--primary">Ver más proyectos</a>
+  <a href="/portfolio/projects/" class="btn btn--primary">See more projects</a>
 </div>
 
 <hr class="feature-divider">
 
 <!-- About section -->
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <img src="/assets/images/web_hero-about.png" alt="About me">
   <div>
-    <h1>Acerca de mí</h1>
-    <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
-    <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
-    <h2>Del saber al hacer: Una integración práctica</h2>
-    <p>Mi trayectoria es la prueba que el rigor estadístico y la intuición clínica no son opuestos, sino el camino de avanzar en la medicina moderna basada en la evidencia.</p>
+    <h1>About Me</h1>
+    <h2>“The physician who only knows medicine, knows not even medicine” — José de Letamendi</h2>
+    <p>To me, being a doctor goes beyond clinical practice; every experience has been an opportunity to learn valuable lessons about the complexity of the world around us and how we can integrate that knowledge into healthcare.</p>
+    <h2>Translating Knowledge into Action</h2>
+    <p>My career path is proof that statistical rigor and clinical intuition are not opposites, but the way forward in modern evidence-based medicine.</p>
   </div>
 </div>

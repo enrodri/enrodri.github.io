@@ -73,21 +73,21 @@ books:
 <div class="grid-container books-grid">
   <div class="grid-item">
       <a href="https://www.amazon.com/Complications-Surgeons-Notes-Imperfect-Science/dp/0312421702">
-        <img src="/assets/images/books_es_complications.jpg" alt="Book: Complications, Atul Gawande">
+        <img src="/assets/images/books_en_complications.jpg" alt="Book: Complications, Atul Gawande">
         <br>
         <p>This book has taught me that human psychology—both the physician's and the patient's—plays a critical role in clinical outcomes. Through its pages, I understood how heuristics can save lives or lead to error, underlining the importance of systems that support human judgment.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719227">
-        <img src="/assets/images/books_es_failure.jpg" alt="Book: Why Nations Fail">
+        <img src="/assets/images/books_en_failure.jpg" alt="Book: Why Nations Fail">
          <br>
          <p>It has taught me that social and health challenges are too systemic for oversimplified solutions. Understanding the complexity of institutions and economics is vital for designing solutions that are not just patches, but structural changes.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.com/Influence-New-Expanded-Psychology-Persuasion/dp/0062937650">
-        <img src="/assets/images/books_es_influence.jpg" alt="Book: Influence. The Psychology of Persuasion">
+        <img src="/assets/images/books_en_influence.jpg" alt="Book: Influence. The Psychology of Persuasion">
         <br>
         <p>Through Cialdini, I delved into how human psychology can be suggestive when attempting to ease cognitive load and take shortcuts in decision-making. It is an essential guide for using persuasion ethically in healthcare and understanding the mechanisms behind our choices.</p>
       </a>

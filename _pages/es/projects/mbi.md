@@ -65,6 +65,13 @@ highlights:
     <strong>Tech Stack:</strong> <code>Pandas, NumPy, Statsmodels, Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
+<!-- <div style="background-color: #f0f7ff; border-left: 5px solid #003152; padding: 15px; margin: 20px 0; border-radius: 4px;">
+    <h4 style="margin-top: 0; color: #003152;"><i class="fas fa-info-circle"></i> Revisión por Pares</h4>
+    <p style="margin-bottom: 0; font-size: 0.95em;">
+        Actualmente en fase de preparación para publicación en colaboración con especialistas de <strong>UNC Chapel Hill Cardiology</strong>, basada en la cohorte de la misión <strong>Project Health for Leon</strong>.
+    </p>
+</div> -->
+
 <h2>El corazón del análisis: ¿Qué es el 'Medication Burden Index' (MBI)?</h2>
 <p>
   El <strong>MBI</strong> es un índice ponderado que cuantifica la intensidad del tratamiento farmacológico de un paciente. En lugar de solo contar cuántas pastillas toma una persona, el MBI evalúa el "esfuerzo" que el sistema cardiovascular está realizando bajo soporte médico.

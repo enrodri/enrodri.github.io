@@ -22,12 +22,27 @@ excerpt: "Curiosity is the first step toward innovation. In this section, I have
 
 <div class="toggle-container">
   <h3 class="toggle-heading">
+    What is Data Analytics, and how can it help my organization?
+  </h3>
+  <div class="toggle-content">
+    <p>
+      <strong>Data Analytics</strong> is the systematic process of inspecting, cleaning, and modeling datasets to discover actionable information. While raw data tells you what happened, analytics tells you <strong>why it happened</strong> and <strong>what is likely to happen next</strong>.
+    </p>
+    <p>For your organization, this translates into tangible clinical and operational benefits:</p>
+    <ul>
+      <li><strong>Resource Optimization:</strong> Identifying which patients require urgent intervention to allocate specialized staff and equipment more efficiently.</li>
+      <li><strong>Quality Improvement:</strong> Detecting subtle patterns in treatment outcomes or adverse drug reactions that standard reporting might miss.</li>
+      <li><strong>Evidence-Based Strategy:</strong> Moving from "intuition-based" to "data-driven" decisions, reducing clinical variability and improving institutional KPIs.</li>
+    </ul>
+  </div>
+
+  <!-- <h3 class="toggle-heading">
     What is Data Science, and how can it help my organization?
   </h3>
   <div class="toggle-content">
     <p>Data Science is a discipline that combines technology and mathematics to analyze large amounts of information and uncover patterns that are invisible to the naked eye.</p>
     <p>Think of it as a high-powered magnifying glass for your organization's data: It helps you predict disease outbreaks or identify patients at higher risk for certain conditions, enabling proactive care and, most importantly, clinical decision-making with a greater impact on patient outcomes.</p>
-  </div>
+  </div> -->
   
   <h3 class="toggle-heading">
     What software and tools do you use?
