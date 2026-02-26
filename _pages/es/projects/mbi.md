@@ -54,6 +54,13 @@ highlights:
     border-collapse: collapse !important;
     display: table !important;
 }
+
+.math-block {
+    text-align: center;
+    font-size: clamp(0.8rem, 4vw, 1.2rem); 
+    overflow-x: auto;
+    white-space: nowrap;
+}
 </style>
 
 <div class="headline">
@@ -78,7 +85,7 @@ highlights:
 </p>
 
 <div class="math-block">
-  $$MBI = \sum \left( \text{Peso de Clase} \times \frac{\text{Dosis Total Diaria}}{\text{Dosis Clínica Máxima}} \right)$$
+  $$MBI = \sum \left( \text{Peso} \times \frac{\text{DTD}}{\text{Dosis Máxima}} \right)$$
 </div>
 
 <p>Para lograr este cálculo, el motor procesa dos variables críticas:</p>

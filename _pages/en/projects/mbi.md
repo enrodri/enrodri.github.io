@@ -54,6 +54,13 @@ highlights:
     border-collapse: collapse !important;
     display: table !important;
 }
+
+.math-block {
+    text-align: center;
+    font-size: clamp(0.8rem, 4vw, 1.2rem); 
+    overflow-x: auto;
+    white-space: nowrap;
+}
 </style>
 
 <div class="headline">
@@ -78,7 +85,7 @@ highlights:
 </p>
 
 <div class="math-block">
-  $$MBI = \sum \left( \text{Class Weight} \times \frac{\text{Total Daily Dose}}{\text{Maximum Clinical Dose}} \right)$$
+  $$MBI = \sum \left( \text{Weight} \times \frac{\text{TDD}}{\text{Maximum Dose}} \right)$$
 </div>
 
 <p>To achieve this, the engine processes two critical variables:</p>
