@@ -27,34 +27,56 @@
             </li>
           {% endfor %}
 
-          {% include navbar-cta.html %}
-          
-          <li class="masthead__menu-item">
-            <a href="#" class="lang-switch-btn btn btn--inverse" style="padding: 0.4em 0.8em; font-weight: bold;">
-              {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
-            </a>
+          <li class="masthead__menu-item custom-lang-wrapper">
+            <div class="lang-dropdown">
+              <button class="lang-trigger">
+                <i class="fa-solid fa-language lang-icon-main"></i>
+                {% if site.active_lang == 'es' %} ES {% else %} EN {% endif %}
+                <i class="fas fa-caret-down"></i>
+              </button>
+              <ul class="lang-menu">
+                <li>
+                  <a href="#" class="lang-opt" data-lang="en">
+                    <i class="fa-solid fa-language lang-icon-main"></i>
+                    English {% if site.active_lang != 'es' %}<i class="fas fa-check"></i>{% endif %}
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="lang-opt" data-lang="es">
+                    <i class="fa-solid fa-language lang-icon-main"></i>
+                    Español {% if site.active_lang == 'es' %}<i class="fas fa-check"></i>{% endif %}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <script>
-            document.getElementById('lang-switch').addEventListener('click', function(e) {
-              e.preventDefault();
-              let currentUrl = window.location.pathname;
-              let newUrl;
+            // This script handles the URL redirection logic
+            document.querySelectorAll('.lang-opt').forEach(link => {
+              link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetLang = this.getAttribute('data-lang');
+                const currentUrl = window.location.pathname;
+                let newUrl;
 
-              if (currentUrl.includes('/es/')) {
-                // Si estamos en español, quitamos el /es/ para ir a inglés
-                newUrl = currentUrl.replace('/es/', '/');
-              } else {
-                // Si estamos en inglés, añadimos /es/ al principio
-                // Manejamos si estamos en la raíz o en una subpágina
-                newUrl = currentUrl === '/' ? '/es/' : '/es' + currentUrl;
-              }
-              
-              // Limpieza de barras dobles por si acaso
-              window.location.href = newUrl.replace(/\/+/g, '/');
+                if (targetLang === 'en') {
+                  // Switch to English: remove /es/ if present
+                  newUrl = currentUrl.replace('/es/', '/');
+                } else {
+                  // Switch to Spanish: add /es/ if not already there
+                  newUrl = currentUrl.includes('/es/') ? currentUrl : (currentUrl === '/' ? '/es/' : '/es' + currentUrl);
+                }
+                
+                // Final cleanup: ensure no double slashes and redirect
+                window.location.href = newUrl.replace(/\/+/g, '/');
+              });
             });
           </script>
+
         </ul>
+
+        {% include navbar-cta.html %}
 
         {% if site.search == true %}
         <button class="search__toggle" type="button">

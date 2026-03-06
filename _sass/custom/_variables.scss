@@ -18,6 +18,96 @@ body {
 }
 
 // ===============================================
+// LANG SWITCH STYLES
+// ===============================================
+
+/* 1. Target the transition, the background, AND the content */
+.masthead__menu-item a::after,
+.visible-links a::after,
+.greedy-nav a::after,
+.no-underline a::after {
+  content: none !important;
+  display: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: none !important; /* This stops the animation from firing */
+}
+
+// 2. Language switcher dropdown
+.masthead, 
+.masthead__inner-wrap, 
+.greedy-nav,
+.visible-links {
+  overflow: visible !important;
+}
+
+.custom-lang-wrapper {
+  position: relative !important;
+}
+
+// 3. Language switcher styling
+.lang-trigger {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.lang-trigger:hover {
+  background: rgba(255, 255, 255, 0.15) !important; /* Subtle glass highlight */
+}
+
+.lang-icon-main {
+  color: white !important;
+  margin-right: 5px;
+}
+
+// .lang-trigger:hover .lang-icon-main {
+//   color: #002b44 !important;
+// }
+
+.lang-menu {
+  display: none; /* Base state: hidden */
+  position: absolute !important;
+  top: 100% !important;
+  right: 0 !important;
+  background: #003152 !important; /* Dark blue with slight transparency */
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  min-width: 160px !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+  z-index: 99999 !important; /* Extremely high z-index */
+  margin: 0 !important;
+  // padding: 10px 0 !important;
+  list-style: none !important;
+  border-radius: 4px;
+}
+
+/* The Trigger: When hovering the wrapper, show the menu */
+.custom-lang-wrapper:hover .lang-menu {
+  display: block !important;
+}
+
+/* Style for links inside the menu */
+.lang-menu li a {
+  padding: 10px 5px !important;
+  align-items: center;
+  font-size: 0.85em !important;
+}
+
+.lang-menu li:hover {
+  background: rgba(255, 255, 255, 0.15) !important; /* Subtle glass highlight */
+}
+
+// ===============================================
 // CUSTOM HERO/SPLASH SECTION (.custom-splash-hero)
 // Used on the homepage for the main banner
 // ===============================================
@@ -450,7 +540,7 @@ body {
 }
 
 // ===============================================
-// VCard/About Me Banner
+// VCARD/ABOUT ME BANNER
 // ===============================================
 
 .vcard {
@@ -884,58 +974,4 @@ $footer-background-color: #003152;
     font-size: 0.9em;
   }
 }
-}
-
-// ===============================================
-// LANG SWITCH STYLES
-// ===============================================
-
-// Styles for the button language switch
-.lang-switch-btn {
-  border: 1.5px solid #ffffff !important;
-  color: #ffffff !important;
-  background-color: transparent !important;
-  transition: all 0.3s ease !important;
-  text-decoration: none !important;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.lang-switch-btn:hover {
-  background-color: #00548d !important;
-  border-color: #ffffff !important;
-}
-
-// Footer buttons container
-.footer-actions-stack {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 10px;              
-}
-
-// Lang switcher alignment
-.footer-lang-switch-wrapper {
-  display: flex;
-  justify-content: center; 
-  width: auto;
-}
-
-// Adjustment for tablet and desktop sizes
-@media (min-width: 701px) {
-  .footer-actions-stack {
-    align-items: flex-end; 
-  }
-  
-  .footer-lang-switch-wrapper {
-    justify-content: flex-end;
-  }
-}
-
-.lang-switch-btn {
-  display: inline-block !important;
-  min-width: 60px;
-  max-width: fit-content;
-  text-align: center;
-  padding: 0.4em 0.8em !important;
 }
