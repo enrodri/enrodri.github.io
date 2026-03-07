@@ -18,26 +18,27 @@ body {
 }
 
 // ===============================================
+// NAVBAR
+// ===============================================
+
+// Targeted hover color for standard navbar links
+#site-nav.greedy-nav .visible-links .masthead__menu-item a:hover {
+  color: #D29606 !important;
+}
+
+// This removes the underline on the navbar elements
+.greedy-nav .visible-links a::before {
+  display: none !important;
+  content: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+// ===============================================
 // LANG SWITCH STYLES
 // ===============================================
 
-/* 1. Target the transition, the background, AND the content */
-.masthead__menu-item a::after,
-.visible-links a::after,
-.greedy-nav a::after,
-.no-underline a::after {
-  content: none !important;
-  display: none !important;
-  background-color: transparent !important;
-  border: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  transition: none !important; /* This stops the animation from firing */
-}
-
-// 2. Language switcher dropdown
+// Language switcher dropdown
 .masthead, 
 .masthead__inner-wrap, 
 .greedy-nav,
@@ -49,7 +50,7 @@ body {
   position: relative !important;
 }
 
-// 3. Language switcher styling
+// Language switcher styling
 .lang-trigger {
   background: transparent;
   color: white;
@@ -62,18 +63,10 @@ body {
   align-items: center;
 }
 
-.lang-trigger:hover {
-  background: rgba(255, 255, 255, 0.15) !important; /* Subtle glass highlight */
-}
-
 .lang-icon-main {
   color: white !important;
   margin-right: 5px;
 }
-
-// .lang-trigger:hover .lang-icon-main {
-//   color: #002b44 !important;
-// }
 
 .lang-menu {
   display: none; /* Base state: hidden */
@@ -82,7 +75,7 @@ body {
   right: 0 !important;
   background: #003152 !important; /* Dark blue with slight transparency */
   border: 1px solid rgba(255, 255, 255, 0.5) !important;
-  min-width: 160px !important;
+  min-width: 130px !important;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
   z-index: 99999 !important; /* Extremely high z-index */
   margin: 0 !important;
@@ -91,20 +84,46 @@ body {
   border-radius: 4px;
 }
 
-/* The Trigger: When hovering the wrapper, show the menu */
-.custom-lang-wrapper:hover .lang-menu {
-  display: block !important;
-}
-
-/* Style for links inside the menu */
+// Style for links inside the menu
 .lang-menu li a {
   padding: 10px 5px !important;
   align-items: center;
   font-size: 0.85em !important;
 }
 
-.lang-menu li:hover {
-  background: rgba(255, 255, 255, 0.15) !important; /* Subtle glass highlight */
+// The Trigger: When hovering the wrapper, show the menu
+.custom-lang-wrapper:hover .lang-menu {
+  display: block !important;
+}
+
+// Syncs hover transitions for the switcher
+.lang-trigger, 
+.lang-trigger i, 
+.lang-trigger span {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
+}
+
+// Applies custom color hover globally to the switcher components
+.lang-menu:hover,
+.lang-trigger:hover,
+.lang-trigger:hover .lang-icon-main,
+.lang-trigger:hover .fa-caret-down {
+  color: #D29606 !important;
+  border-color: rgba(210, 150, 6, 0.5) !important;
+}
+
+// Sync all icon transitions inside the dropdown
+.lang-menu li a,
+.lang-menu li a i,
+.lang-menu li a span {
+  transition: all 0.2s ease-in-out !important;
+}
+
+// Ensure the check icon highlights at the exact same time as the text
+.lang-menu li:hover a,
+.lang-menu li:hover .fa-check {
+  color: #D29606 !important;
 }
 
 // ===============================================
@@ -716,6 +735,27 @@ body {
   content: "-";
   transform: translateY(-50%) rotate(180deg);
 }
+
+// ===============================================
+// NAVBAR MOBILE STYLING
+// ===============================================
+
+// @media (max-width: 1024px) {
+//   /* Ensure the toggle is visible */
+//   .greedy-nav__toggle {
+//     display: block !important;
+//   }
+
+//   /* Style the CTA inside the hamburger list */
+//   .hidden-links .cta-item a.btn--primary {
+//     background-color: transparent !important;
+//     border: none !important;
+//     padding: 10px 20px !important;
+//     color: white !important;
+//     font-weight: bold;
+//     text-align: left;
+//   }
+// }
 
 // ===============================================
 // GLOBAL FOOTER STYLES
