@@ -31,7 +31,8 @@
             <div class="lang-dropdown">
               <button class="lang-trigger">
                 <i class="fa-solid fa-language lang-icon-main"></i>
-                {% if site.active_lang == 'es' %} ES {% else %} EN {% endif %}
+                <span class="lang-label-full">{% if site.active_lang == 'es' %} ESPAÑOL {% else %} ENGLISH {% endif %}</span>
+                <span class="lang-label-short">{% if site.active_lang == 'es' %} ES {% else %} EN {% endif %}</span>
                 <i class="fas fa-caret-down"></i>
               </button>
               <ul class="lang-menu">
@@ -72,9 +73,36 @@
             });
           </script>
 
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const langTrigger = document.querySelector('.custom-lang-wrapper .lang-trigger');
+              
+              if (langTrigger) {
+                langTrigger.addEventListener('click', function(e) {
+                  // If we are inside the hidden links (hamburger menu)
+                  if (this.closest('.hidden-links')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Toggle a class to show/hide the menu
+                    this.parentElement.classList.toggle('mobile-open');
+                  }
+                });
+              }
+            });
+          </script>
+
+          <li class="masthead__menu-item mobile-only-cta">
+            <a href="/contact/">{% if site.active_lang == 'es' %}Contáctame{% else %}Get in Touch{% endif %}</a>
+          </li>
         </ul>
 
-        {% include navbar-cta.html %}
+        <div class="desktop-cta-wrapper">
+          {% if site.active_lang == 'es' %}
+            <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
+          {% else %}
+            <a href="/contact/" class="btn btn--primary">Get in Touch</a>
+          {% endif %}
+        </div>
 
         {% if site.search == true %}
         <button class="search__toggle" type="button">
