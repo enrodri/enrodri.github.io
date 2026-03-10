@@ -91,28 +91,65 @@
             </script>
 
             <script>
-              // This script checks if the click happened inside the navigation area.
               document.addEventListener('click', function (event) {
-                const navContainer = document.querySelector('.custom-nav'); // Adjust to your wrapper class
+                const navContainer = document.querySelector('.custom-nav');
                 const navLinks = document.querySelector('.nav-links');
                 const toggleBtn = document.querySelector('.nav-toggle-btn');
+                const langTrigger = document.querySelector('.lang-trigger');
                 const langMenu = document.querySelector('.lang-menu');
 
-                // Check if the click was OUTSIDE the navigation container
-                if (!navContainer.contains(event.target)) {
-                  // 1. Close Hamburger Menu
-                  if (navLinks.classList.contains('is-open')) {
+                // 1. MUTUAL EXCLUSION: If clicking the Hamburger Toggle, close Lang Menu
+                if (toggleBtn && toggleBtn.contains(event.target)) {
+                  if (langMenu) langMenu.style.display = 'none';
+                }
+
+                // 2. MUTUAL EXCLUSION: If clicking the Lang Trigger, close Hamburger Menu
+                if (langTrigger && langTrigger.contains(event.target)) {
+                  if (navLinks && navLinks.classList.contains('is-open')) {
+                    navLinks.classList.remove('is-open');
+                    toggleBtn.classList.remove('is-active');
+                  }
+                }
+
+                // 3. CLICK OUTSIDE: Check if the click was OUTSIDE the entire navigation area
+                if (navContainer && !navContainer.contains(event.target)) {
+                  
+                  // Close Hamburger Menu
+                  if (navLinks && navLinks.classList.contains('is-open')) {
                     navLinks.classList.remove('is-open');
                     toggleBtn.classList.remove('is-active');
                   }
                   
-                  // 2. Close Lang Menu (if it's not handled by hover)
+                  // Close Lang Menu
                   if (langMenu && langMenu.style.display === 'block') {
                     langMenu.style.display = 'none';
                   }
                 }
               });
             </script>
+            <!-- <script>
+              // This script checks if the click happened inside the navigation area.
+                document.addEventListener('click', function (event) {
+                  const navContainer = document.querySelector('.custom-nav'); // Adjust to your wrapper class
+                  const navLinks = document.querySelector('.nav-links');
+                  const toggleBtn = document.querySelector('.nav-toggle-btn');
+                  const langMenu = document.querySelector('.lang-menu');
+
+                  // Check if the click was OUTSIDE the navigation container
+                  if (!navContainer.contains(event.target)) {
+                    // 1. Close Hamburger Menu
+                    if (navLinks.classList.contains('is-open')) {
+                      navLinks.classList.remove('is-open');
+                      toggleBtn.classList.remove('is-active');
+                    }
+                    
+                    // 2. Close Lang Menu (if it's not handled by hover)
+                    if (langMenu && langMenu.style.display === 'block') {
+                      langMenu.style.display = 'none';
+                    }
+                  }
+                });
+            </script> -->
           </div>
 
           <div class="persistent-cta">
