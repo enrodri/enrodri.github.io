@@ -98,7 +98,7 @@ a.site-title {
 
 .nav-links.is-open {
   background: #003152 !important;
-  border: 2px solid rgba(255, 255, 255, 0.8) !important; 
+  // border: 2px solid rgba(255, 255, 255, 0.8) !important; 
   border-radius: 0 0 4px 4px !important; // Only round the bottom corners
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: block; 
@@ -337,6 +337,8 @@ a.site-title {
   }
   &:hover .lang-menu, &:focus-within .lang-menu {
     display: block !important;
+    animation: slideDown 0.2s ease-out forwards;
+    transform-origin: top center;
   }
 }
 
@@ -427,149 +429,6 @@ a.site-title {
     width: 130px;
   }
 }
-
-// // ===============================================
-// // NAVBAR
-// // ===============================================
-
-// // Targeted hover color for standard navbar links
-// #site-nav.greedy-nav .visible-links .masthead__menu-item a:hover {
-//   color: #D29606 !important;
-// }
-
-// // This removes the underline on the navbar elements
-// .greedy-nav .visible-links a::before {
-//   display: none !important;
-//   content: none !important;
-//   visibility: hidden !important;
-//   opacity: 0 !important;
-// }
-
-// /* Remove the focus border/outline globally for the switcher */
-// .lang-trigger:focus, 
-// .lang-trigger:active,
-// .lang-opt:focus {
-//   outline: none !important;
-//   box-shadow: none !important;
-// }
-
-// // Desktop CTA: Visible by default
-// .desktop-cta-wrapper {
-//   display: flex !important;
-//   align-items: center;
-//   margin-left: 20px;
-// }
-
-// // Mobile CTA: Hidden by default
-// .mobile-only-cta {
-//   display: none !important;
-// }
-
-// // ===============================================
-// // LANG SWITCH STYLES
-// // ===============================================
-
-// // Language switcher dropdown
-// .masthead, 
-// .masthead__inner-wrap, 
-// .greedy-nav,
-// .visible-links {
-//   overflow: visible !important;
-// }
-
-// .custom-lang-wrapper {
-//   position: relative !important;
-// }
-
-// // Language switcher styling
-// .lang-trigger {
-//   background: transparent;
-//   color: white;
-//   border: 1px solid rgba(255, 255, 255, 0.5);
-//   border-radius: 4px;
-//   padding: 5px 10px;
-//   cursor: pointer;
-//   font-family: inherit;
-//   display: flex;
-//   align-items: center;
-//   margin-left: 20px;
-// }
-
-// .lang-icon-main {
-//   color: white !important;
-//   margin-right: 5px;
-// }
-
-// .lang-menu {
-//   display: none; /* Base state: hidden */
-//   position: absolute !important;
-//   top: 100% !important;
-//   right: 0 !important;
-//   background: #003152 !important; /* Dark blue with slight transparency */
-//   border: 1px solid rgba(255, 255, 255, 0.5) !important;
-//   min-width: 130px !important;
-//   box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
-//   z-index: 99999 !important; /* Extremely high z-index */
-//   margin: 0 !important;
-//   // padding: 10px 0 !important;
-//   list-style: none !important;
-//   border-radius: 4px;
-// }
-
-// /* --- 1. Desktop & Tablet: Show "EN/ES" --- */
-// .lang-label-full { display: none; }
-// .lang-label-short { display: inline; }
-
-// // Style for links inside the menu
-// .lang-menu li a {
-//   padding: 10px 5px !important;
-//   align-items: center;
-//   font-size: 0.85em !important;
-// }
-
-// // The Trigger: When hovering the wrapper, show the menu
-// .custom-lang-wrapper:hover .lang-menu {
-//   display: block !important;
-// }
-
-// // Syncs hover transitions for the switcher
-// .lang-trigger, 
-// .lang-trigger i, 
-// .lang-trigger span {
-//   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
-//   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
-// }
-
-// // Applies custom color hover globally to the switcher components
-// .lang-menu:hover,
-// .lang-trigger:hover,
-// .lang-trigger:hover .lang-icon-main,
-// .lang-trigger:hover .fa-caret-down {
-//   color: #D29606 !important;
-//   border-color: rgba(210, 150, 6, 0.5) !important;
-// }
-
-// // Sync all icon transitions inside the dropdown
-// .lang-menu li a,
-// .lang-menu li a i,
-// .lang-menu li a span {
-//   transition: all 0.2s ease-in-out !important;
-// }
-
-// // Ensure the check icon highlights at the exact same time as the text
-// .lang-menu li:hover a,
-// .lang-menu li:hover .fa-check {
-//   color: #D29606 !important;
-// }
-
-// .lang-trigger i {
-//   margin: 0 8px; /* Give icons space from the text */
-// }
-
-// .lang-label {
-//   font-weight: bold;
-//   letter-spacing: 1px;
-// }
 
 // ===============================================
 // CUSTOM HERO/SPLASH SECTION (.custom-splash-hero)
