@@ -17,12 +17,6 @@
     {% else %}
       <a href="/contact/" class="btn btn--primary">Get in Touch</a>
     {% endif %}
-
-    <div class="footer-lang-switch-wrapper">
-      <a href="#" class="lang-switch-btn btn btn--inverse">
-        {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
-      </a>
-    </div>
   </div>
 </div>
 
@@ -72,7 +66,7 @@
   </div>
 </div>
 
-<script>
+<!-- <script>
   // Buscamos todos los botones que tengan la clase .lang-switch-btn
   document.querySelectorAll('.lang-switch-btn').forEach(button => {
     button.addEventListener('click', function(e) {
@@ -90,4 +84,4 @@
       window.location.href = newUrl.replace(/\/+/g, '/');
     });
   });
-</script>
+</script> -->

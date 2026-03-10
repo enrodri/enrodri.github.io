@@ -17,6 +17,417 @@ body {
   overflow-x: hidden; 
 }
 
+// ==========================================================================
+// NAVIGATION GLOBAL STYLES
+// ========================================================================== 
+
+// Default state: Kill both CTA containers globally
+.mobile-only-cta-container,
+.persistent-cta-container {
+  display: none !important;
+}
+
+.custom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-branding {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a.site-title {
+    color: white !important; 
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+.nav-links a {
+  color: white !important; 
+  text-decoration: none;
+  &:hover { color: #D29606 !important; }
+}
+
+.lang-menu a {
+  color: white !important; 
+  text-decoration: none;
+}
+
+// Kill the gray rectangle and focus outlines on the toggle
+.nav-toggle-btn {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  cursor: pointer;
+  padding: 0;
+
+  &:focus,
+  &:active,
+  &:hover {
+    background: transparent !important;
+    outline: none !important;
+    border: none !important;
+  }
+}
+
+.lang-menu {
+  background: #003152 !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important; 
+  border-radius: 0 0 4px 4px !important; // Round only the bottom
+  position: absolute; 
+  top: 100% !important; // Touch the masthead
+  right: 0; 
+  z-index: 100;
+
+  // Remove top border to merge it with the header
+  border-top: none !important; 
+}
+
+.nav-links.is-open {
+  background: #003152 !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important; 
+  border-radius: 0 0 4px 4px !important; // Only round the bottom corners
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: block; 
+  position: absolute; 
+  top: 100%;
+  right: 0; 
+  width: 220px;
+  z-index: 100;
+  text-align: center;
+  overflow: visible !important;
+  background: #003152; 
+  list-style: none; 
+  border-top: none !important;
+  &.is-open {
+    padding: 0px 20px;
+    li {
+        margin: 15px 0;
+        padding-bottom: 10px;
+      }
+    }
+}
+
+// ==========================================================================
+// 3. HAMBURGER TO "X" ANIMATION
+// ==========================================================================
+.nav-toggle-btn {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .hamburger-box {
+    width: 24px;
+    height: 18px;
+    position: relative;
+  }
+
+  .hamburger-inner, 
+  .hamburger-inner::before, 
+  .hamburger-inner::after {
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #b80f0a;
+    position: absolute;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .hamburger-inner { 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+
+  .hamburger-inner::before { 
+    content: ""; top: -8px; 
+  }
+
+  .hamburger-inner::after { 
+    content: ""; top: 8px; 
+  }
+
+  // THE TRANSFORMATION TO X
+  &.is-active {
+    .hamburger-inner { 
+      background-color: transparent !important; 
+    }
+    .hamburger-inner::before { 
+      transform: translateY(8px) rotate(45deg); 
+    }
+    .hamburger-inner::after { 
+      transform: translateY(-8px) rotate(-45deg); 
+    }
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nav-links.is-open {
+  animation: slideDown 0.3s ease forwards;
+}
+
+// ==========================================================================
+// MOBILE NAVIGATION STYLE
+// ========================================================================== 
+// Order: Logo (Left) | Lang Switch | Ham Menu
+@media (max-width: 700px) {
+  .nav-links.is-open .mobile-only-cta-container {
+    display: block !important;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .persistent-cta {
+    display: none !important;
+  }
+  
+  .nav-links {
+    display: none;
+    &.is-open {
+      padding-top: 20px !important; 
+    }
+  }
+  
+  // Fix weird gray rectangle (MM priority plus remnants)
+  .nav-links {
+    background-color: #003152 !important; 
+    border: none !important;
+  }
+}
+
+// ==========================================================================
+// TABLET NAVIGATION STYLE
+// ========================================================================== 
+// Order: Logo (Left) | Lang Switch | CTA | Ham Menu
+@media (min-width: 701px) and (max-width: 1024px) {
+  .mobile-only-cta-container {
+    display: none !important;
+  }
+  
+  // Show the one in the right-side actions bar
+  .persistent-cta-container {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .nav-links:not(.is-open) {
+    display: none; 
+  }
+
+  .nav-toggle-btn {
+    background-color: transparent !important; 
+    background: transparent !important; 
+    border: none !important
+  }
+
+  .nav-actions {
+    gap: 30px;  
+  }
+
+  .nav-links {
+    display: none;
+    &.is-open {
+      padding-top: 10px !important; 
+    }
+  }
+}
+
+// ==========================================================================
+// DESKTOP NAVIGATION STYLE
+// ========================================================================== 
+// Order: Logo | Site Name | Links | Lang Switch | CTA
+@media (min-width: 1025px) {
+  .mobile-only-cta-container {
+    display: none !important;
+  }
+
+  .persistent-cta-container {
+    display: flex !important;
+    align-items: center;
+  }
+  
+  .nav-toggle-btn { 
+    display: none !important; 
+  }
+  
+  .nav-links {
+    display: flex !important;
+    list-style: none;
+    margin: 0; padding: 0;
+    flex: 1;
+    justify-content: right; 
+  }
+
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    &:hover { color: #D29606 !important; }
+  }
+
+  .nav-actions {
+    gap: 35px;  
+  }
+
+  .lang-trigger {
+    margin-left: 15px;
+  }
+
+  // .custom-lang-wrapper {
+  //   .lang-menu {
+  //     top: calc(100% + 22px); 
+  //   }
+  // }
+}
+
+// ==========================================================================
+// LANGUAGE SWITCHER
+// ==========================================================================
+
+.custom-lang-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .lang-menu {
+    display: none; 
+    position: absolute; 
+    right: 0; 
+    background: #003152;
+    // border: 1px solid rgba(255, 255, 255, 0.5); 
+    min-width: 145px; 
+    z-index: 100;
+    list-style: none; 
+    margin: 0; 
+    // border-radius: 4px;
+    padding: 10px 0;
+
+    li a {
+      display: flex;
+      justify-content: space-between; // Pushes fa-check to the far side
+      align-items: center;
+      padding: 8px 15px;
+      width: 100%;
+      
+      .fa-check {
+        margin-left: 10px;
+        font-size: 0.8em;
+      }
+    }
+  }
+  &:hover .lang-menu, &:focus-within .lang-menu {
+    display: block !important;
+  }
+}
+
+.lang-trigger {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8); 
+    border-radius: 4px !important;
+    padding: 5px 0px; cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    i.fa-caret-down {
+      margin-left: 5px;    
+      margin-right: 5px;
+    }
+  }
+
+.lang-trigger:focus,
+.lang-trigger:active {
+  outline: none; 
+  box-shadow: none;
+  border-radius: 4px 4px 0px 0px !important;
+}
+
+.lang-trigger, 
+.lang-trigger i, 
+.lang-trigger span {
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
+}
+
+.lang-trigger i {
+  margin: 0 8px; /* Give icons space from the text */
+}
+
+.custom-lang-wrapper {
+  // 1. When the ENTIRE wrapper is hovered...
+  &:hover {
+    // Change the button border color
+    .lang-trigger {
+      border-color: rgba(210, 150, 6, 0.8) !important; // Your gold/desired color
+      color: #D29606 !important;
+      
+      // 2. Kill the bottom border/radius to merge with the menu
+      border-bottom-color: transparent !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
+
+    // Change the menu border color to match
+    .lang-menu {
+      border-color: rgba(210, 150, 6, 0.8) !important;
+      // Ensure the top is still "none" or transparent to maintain the merge
+      border-top: none !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;  
+    }
+  }
+}
+
+// 3. Keep the check icon and links highlighted when hovering the menu
+.lang-menu li:hover a {
+  color: #D29606 !important;
+}
+
+@media (max-width: 700px) {
+  .custom-lang-wrapper {
+    .lang-menu {
+      min-width: 115px; 
+    }
+  }
+
+  .lang-trigger {
+    width: 115px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  .custom-lang-wrapper {
+    .lang-menu {
+      min-width: 130px; 
+    }
+  }
+
+  .lang-trigger {
+    width: 130px;
+  }
+}
+
 // ===============================================
 // CUSTOM HERO/SPLASH SECTION (.custom-splash-hero)
 // Used on the homepage for the main banner
@@ -652,7 +1063,7 @@ $footer-background-color: #003152;
 }
 
 // ===============================================
-// RESPONSIVE FALLBACKS (Old/Generic Media Queries)
+// RESPONSIVE FALLBACKS (Generic Media Queries)
 // ===============================================
 
 // Generic max-width media query for structural elements
@@ -793,7 +1204,6 @@ $footer-background-color: #003152;
   color: #fff;
 }
 
-
 // =====================================================
 // TABLET STYLES (4-Column Layout - min-width: 701px)
 // =====================================================
@@ -801,7 +1211,7 @@ $footer-background-color: #003152;
 @media screen and (min-width: 701px) {
   .footer-grid {
     // 4 equal columns for tablet size
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
     grid-template-areas: "logo portfolio explore cta"; // Uses 4 areas
     gap: 1.5rem; 
     padding: 2rem 0;
@@ -822,7 +1232,7 @@ $footer-background-color: #003152;
 
   // General desktop/tablet alignment styles
   .footer-logo-col { align-items: flex-start; text-align: left; }
-  .footer-cta-col  { justify-content: flex-end; align-items: flex-start; }
+  .footer-cta-col  { justify-content: flex-start; align-items: flex-start; }
   .footer-cta-col .btn--primary { font-size: 0.9rem; }
 }
 
@@ -884,58 +1294,4 @@ $footer-background-color: #003152;
     font-size: 0.9em;
   }
 }
-}
-
-// ===============================================
-// LANG SWITCH STYLES
-// ===============================================
-
-// Styles for the button language switch
-.lang-switch-btn {
-  border: 1.5px solid #ffffff !important;
-  color: #ffffff !important;
-  background-color: transparent !important;
-  transition: all 0.3s ease !important;
-  text-decoration: none !important;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.lang-switch-btn:hover {
-  background-color: #00548d !important;
-  border-color: #ffffff !important;
-}
-
-// Footer buttons container
-.footer-actions-stack {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;    
-  gap: 10px;              
-}
-
-// Lang switcher alignment
-.footer-lang-switch-wrapper {
-  display: flex;
-  justify-content: center; 
-  width: auto;
-}
-
-// Adjustment for tablet and desktop sizes
-@media (min-width: 701px) {
-  .footer-actions-stack {
-    align-items: flex-end; 
-  }
-  
-  .footer-lang-switch-wrapper {
-    justify-content: flex-end;
-  }
-}
-
-.lang-switch-btn {
-  display: inline-block !important;
-  min-width: 60px;
-  max-width: fit-content;
-  text-align: center;
-  padding: 0.4em 0.8em !important;
 }

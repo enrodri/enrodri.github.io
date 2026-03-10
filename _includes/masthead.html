@@ -4,69 +4,131 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
-        {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}">
-          {{ site.masthead_title | default: site.title | escape_once | strip }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
-        </a>
-
-        <ul class="visible-links">
-          {% comment %} Polyglot logic to pick the right nav file {% endcomment %}
-          {% if site.active_lang == 'es' %}
-            {% assign nav_links = site.data.navigation_es.main %}
-          {% else %}
-            {% assign nav_links = site.data.navigation.main %}
-          {% endif %}
-
-          {% for link in nav_links %}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-
-          {% include navbar-cta.html %}
-          
-          <li class="masthead__menu-item">
-            <a href="#" class="lang-switch-btn btn btn--inverse" style="padding: 0.4em 0.8em; font-weight: bold;">
-              {% if site.active_lang == 'es' %} EN {% else %} ES {% endif %}
+      <nav id="site-nav" class="custom-nav">
+        <div class="nav-branding">
+          {% unless logo_path == empty %}
+            <a class="site-logo" href="{{ '/' | relative_url }}">
+              <img src="{{ logo_path | relative_url }}" alt="Logo">
             </a>
-          </li>
+          {% endunless %}
+          <a class="site-title" href="{{ '/' | relative_url }}">
+            {{ site.masthead_title | default: site.title }}
+          </a>
+        </div>
 
-          <script>
-            document.getElementById('lang-switch').addEventListener('click', function(e) {
-              e.preventDefault();
-              let currentUrl = window.location.pathname;
-              let newUrl;
-
-              if (currentUrl.includes('/es/')) {
-                // Si estamos en español, quitamos el /es/ para ir a inglés
-                newUrl = currentUrl.replace('/es/', '/');
-              } else {
-                // Si estamos en inglés, añadimos /es/ al principio
-                // Manejamos si estamos en la raíz o en una subpágina
-                newUrl = currentUrl === '/' ? '/es/' : '/es' + currentUrl;
-              }
-              
-              // Limpieza de barras dobles por si acaso
-              window.location.href = newUrl.replace(/\/+/g, '/');
-            });
-          </script>
+        <ul class="nav-links">
+          {% if site.active_lang == 'es' %}{% assign nav_links = site.data.navigation_es.main %}{% else %}{% assign nav_links = site.data.navigation.main %}{% endif %}
+          {% for link in nav_links %}
+            <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          
+          <div class="mobile-only-cta-container">
+            {% include navbar-cta.html %}
+          </div>
         </ul>
 
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].search_label | default: "Search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
-        {% endif %}
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].menu_label | default: "Menu" }}</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
+
+
+        <div class="nav-actions">
+          <div class="custom-lang-wrapper">
+            <button class="lang-trigger">
+              <i class="fa-solid fa-language lang-icon-main"></i>
+              <span class="lang-label-short">{% if site.active_lang == 'es' %} ES {% else %} EN {% endif %}</span>
+              <i class="fas fa-caret-down"></i>
+            </button>
+            <ul class="lang-menu">
+              <li>
+                <a href="#" class="lang-opt" data-lang="en">
+                  English {% if site.active_lang != 'es' %}<i class="fas fa-check"></i>{% endif %}
+                </a>
+              </li>
+              <li>
+                <a href="#" class="lang-opt" data-lang="es">
+                  Español {% if site.active_lang == 'es' %}<i class="fas fa-check"></i>{% endif %}
+                </a>
+              </li>
+            </ul>
+
+            <script>
+              // This script handles the URL redirection logic
+              document.querySelectorAll('.lang-opt').forEach(link => {
+                link.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  const targetLang = this.getAttribute('data-lang');
+                  const currentUrl = window.location.pathname;
+                  let newUrl;
+
+                  if (targetLang === 'en') {
+                    // Switch to English: remove /es/ if present
+                    newUrl = currentUrl.replace('/es/', '/');
+                  } else {
+                    // Switch to Spanish: add /es/ if not already there
+                    newUrl = currentUrl.includes('/es/') ? currentUrl : (currentUrl === '/' ? '/es/' : '/es' + currentUrl);
+                  }
+                  
+                  // Final cleanup: ensure no double slashes and redirect
+                  window.location.href = newUrl.replace(/\/+/g, '/');
+                });
+              });
+            </script>
+
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const langTrigger = document.querySelector('.custom-lang-wrapper .lang-trigger');
+                
+                if (langTrigger) {
+                  langTrigger.addEventListener('click', function(e) {
+                    // If we are inside the hidden links (hamburger menu)
+                    if (this.closest('.hidden-links')) {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      // Toggle a class to show/hide the menu
+                      this.parentElement.classList.toggle('mobile-open');
+                    }
+                  });
+                }
+              });
+            </script>
+
+            <script>
+              // This script checks if the click happened inside the navigation area.
+              document.addEventListener('click', function (event) {
+                const navContainer = document.querySelector('.custom-nav'); // Adjust to your wrapper class
+                const navLinks = document.querySelector('.nav-links');
+                const toggleBtn = document.querySelector('.nav-toggle-btn');
+                const langMenu = document.querySelector('.lang-menu');
+
+                // Check if the click was OUTSIDE the navigation container
+                if (!navContainer.contains(event.target)) {
+                  // 1. Close Hamburger Menu
+                  if (navLinks.classList.contains('is-open')) {
+                    navLinks.classList.remove('is-open');
+                    toggleBtn.classList.remove('is-active');
+                  }
+                  
+                  // 2. Close Lang Menu (if it's not handled by hover)
+                  if (langMenu && langMenu.style.display === 'block') {
+                    langMenu.style.display = 'none';
+                  }
+                }
+              });
+            </script>
+          </div>
+
+          <div class="persistent-cta">
+            {% include navbar-cta.html %}
+          </div>
+
+          <button class="nav-toggle-btn" onclick="this.classList.toggle('is-active'); document.querySelector('.nav-links').classList.toggle('is-open')">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>  
+
+          <!-- <button class="nav-toggle-btn" onclick="document.querySelector('.nav-links').classList.toggle('is-open')">
+            <div class="navicon"></div>
+          </button> -->
+        </div>
       </nav>
     </div>
   </div>
