@@ -90,13 +90,14 @@
               });
             </script>
 
-            <script>
+            <!-- <script>
               document.addEventListener('click', function (event) {
                 const navContainer = document.querySelector('.custom-nav');
                 const navLinks = document.querySelector('.nav-links');
                 const toggleBtn = document.querySelector('.nav-toggle-btn');
                 const langTrigger = document.querySelector('.lang-trigger');
                 const langMenu = document.querySelector('.lang-menu');
+                const langWrapper = document.querySelector('.custom-lang-wrapper');
 
                 // 1. MUTUAL EXCLUSION: If clicking the Hamburger Toggle, close Lang Menu
                 if (toggleBtn && toggleBtn.contains(event.target)) {
@@ -126,30 +127,47 @@
                   }
                 }
               });
-            </script>
-            <!-- <script>
-              // This script checks if the click happened inside the navigation area.
-                document.addEventListener('click', function (event) {
-                  const navContainer = document.querySelector('.custom-nav'); // Adjust to your wrapper class
-                  const navLinks = document.querySelector('.nav-links');
-                  const toggleBtn = document.querySelector('.nav-toggle-btn');
-                  const langMenu = document.querySelector('.lang-menu');
-
-                  // Check if the click was OUTSIDE the navigation container
-                  if (!navContainer.contains(event.target)) {
-                    // 1. Close Hamburger Menu
-                    if (navLinks.classList.contains('is-open')) {
-                      navLinks.classList.remove('is-open');
-                      toggleBtn.classList.remove('is-active');
-                    }
-                    
-                    // 2. Close Lang Menu (if it's not handled by hover)
-                    if (langMenu && langMenu.style.display === 'block') {
-                      langMenu.style.display = 'none';
-                    }
-                  }
-                });
             </script> -->
+
+            <script>
+              document.addEventListener('click', function (event) {
+                const navContainer = document.querySelector('.custom-nav');
+                const navLinks = document.querySelector('.nav-links');
+                const toggleBtn = document.querySelector('.nav-toggle-btn');
+                const langTrigger = document.querySelector('.lang-trigger');
+                const langMenu = document.querySelector('.lang-menu');
+                const langWrapper = document.querySelector('.custom-lang-wrapper');
+
+                // TOGGLE LOGIC: If clicking the Lang Trigger
+                if (langTrigger && langTrigger.contains(event.target)) {
+                  // 1. Close Hamburger Menu if it's open
+                  if (navLinks && navLinks.classList.contains('is-open')) {
+                    navLinks.classList.remove('is-open');
+                    toggleBtn.classList.remove('is-active');
+                  }
+
+                  // 2. Toggle the "is-active" class on the menu
+                  // This allows the second click to remove the class (closing it)
+                  langMenu.classList.toggle('is-active');
+                  
+                  // Prevent the "Click Outside" logic from firing immediately
+                  event.stopPropagation(); 
+                  return; 
+                }
+
+                // CLICK OUTSIDE: Close everything if clicking away
+                if (navContainer && !navContainer.contains(event.target)) {
+                  if (navLinks) navLinks.classList.remove('is-open');
+                  if (toggleBtn) toggleBtn.classList.remove('is-active');
+                  if (langMenu) langMenu.classList.remove('is-active');
+                }
+
+                // MUTUAL EXCLUSION: Close Lang Menu if Hamburger is clicked
+                if (toggleBtn && toggleBtn.contains(event.target)) {
+                  if (langMenu) langMenu.classList.remove('is-active');
+                }
+              });
+            </script>
           </div>
 
           <div class="persistent-cta">

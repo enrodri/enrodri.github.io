@@ -335,11 +335,25 @@ a.site-title {
         font-size: 0.8em;
       }
     }
+
+    &.is-active {
+      display: block !important;
+      animation: slideDown 0.2s ease-out forwards;
+    }
   }
+
   &:hover .lang-menu, &:focus-within .lang-menu {
     display: block !important;
     animation: slideDown 0.2s ease-out forwards;
     transform-origin: top center;
+  }
+
+  // Add support for the active class (for clicks/taps)
+  .lang-menu.is-active ~ .lang-trigger, // If using sibling logic
+  &:has(.lang-menu.is-active) .lang-trigger { 
+     border-bottom-color: transparent !important;
+     border-bottom-left-radius: 0 !important;
+     border-bottom-right-radius: 0 !important;
   }
 }
 
