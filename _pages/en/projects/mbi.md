@@ -13,30 +13,30 @@ highlights_title:
   - title: "Data Analysis and Visualization"
   - excerpt: "From raw data processing to statistical validation: the end-to-end workflow for the 2025 'Project Health for Leon' cardiology mission."
 highlights:
-  - url: "/assets/images/mbi_imputation.jpg"
-    image_path: "/assets/images/mbi_imputation.jpg"
-    alt: "Density Distribution after Gaussian Imputation"
-    title: "Bias Mitigation: Restoring the real physiological distribution through Gaussian noise imputation to correct missing data bias (MNAR)."
-  - url: "/assets/images/mbi_roc.jpg"
-    image_path: "/assets/images/mbi_roc.jpg"
-    alt: "ROC Curve and Threshold Validation"
-    title: "Predictive Power: ROC curve with an AUC of 0.73, validating the MBI's efficacy in detecting hemodynamic complexity and cardiac remodeling."
-  - url: "/assets/images/mbi_roc_rvsp.jpg"
-    image_path: "/assets/images/mbi_roc_rvsp.jpg"
-    alt: "MBI vs RVSP Correlation"
-    title: "Clinical Significance: Linear correlation between the medication burden index and right ventricular systolic pressure (RVSP), validating MBI as a hemodynamic surrogate."
-  - url: "/assets/images/mbi_decomposed.jpg"
-    image_path: "/assets/images/mbi_decomposed.jpg"
-    alt: "MBI Stratification by Drug Group"
-    title: "Contribution Hierarchy: Analysis of weighted drug burden by class, where dark red groups represent the highest clinical weights in the MBI calculation."
   - url: "/assets/images/mbi_code.png"
     image_path: "/assets/images/mbi_code.png"
-    alt: "Code architecture for clinical weights"
-    title: "Feature Engineering: Snippet of dictionary structures used to standardize therapeutic ceilings and cardiovascular severity weighting in a scalable way."
-  - url: "/assets/images/mbi_output.jpg"
-    image_path: "/assets/images/mbi_output.jpg"
-    alt: "Executive Summary Output"
-    title: "Executive Summary: Key metrics overview including MBI for native valve patients, complex case counts, and risk stratification."
+    alt: "Architecting the MBI engine"
+    title: "Implementation of the ClinicalConfig class to standardize medication weights and dosages into a reproducible Python pipeline."
+  - url: "/assets/images/mbi_imputation.jpg"
+    image_path: "/assets/images/mbi_imputation.jpg"
+    alt: "Restoring Data Integrity"
+    title: "Utilizing Stochastic Gaussian Imputation to correct 'Informative Missingness' (MNAR) and restore the natural physiological distribution of RVSP."
+  - url: "/assets/images/mbi_decomposed.jpg"
+    image_path: "/assets/images/mbi_decomposed.jpg"
+    alt: "Deconstructing the Index"
+    title: "A visual breakdown of how different pharmacological classes contribute to the total MBI score across the cohort."
+  - url: "/assets/images/mbi_roc_rvsp.jpg"
+    image_path: "/assets/images/mbi_roc_rvsp.jpg"
+    alt: "Statistical Validation"
+    title: "ROC Curve analysis establishing the 5.25 MBI threshold as a high-precision marker for critical pulmonary hypertension."
+  - url: "/assets/images/mbi_discordance.jpg"
+    image_path: "/assets/images/mbi_discordance.jpg"
+    alt: "Mapping the Care Gap"
+    title: "Identifying 'deceptively stable' patients who maintain moderate pressures only through aggressive pharmacological compensation."
+  - url: "/assets/images/mbi_table.jpg"
+    image_path: "/assets/images/mbi_table.jpg"
+    alt: "Strategic Triage Mapping"
+    title: "Defining the clinical 'Sweet Spot' to prioritize surgical interventions based on the intersection of MBI zones and hemodynamic severity."
 ---
 
 <style>
@@ -65,7 +65,7 @@ highlights:
 
 <div class="headline">
     <h1>Quantifying Clinical Gaps: MBI as a Surrogate for Cardiac Remodeling</h1>
-    <p>Data science applied to the 2025 Cardiology Mission in León, Nicaragua.</p>
+    <p>Data Analysis applied to the 2025 Cardiology Mission in León, Nicaragua.</p>
 </div>
 
 <div class="skills-bar">
