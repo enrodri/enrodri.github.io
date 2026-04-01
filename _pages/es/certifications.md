@@ -74,6 +74,14 @@ other_skills:
 <!-- Statistics and data columns -->
 <div class="grid-container">
   <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
+      <h3>Ingeniero de Bases de Datos</h3>
+      <p>Meta</p>
+      <p>Diseño de esquemas relacionales, optimización avanzada de MySQL y desarrollo de pipelines ETL en Python.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
       <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
       <h3>Estadística con Python</h3>

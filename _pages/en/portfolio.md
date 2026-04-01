@@ -57,11 +57,11 @@ certifications:
 
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-      <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV SILAIS Granada Scientific Conference — 1st place">
-      <h3>First Place</h3>
-      <p>XV Scientific Conference, SILAIS Granada</p>
-      <p>Transformation of pharmacovigilance metrics into a clear visual narrative.</p>
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certification: Meta Database Engineer">
+      <h3>Meta Database Engineer</h3>
+      <p>Meta</p>
+      <p>Relational schema design, advanced MySQL optimization, and Python-driven ETL pipeline development.</p>
     </a>
   </div>
   <div class="grid-item">

@@ -71,6 +71,14 @@ other_skills:
 
 <div class="grid-container">
   <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certification: Meta Database Engineer">
+      <h3>Meta Database Engineer</h3>
+      <p>Meta</p>
+      <p>Relational schema design, advanced MySQL optimization, and Python-driven ETL pipeline development.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
       <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
       <h3>Statistics with Python</h3>
