@@ -4,6 +4,15 @@ title: Enyel Rodríguez
 permalink: /
 lang: es
 author_profile: false    
+# Social previews
+description: "Ayudo a transformar la complejidad clínica en modelos explicativos y predictivos que contribuyen a tomar decisiones estratégicas."
+header:
+  teaser: "/assets/images/hero_preview.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Enyel Rodríguez" # Repeat title here
+  image: "/assets/images/hero_preview.png"    
 # Certifications section
 certifications: 
   - title: "Certificaciones"

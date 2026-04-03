@@ -3,10 +3,17 @@ layout: splash
 title: "Contacto"
 permalink: contact/
 lang: es
+# Social previews
+description: "Conversemos. Juntos podemos explorar cómo mis habilidades pueden convertirse en la pieza clave para que tu proyecto sea exitoso y tenga un impacto duradero."
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-contact.jpg
+  teaser: /assets/images/splash-contact.jpg
 excerpt: "Cada gran proyecto comienza con una conversación. Has visto mi dedicación a la excelencia y mi enfoque en resultados de alto impacto. Ahora, es tu turno de compartir tus metas. Conversemos. Juntos podemos explorar cómo mis habilidades pueden convertirse en la pieza clave para que tu proyecto sea exitoso y tenga un impacto duradero."
+seo:
+  type: "article"
+  title: "Contacto" # Repeat title here
+  image: "/assets/images/splash-contact.jpg"
 social:
   - title: "¡Conéctate conmigo!"
 ---

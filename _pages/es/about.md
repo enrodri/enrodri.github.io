@@ -3,6 +3,15 @@ layout: splash
 title: "Acerca de mí"
 permalink: about/
 lang: es
+# Social previews
+description: "Para mí, el desarrollo personal es un viaje de aprendizaje continuo, donde la integración de diversas habilidades y experiencias me permite abordar desafíos desde múltiples perspectivas."
+header:
+  teaser: "/assets/images/hero_preview.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Acerca de mí" # Repeat title here
+  image: "/assets/images/hero_preview.png"    
 story-1: 
   - image_path: /assets/images/about_story-1.jpeg
     alt: "Foto: Entrega de galardón de XV Jornada científica SILAIS Granada"

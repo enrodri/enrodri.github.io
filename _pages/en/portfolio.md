@@ -3,11 +3,18 @@ layout: splash
 title: "Portfolio"
 permalink: portfolio/
 lang: en
+# Social previews
+description: "From real-world projects to distinguished awards, each case demonstrates the power of evidence to transform uncertainty into success."
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-portfolio.jpg
+  teaser: /assets/images/splash-portfolio.jpg
 excerpt: Explore my portfolio to see how my expertise translates into tangible results. From real-world projects to distinguished awards, each case demonstrates the power of evidence to transform uncertainty into success. I invite you to see a sample of what we can achieve together.
+seo:
+  type: "article"
+  title: "Portfolio" # Repeat title here
+  image: "/assets/images/splash-portfolio.jpg"
 # Projects section
 projects: 
   - title: "Projects"

@@ -3,6 +3,15 @@ layout: splash
 title: "About Me"
 permalink: about/
 lang: en
+# Social previews
+description: "For me, personal development is a journey of continuous learning, where integrating diverse skills and experiences allows me to approach challenges from multiple perspectives."
+header:
+  teaser: "/assets/images/hero_preview.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "About Me" # Repeat title here
+  image: "/assets/images/hero_preview.png"    
 story-1: 
   - image_path: /assets/images/about_story-1.jpeg
     alt: "Photo: Award ceremony of the XV SILAIS Granada Scientific Conference"

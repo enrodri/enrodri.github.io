@@ -4,11 +4,18 @@ title: "Certifications"
 permalink: portfolio/certifications/
 lang: en
 author_profile: false
+# Social previews
+description: "My certifications are not just credentials; they are proof of an unwavering commitment to excellence."
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-certifications.jpg
+  teaser: /assets/images/splash-certifications.jpg
 excerpt: 'My certifications are not just credentials; they are proof of an unwavering commitment to excellence. <br>From statistical analysis to effective communication, each skill is a key piece in ensuring our projects are technically sound, well-communicated, and high-impact.'
+seo:
+  type: "article"
+  title: "Certifications" # Repeat title here
+  image: "/assets/images/splash-certifications.jpg"
 # Certifications section
 research_and_public-health: 
   - title: "Research and Public Health"

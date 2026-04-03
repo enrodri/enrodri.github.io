@@ -3,11 +3,18 @@ layout: splash
 title: "Portafolio"
 permalink: portfolio/
 lang: es
+# Social previews
+description: "Desde proyectos reales hasta reconocimientos destacados, cada caso es una muestra del potencial que tiene la evidencia para transformar la incertidumbre en éxito."
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-portfolio.jpg
+  teaser: /assets/images/splash-portfolio.jpg
 excerpt: Explora mi portafolio, y verás cómo mi experiencia se traduce en resultados tangibles. Desde proyectos reales hasta reconocimientos destacados, cada caso es una muestra del potencial que tiene la evidencia para transformar la incertidumbre en éxito. Te invito a ver una muestra de lo que podemos lograr juntos.
+seo:
+  type: "article"
+  title: "Portafolio" # Repeat title here
+  image: "/assets/images/splash-portfolio.jpg"
 # Projects section
 projects: 
   - title: "Proyectos"

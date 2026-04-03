@@ -3,10 +3,17 @@ layout: splash
 title: "Contact"
 permalink: contact/
 lang: en
+# Social previews
+description: "Let's talk. Together, we can explore how my skills can become the key piece for your project's success and lasting impact."
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-contact.jpg
+  teaser: /assets/images/splash-contact.jpg
 excerpt: "Every great project begins with a conversation. You've seen my dedication to excellence and my focus on high-impact results. Now, it's your turn to share your goals. Let's talk. Together, we can explore how my skills can become the key piece for your project's success and lasting impact."
+seo:
+  type: "article"
+  title: "Contact" # Repeat title here
+  image: "/assets/images/splash-contact.jpg"
 social:
   - title: "Let's Connect!"
 ---

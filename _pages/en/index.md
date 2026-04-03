@@ -3,7 +3,16 @@ layout: splash
 title: Enyel Rodríguez
 permalink: /
 lang: en
-author_profile: false    
+author_profile: false
+# Social previews
+description: "I help transform clinical complexity into explanatory and predictive models that contribute to making strategic decisions."
+header:
+  teaser: "/assets/images/hero_preview.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Enyel Rodríguez" # Repeat title here
+  image: "/assets/images/hero_preview.png"    
 # Certifications section
 certifications: 
   - title: "Certifications"

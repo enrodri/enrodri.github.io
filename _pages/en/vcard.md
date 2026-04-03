@@ -4,6 +4,15 @@ title: Enyel Rodríguez
 permalink: vcard/
 lang: en
 author_profile: false
+# Social previews
+description: "I help transform clinical complexity into explanatory and predictive models that contribute to making strategic decisions."
+header:
+  teaser: "/assets/images/hero_preview.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Enyel Rodríguez" # Repeat title here
+  image: "/assets/images/hero_preview.png"    
 social:
   - title: "Let's Connect!"
 # Certifications section

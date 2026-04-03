@@ -4,11 +4,17 @@ title: "Certificaciones"
 permalink: portfolio/certifications/
 lang: es
 author_profile: false
-# Header 
+#Social previews
+description: "Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia."
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-certifications.jpg
+  teaser: /assets/images/splash-certifications.jpg
 excerpt: 'Mis certificaciones no son solo credenciales; son la prueba de un compromiso inquebrantable con la excelencia. <br>Desde el análisis estadístico hasta la comunicación efectiva, cada habilidad es una pieza clave para asegurar que nuestros proyectos sean técnicamente sólidos, bien comunicados y de gran impacto.'
+seo:
+  type: "article"
+  title: "Certificaciones" # Repeat title here
+  image: "/assets/images/splash-certifications.jpg"
 # Certifications section
 research_and_public-health: 
   - title: "Investigación y salud pública"

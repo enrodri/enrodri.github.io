@@ -4,10 +4,17 @@ title: FAQ
 permalink: faq/
 lang: en
 author_profile: false
+# Social previews
+description: "In this section, I have compiled the most frequent questions to help resolve your doubts and lay the groundwork for a clear and successful collaboration."
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-faq.jpg
+  teaser: /assets/images/splash-faq.jpg
 excerpt: "Curiosity is the first step toward innovation. In this section, I have compiled the most frequent questions to help resolve your doubts and lay the groundwork for a clear and successful collaboration."
+seo:
+  type: "article"
+  title: "FAQ" # Repeat title here
+  image: "/assets/images/splash-faq.jpg"
 ---
 <style>
 .feature-divider {

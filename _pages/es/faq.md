@@ -4,10 +4,17 @@ title: Preguntas frecuentes
 permalink: faq/
 lang: es
 author_profile: false
+# Social previews
+description: "En esta sección, he recopilado las preguntas más frecuentes para que, al resolver tus dudas, podamos sentar las bases para una colaboración clara y exitosa."
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-faq.jpg
+  teaser: /assets/images/splash-faq.jpg
 excerpt: "La curiosidad es el primer paso para la innovación. En esta sección, he recopilado las preguntas más frecuentes para que, al resolver tus dudas, podamos sentar las bases para una colaboración clara y exitosa."
+seo:
+  type: "article"
+  title: "FAQ" # Repeat title here
+  image: "/assets/images/splash-faq.jpg"
 ---
 <style>
 .feature-divider {

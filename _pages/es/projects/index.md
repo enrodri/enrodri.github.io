@@ -3,11 +3,18 @@ layout: splash
 title: "Proyectos"
 permalink: portfolio/projects/
 lang: es
+# Social previews
+description: "Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto."
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-projects.jpg
+  teaser: "/assets/images/splash-projects.jpg"
 excerpt: 'Mis proyectos no son solo un resumen de mi trabajo; son un testimonio de mi dedicación para lograr resultados de alto impacto. <br>A través de cada análisis, mi objetivo es asegurar que los datos no solo sean correctos, sino que cuenten una historia convincente y respaldada por evidencia, capaz de inspirar la acción y la innovación'  
+seo:
+  type: "article"
+  title: "Projects" # Repeat title here
+  image: "/assets/images/splash-projects.jpg"
 presentations:
   - title: "Presentaciones"
 data:

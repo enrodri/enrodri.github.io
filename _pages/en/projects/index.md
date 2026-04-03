@@ -3,11 +3,18 @@ layout: splash
 title: "Projects"
 permalink: portfolio/projects/
 lang: en
+# Social previews
+description: "My projects are more than just a summary of my work; they are a testament to my dedication to achieving high-impact results."
 # Header 
 header:
   overlay_filter: rgba(0, 19, 32, 0.8)
   overlay_image: /assets/images/splash-projects.jpg
+  teaser: "/assets/images/splash-projects.jpg"
 excerpt: 'My projects are more than just a summary of my work; they are a testament to my dedication to achieving high-impact results. <br>Through every analysis, my goal is to ensure that data is not only correct but tells a compelling story backed by evidence, capable of inspiring action and innovation.'  
+seo:
+  type: "article"
+  title: "Projects" # Repeat title here
+  image: "/assets/images/splash-projects.jpg"
 presentations:
   - title: "Presentations"
 data:
