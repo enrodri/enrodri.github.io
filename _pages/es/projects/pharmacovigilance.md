@@ -3,6 +3,16 @@ layout: splash
 title: "Farmacovigilancia y narrativa clínica"
 permalink: portfolio/projects/pharmacovigilance/
 lang: es
+# Social previews
+description: "Transformando datos complejos de farmacovigilancia en una narrativa clínica de alto impacto que convirtió una causalidad del 95.2% en una llamada a la acción."
+header:
+  teaser: "/assets/images/project_pharmacovigilance.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Farmacovigilancia y narrativa clínica" # Repeat title here
+  image: "/assets/images/project_pharmacovigilance.png"
+# Sections
 approach:
   - title: "Metodología: Del Dato a la Decisión"
   - excerpt: "Mi metodología transformó datos áridos de farmacovigilancia en una hoja de ruta clínica. El desafío no fue solo presentar el Algoritmo de la OMS, sino hacer que la audiencia 'viera' el riesgo del 50% de abandono del tratamiento a través de una <strong>jerarquía visual estratégica</strong>."

@@ -3,6 +3,16 @@ layout: splash
 title: "Medication Burden Index (MBI)"
 permalink: portfolio/projects/mbi/
 lang: en
+# Social previews
+description: "Developing a Python-based clinical engine to quantify pharmacological intensity. Featuring ROC-validated triage thresholds for critical pulmonary hypertension."
+header:
+  teaser: "/assets/images/mbi_triage.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Medication Burden Index (MBI)" # Repeat title here
+  image: "/assets/images/mbi_triage.png"
+# Sections
 approach:
   - title: "The Architecture: <code>ClinicalConfig</code>"
   - excerpt: "I developed an analytical engine in Python that translates fragmented medication lists into a Medication Burden Index (MBI). It’s not just code; it’s a digital medical dictionary mapping maximum doses and clinical weights to predict hemodynamic severity before an echocardiogram is even performed."

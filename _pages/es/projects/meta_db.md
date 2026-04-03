@@ -3,6 +3,16 @@ layout: splash
 title: "Base de Datos Relacional e integración MySQL-Python"
 permalink: portfolio/projects/little-lemon-db/
 lang: es
+# Social previews
+description: "Desarrollo de una base de datos relacional en 3NF e integración Python-SQL para la gestión operativa."
+header:
+  teaser: "/assets/images/database_schema.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Base de Datos Relacional e integración MySQL-Python" # Repeat title here
+  image: "/assets/images/database_schema.png"
+# Sections
 approach:
   - title: "El Flujo de Ingeniería"
   - excerpt: "Mi propuesta se centró en un flujo de trabajo de tres fases: Ingeniería de un esquema robusto, Población Automatizada mediante Python y Capas de Lógica a través de procedimientos almacenados en SQL. Al implementar la <strong>Tercera Forma Normal (3NF)</strong>, diseñé un ecosistema relacional donde se elimina la redundancia de datos."

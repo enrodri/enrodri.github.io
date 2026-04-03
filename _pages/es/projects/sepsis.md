@@ -3,6 +3,16 @@ layout: splash
 title: "Evidencia en choque séptico"
 permalink: portfolio/projects/sepsis/
 lang: es
+# Social previews
+description: "Sintetizando evidencia de los principales ensayos clínicos aleatorizados para facilitar un consenso basado en datos en la reanimación del choque séptico."
+header:
+  teaser: "/assets/images/presentation_sepsis.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Evidencia en choque séptico" # Repeat title here
+  image: "/assets/images/presentation_sepsis.png"
+# Sections
 approach:
   - title: "Metodología: Síntesis y Consenso"
   - excerpt: "Mi abordaje se centró en la selección crítica de la literatura médica. En lugar de una exposición unilateral, utilicé la evidencia de los grandes ensayos clínicos para fomentar la discusión técnica, permitiendo que el equipo médico llegara a acuerdos operativos basados en datos."

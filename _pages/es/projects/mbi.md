@@ -3,6 +3,16 @@ layout: splash
 title: "Índice de carga farmacológica"
 permalink: portfolio/projects/mbi/
 lang: es
+# Social previews
+description: "Desarrollo de un motor clínico en Python para cuantificar la intensidad farmacológica. Incluye umbrales de triaje validados mediante curvas ROC para hipertensión pulmonar crítica."
+header:
+  teaser: "/assets/images/mbi_triage.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Índice de carga farmacológica" # Repeat title here
+  image: "/assets/images/mbi_triage.png"
+# Sections
 approach:
   - title: "La Arquitectura: <code>ClinicalConfig</code>"
   - excerpt: "Desarrollé un motor analítico en Python que traduce listas de medicación fragmentadas en un índice de carga farmacológica (MBI). No es solo código; es un diccionario médico digital que mapea dosis máximas y pesos clínicos para predecir la gravedad hemodinámica antes de realizar un ecocardiograma."

@@ -3,6 +3,16 @@ layout: splash
 title: "Pharmacovigilance & Clinical Narrative"
 permalink: portfolio/projects/pharmacovigilance/
 lang: en
+# Social previews
+description: "Transforming complex pharmacovigilance data into a high-impact clinical narrative that turned 95.2% causality into a call to action."
+header:
+  teaser: "/assets/images/project_pharmacovigilance.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Pharmacovigilance & Clinical Narrative" # Repeat title here
+  image: "/assets/images/project_pharmacovigilance.png"
+# Sections
 approach:
   - title: "Methodology: From Data to Decision"
   - excerpt: "My methodology transformed dry pharmacovigilance data into a clinical roadmap. The challenge wasn't just presenting the WHO Algorithm, but making the audience 'see' the 50% treatment dropout risk through a <strong>strategic visual hierarchy</strong>."

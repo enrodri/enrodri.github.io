@@ -3,6 +3,16 @@ layout: splash
 title: "Evidence in Septic Shock"
 permalink: portfolio/projects/sepsis/
 lang: en
+# Social previews
+description: "Synthesizing evidence from major randomized controlled trials (RCTs) to facilitate data-driven consensus in septic shock resuscitation."
+header:
+  teaser: "/assets/images/presentation_sepsis.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Evidence in Septic Shock" # Repeat title here
+  image: "/assets/images/presentation_sepsis.png"
+# Sections
 approach:
   - title: "Methodology: Synthesis and Consensus"
   - excerpt: "My approach focused on the critical selection of medical literature. Instead of a unilateral presentation, I utilized evidence from major clinical trials to foster technical discussion, allowing the medical team to reach data-driven operational agreements."
