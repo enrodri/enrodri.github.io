@@ -69,7 +69,7 @@ highlights:
 </div>
 
 <div class="skills-bar">
-    <strong>Tech Stack:</strong> <code>Pandas, NumPy, Statsmodels, Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
+    <strong>Tech Stack:</strong> Object-Oriented Programming (OOP), <code>Pandas</code>, <code>NumPy</code>, <code>Statsmodels</code>, <code>Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
 <!-- <div style="background-color: #f0f7ff; border-left: 5px solid #003152; padding: 15px; margin: 20px 0; border-radius: 4px;">

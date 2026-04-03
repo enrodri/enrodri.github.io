@@ -37,6 +37,14 @@ data:
       <p><strong>Impacto:</strong> 85% de precisión en la detección de remodelación cardíaca avanzada en triaje preclínico</p>
     </a>
   </div>
+  <div class="grid-item">
+    <a href="little-lemon-db/">
+      <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
+      <h3>Base de Datos Relacional e Integración Python-SQL</h3>
+      <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
+      <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
+    </a>
+  </div>
 </div>
 
 {% include feature_row id="presentations" type="center" %}

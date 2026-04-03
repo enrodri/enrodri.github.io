@@ -81,11 +81,11 @@ projects:
 <!-- Certifications columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
-      <h3>Primer lugar</h3>
-      <p>XV Jornada Científica, SILAIS Granada</p>
-      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
+      <h3>Ingeniero de Bases de Datos</h3>
+      <p>Meta</p>
+      <p>Diseño de esquemas relacionales, optimización avanzada de MySQL y desarrollo de pipelines ETL en Python.</p>
     </a>
   </div>
   <div class="grid-item">
@@ -125,11 +125,11 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portfolio/projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-      <h3>Farmacovigilancia y narrativa clínica</h3>
-      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
+    <a href="/es/portfolio/projects/little-lemon-db/">
+      <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
+      <h3>Base de Datos Relacional e Integración Python-SQL</h3>
+      <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
+      <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
     </a>
   </div>
   <div class="grid-item">

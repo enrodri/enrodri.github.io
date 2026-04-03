@@ -32,14 +32,6 @@ other_skills:
 
 <div class="grid-container">
   <div class="grid-item">
-    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-      <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV SILAIS Granada Scientific Conference — 1st Place">
-      <h3>First Place</h3>
-      <p>XV Scientific Conference, SILAIS Granada</p>
-      <p>Transformation of pharmacovigilance metrics into a clear visual narrative.</p>
-    </a>
-  </div>
-  <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
       <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
       <h3>Biostatistics in Public Health</h3>
@@ -124,6 +116,14 @@ other_skills:
         <p>National Research Tomsk State University</p>
         <p>Drafting persuasive narratives and impactful story architecture.</p>
       </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Award: XV SILAIS Granada Scientific Conference — 1st Place">
+      <h3>First Place</h3>
+      <p>XV Scientific Conference, SILAIS Granada</p>
+      <p>Transformation of pharmacovigilance metrics into a clear visual narrative.</p>
+    </a>
   </div>
   <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/specialization/MV8WGWJ9SBPR">

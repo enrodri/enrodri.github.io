@@ -11,7 +11,7 @@ excerpt: 'My projects are more than just a summary of my work; they are a testam
 presentations:
   - title: "Presentations"
 data:
-  - title: "Data Analysis"
+  - title: "Data and Databases"
 ---
 
 <style>
@@ -35,25 +35,33 @@ data:
       <p><strong>Impact:</strong> 85% accuracy in detecting advanced cardiac remodeling in preclinical triage.</p>
     </a>
   </div>
+  <div class="grid-item">
+    <a href="little-lemon-db/">
+      <img src="/assets/images/database_schema.png" alt="Project: Little Lemon">
+      <h3>Relational Database and MySQL-Python integration</h3>
+      <p>Engineering a 3NF ecosystem and a programmatic bridge to automate complex restaurant operations.</p>
+      <p><strong>Impact:</strong> 100% transaction integrity and elimination of data redundancy through stored procedures.</p>
+    </a>
+  </div>
 </div>
 
 {% include feature_row id="presentations" type="center" %}
 
 <div class="grid-container">
   <div class="grid-item">
-  <a href="pharmacovigilance/">
-    <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
-    <h3>Pharmacovigilance and Clinical Narrative</h3>
-    <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
-    <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
-  </a>
-  </div>
-  <div class="grid-item">
   <a href="sepsis/">
     <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and Septic Shock">
     <h3>Critical Evidence in Septic Shock</h3>
     <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
     <p><strong>Impact:</strong> Synthesis of cutting-edge protocols for the advanced management of septic shock.</p>
+  </a>
+  </div>
+  <div class="grid-item">
+  <a href="pharmacovigilance/">
+    <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
+    <h3>Pharmacovigilance and Clinical Narrative</h3>
+    <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
+    <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
   </a>
   </div>
 </div>

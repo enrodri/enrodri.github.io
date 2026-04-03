@@ -30,11 +30,11 @@ certifications:
     </a>
   </div>
   <div class="grid-item">
-    <a href="projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
-      <h3>Pharmacovigilance and Clinical Narrative</h3>
-      <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
-      <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
+    <a href="projects/little-lemon-db/">
+      <img src="/assets/images/database_schema.png" alt="Project: Little Lemon">
+      <h3>Relational Database and MySQL-Python integration</h3>
+      <p>Engineering a 3NF ecosystem and a programmatic bridge to automate complex restaurant operations.</p>
+      <p><strong>Impact:</strong> 100% transaction integrity and elimination of data redundancy through stored procedures.</p>
     </a>
   </div>
   <div class="grid-item">

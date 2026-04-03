@@ -34,14 +34,6 @@ other_skills:
 <!-- Research and public health columns -->
  <div class="grid-container">
   <div class="grid-item">
-    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
-      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
-      <h3>Primer lugar</h3>
-      <p>XV Jornada Científica, SILAIS Granada</p>
-      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
-    </a>
-  </div>
-  <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
       <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
       <h3>Bioestadística en salud pública</h3>
@@ -128,6 +120,14 @@ other_skills:
         <p>National Research Tomsk State University</p>
         <p>Redacción de narrativas persuasivas y arquitectura de historias de impacto.</p>
       </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://drive.google.com/file/d/1nib_fIRz1-YxlaEv80VYZgGtqg_XQotb/view?usp=sharing">
+      <img src="/assets/images/award_scientific-fair.jpg" alt="Galardón: XV Jornada Científica SILAIS Granada — 1er lugar">
+      <h3>Primer lugar</h3>
+      <p>XV Jornada Científica, SILAIS Granada</p>
+      <p>Transformación de métricas de farmacovigilancia en una narrativa visual clara</p>
+    </a>
   </div>
   <div class="grid-item">
       <a href="https://www.coursera.org/account/accomplishments/specialization/MV8WGWJ9SBPR">

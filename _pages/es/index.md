@@ -96,11 +96,11 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portfolio/projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-      <h3>Farmacovigilancia y narrativa clínica</h3>
-      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
+    <a href="/es/portfolio/projects/little-lemon-db/">
+      <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
+      <h3>Base de Datos Relacional e Integración Python-SQL</h3>
+      <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
+      <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
     </a>
   </div>
   <div class="grid-item">
