@@ -21,7 +21,7 @@ title                    : "Enyel Rodríguez"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Enyel A. Rodríguez G."
-description              : "Bioestadística y salud pública"
+description              : # Left empty to prioritize page-specific metadata
 url                      : "https://enrodri.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -91,6 +91,7 @@ baidu_site_verification  :
 # Social Sharing
 twitter:
   username               :
+  card: "summary_large_image"
 facebook:
   username               :
   app_id                 :
@@ -268,6 +269,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-polyglot
+  - jekyll-seo-tag
 
 # mimic GitHub Pages with --safe
 whitelist:

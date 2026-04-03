@@ -3,6 +3,16 @@ layout: splash
 title: "Relational Database and MySQL-Python integration"
 permalink: portfolio/projects/little-lemon-db/
 lang: en
+# Social previews
+description: "Engineering a 3NF relational database and Python-SQL integration for operational management."
+header:
+  teaser: "/assets/images/database_schema.png"
+# This block communicates directly with the SEO plugin
+seo:
+  type: "article"
+  title: "Relational Database and MySQL-Python integration" # Repeat title here
+  image: "/assets/images/database_schema.png"
+# Sections
 approach:
   - title: "The Engineering Workflow"
   - excerpt: "My proposal centered on a three-phase workflow: Forward Engineering a robust schema, Automated Population via Python, and Logic Layering through SQL stored procedures. By implementing <strong>3rd Normal Form (3NF)</strong>, I engineered a relational ecosystem where data redundancy is eliminated."
