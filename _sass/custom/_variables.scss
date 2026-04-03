@@ -779,6 +779,7 @@ a.site-title {
 
   // We convert the container to Flex for centering
   display: flex;
+  flex-wrap: wrap;
   align-items: center; 
   min-height: 4rem; // Ensures a consistent base size
 
