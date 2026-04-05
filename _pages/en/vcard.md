@@ -30,21 +30,25 @@ projects:
 }
 </style>
 
-<div class="vcard">
-  <img src="/assets/images/web_hero_eng.png" alt="Profile Picture">
-  <div class="vcard-info">
-    <h1>Enyel A. Rodríguez G., MD</h1>
-    <h2>Physician & Data Analyst</h2>
-    <p>I help researchers and healthcare organizations transform <strong>complex data</strong> into actionable insights and strategic decisions backed by <strong>solid evidence</strong>.</p>
-    <div>
-        <a href="https://wa.me/85365685" class="btn btn--primary">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
+<div class="custom-splash-hero">
+  <div class="hero-main-layout">
+    <img src="/assets/images/web_hero_eng.png" alt="Profile picture" class="hero-img">
+    <div class="hero-text-content">
+      <h1>Enyel A. Rodríguez G., MD</h1>
+      <h2>Physician & Data Analyst</h2>
+      <p>I help researchers and healthcare organizations transform <strong>complex data</strong> into actionable insights and strategic decisions backed by <strong>solid evidence</strong>.</p>
+      <a href="https://wa.me/85365685" class="btn btn--primary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="mailto:mdenrodriguez@gmail.com" class="btn btn--primary"><i class="fa-regular fa-envelope"></i> Email</a>
+    </div>
+  </div>
+  <div class="trust-bar-glass">
+    <div class="trust-content">
+      <span class="trust-label">Certification badges</span>
+      <div class="badge-flex-container">
+        <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
+          <img src="/assets/images/badge-meta-database-engineer.png" alt="Meta Database Engineer" class="cert-badge">
         </a>
-        <a href="mailto:mdenrodriguez@gmail.com" class="btn btn--primary">
-            <i class="fa-regular fa-envelope"></i>
-            Email
-        </a>
+      </div>
     </div>
   </div>
 </div>

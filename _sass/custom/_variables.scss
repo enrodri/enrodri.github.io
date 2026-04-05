@@ -451,7 +451,7 @@ a.site-title {
 // ===============================================
 
 .custom-splash-hero {
-  // Full-width stretch technique
+  /* Your existing 100vw stretch logic */
   width: 100vw;
   max-width: 100vw;
   position: relative;
@@ -459,57 +459,117 @@ a.site-title {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  
-  // Flex layout and styling
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 2.5rem;
-  margin-bottom: 2rem; 
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  min-height: calc(100vh - 60px); // Full viewport height minus header
-  
-  // Background with transparent dark overlay
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
   background: 
     linear-gradient(rgba(0, 19, 32, 0.8), rgba(0, 19, 32, 0.8)),
     url('/assets/images/splash_white.jpeg') center/cover no-repeat;
-}
-
-// Image and VCard Image Styling
-.custom-splash-hero img,
-.vcard img {
-  width: 500px;
-  max-width: 90vw;
-  height: auto;
-  border-radius: 1rem;
-  flex-shrink: 0; /* Prevents image from shrinking below its width */
-}
-
-// Text/Content Container Styling
-.custom-splash-hero > div,
-.vcard > div {
-  min-width: 250px;
-  flex: 1 1 300px; /* Allows content to grow, setting a 300px base */
-  margin-bottom: 0 !important;
-  padding: 0 !important;
+  padding: 0 !important; /* Essential for full-width glass */
 }
 
 // Text Color Overrides for the Dark Hero Background
 .custom-splash-hero h1,
+.custom-splash-hero h2,
 .custom-splash-hero p {
   color: #ffffff; 
 }
 
-// Removes bottom margin from the last element in the hero content div
-.custom-splash-hero > div > *:last-child,
-.vcard > div > *:last-child {
-  margin-bottom: 0 !important;
+/* 2-Column Desktop / Stacked Mobile Wrapper */
+.hero-main-layout {
+  display: flex;
+  flex-direction: row; /* Desktop Default */
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  flex-grow: 1;
+  width: 100%;
+
+  @media (max-width: 1100px) {
+    flex-direction: column; // Mobile Stack: Picture > Text
+    text-align: center;
+    padding: 2rem 1.1rem;
+  }
 }
 
-// Custom splash text width
-.page__hero--overlay .page__lead {
-  max-width: 900px !important;
+.hero-main-layout img,
+.vcard-main-layout img {
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 1rem;
+  flex-shrink: 0; // Prevents image from shrinking below its width
+}
+
+.trust-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  /* Adjust color for both backgrounds: 
+     In the hero it will look like soft white, 
+     In the Vcard it will look like soft dark blue */
+  color: #ffffff;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.trust-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Centers everything
+  gap: 1rem;
+}
+
+.trust-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ffffff; 
+  opacity: 0.6;
+}
+
+// THE TRUST BAR: Optimized Height & Dead Space
+.trust-bar-glass {
+  width: 100%;
+  padding: 1rem 0; // Minimal vertical padding to remove "dead space"
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-top: auto; // Anchors to bottom
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.badge-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; // Scalable spacing for future badges
+}
+
+// Standardizing the 800x800 Meta Badge
+.cert-badge {
+  height: 100px; // Taller, readable size as requested
+  width: auto; // Prevents distortion of original aspect ratio
+  object-fit: contain;
+  filter: drop-shadow(0 4px 15px rgba(0,0,0,0.6));
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  @media (max-width: 768px) {
+    height: 75px; // Scaled for mobile stacked view
+    margin: 0 !important;
+  }
+
+  @media (max-width: 1100px) {
+    margin: 0 !important;
+  }
 }
 
 // ===============================================
@@ -876,36 +936,6 @@ a.site-title {
 
 .skills {
   font-style: italic;
-}
-
-// ===============================================
-// VCARD/ABOUT ME BANNER
-// ===============================================
-
-.vcard {
-  // Full-width stretch technique
-  width: 100vw;
-  max-width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  
-  // Flex layout and styling
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 2.5rem;
-  margin-bottom: 2rem; 
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  min-height: calc(100vh - 60px);
-  
-  // Background with semi-transparent white overlay
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-    url('/assets/images/vcard_background.png');
 }
 
 // ===============================================

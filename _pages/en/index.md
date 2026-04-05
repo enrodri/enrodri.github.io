@@ -23,11 +23,23 @@ projects:
   - excerpt: "My projects are not just a summary of my work; they are a testament to my dedication to achieving high-impact results. Through every analysis, my goal is to ensure that data is not only correct but tells a compelling story backed by evidence, capable of inspiring action and innovation."  
 ---
 <div class="custom-splash-hero">
-  <img src="/assets/images/web_hero_eng.png" alt="Profile picture">
-  <div>
-    <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
-    <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>
-    <a href="contact/" class="btn btn--primary">Get in touch</a>
+  <div class="hero-main-layout">
+    <img src="/assets/images/web_hero_eng.png" alt="Profile picture" class="hero-img">
+    <div class="hero-text-content">
+      <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
+      <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>
+      <a href="contact/" class="btn btn--primary">Get in touch</a>
+    </div>
+  </div>
+  <div class="trust-bar-glass">
+    <div class="trust-content">
+      <span class="trust-label">Certification badges</span>
+      <div class="badge-flex-container">
+        <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
+          <img src="/assets/images/badge-meta-database-engineer.png" alt="Meta Database Engineer" class="cert-badge">
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
