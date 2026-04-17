@@ -38,6 +38,9 @@ projects:
         <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
           <img src="/assets/images/badge-meta-database-engineer.png" alt="Meta Database Engineer" class="cert-badge">
         </a>
+        <a href="https://verify.skilljar.com/c/i3bkw2vc5bcd" target="_blank">
+          <img src="/assets/images/badge-notion-advanced-test.png" alt="Notion Academy: Advanced" class="cert-badge">
+        </a>
       </div>
     </div>
   </div>
